@@ -7,12 +7,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddSingleton<IUserInterface, UserRepository>();
 builder.Services.AddSingleton<NpgsqlConnection>((UserRepository) =>
 {
     var connectionString = UserRepository.GetRequiredService<IConfiguration>().GetConnectionString("pgconnection");
     return new NpgsqlConnection(connectionString);
 });
+
 
 builder.Services.AddControllers();
 builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>

@@ -1,11 +1,7 @@
 @{
     Layout = "_AuthLayout";
 }
-@* <style>
-    body {
-        background: rgb(160, 158, 197);
-        background: linear-gradient(90deg, rgba(160, 158, 197, 1) 0%, rgba(149, 221, 235, 0.6386204139859069) 34%, rgba(249, 239, 239, 1) 49%);
-</style> *@
+
 <div class="login-bg-wrapper d-flex flex-column">
     <div class="login-logo-header d-flex align-items-center">
         <a href="#" class="login-logo-wrapper"><img src="~/css/Default/images/TaskTrackPro.png" class="login-logo-img"
@@ -16,8 +12,8 @@
     <div class="login-graphic-wrapper flex-1 overflow-auto d-flex flex-wrap">
         <div class="login-left-wrapper">
             <div>
-                <img src="~/css/Default/images/Login_Graphics.svg" alt="Register Image" class="login-graphice-img" />
-                <p class="login-graphice-text">A 360 degree Task Management App You Need.</p>
+                <img src="~/css/Default/images/regitser_logo.svg" height="450px" alt="Register Image" class="login-graphice-img" />
+                @* <p class="login-graphice-text">A 360 degree Task Management App You Need.</p> *@
             </div>
         </div>
         <div class="login-right-wrapper">
@@ -56,22 +52,12 @@
                         </div>
 
                         <div class="form-group">
-                            @* <label for="profilePic" class="text-dark font-medium d-block">Upload Profile Picture:</label> *@
                             <div class="file-upload-wrapper d-flex align-items-center">
-                                <input type="file" id="profilePic" class="">
-                                @* <span class="login-textbox-icon"><i class="icon-upload"></i></span> *@
+                                <input type="file" id="profilePic" class="" >
                             </div>
                         </div>
-                        @* <div class="login-input-check">
-                        <div class="login-input-checkbox">
-                            <input type='checkbox' class='k-checkbox' checked id='rememeberme'>
-                            <label class='k-checkbox-label' for='rememeberme'><span>I accept the</span><a href="#"
-                                    aria-label="Terms of use">Terms of Use</a><span> & </span><a href="#"
-                                    aria-label="privacy policy">Privacy Policy.</a></label>
-                        </div>
-                    </div> *@
+
                         <div class="form-group pb-10">
-                            @* <button class="btn btn-primary k-button w100 loginbtn">Sign Up</button> *@
                             <button type="button" id="register"
                                 class="btn btn-primary k-button w100 loginbtn">Submit</button>
                         </div>
@@ -105,7 +91,7 @@
         var fileInput = $('#profilePic')[0].files[0];
         console.log(fileInput);
         if (fileInput) {
-            formData.append("c_profilepicture", fileInput);
+            formData.append("c_profile", fileInput);
         }
 
         $.ajax({

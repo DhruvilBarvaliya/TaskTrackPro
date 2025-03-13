@@ -25,10 +25,7 @@ namespace TaskTrackPro.API
         {
             if (user.c_profile != null && user.c_profile.Length > 0)
             {
-                System.Console.WriteLine("Under profile image upload code");
-                System.Console.WriteLine("Email:" + user.c_email);
-                var fileName = user.c_email + Path.GetExtension(
-                 user.c_profile.FileName);
+                var fileName = user.c_email + Path.GetExtension(user.c_profile.FileName);
                 var filePath = Path.Combine("../TaskTrackPro.MVC/wwwroot/profile_images", fileName);
                 user.c_profilepicture = fileName;
                 using (var stream = new FileStream(filePath, FileMode.Create))
