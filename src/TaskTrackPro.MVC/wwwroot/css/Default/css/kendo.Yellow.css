@@ -1,0 +1,852 @@
+/*kendo yellow css*/
+.mt-navbar {
+    background-color: #ffd44c;
+    color: #003145;
+}
+
+.user-menu > li > a:hover [class^=icon-] {
+    opacity: 1;
+}
+
+.active-workspace.workspace p .change-default-link a,
+.active-workspace.workspace p .change-default-link a:hover,
+.mt-navbar-pages .pages-menu > li > a:hover,
+a {
+    color: #4a88e9;
+}
+
+.notification .counts {
+    background-color: #ff5a5a;
+    border-color: transparent;
+}
+
+.btn-primary,
+.k-pager-numbers .k-link.k-state-selected:hover {
+    background-color: #4a88e9;
+}
+
+    .btn-primary:active,
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-color: #3e73c6;
+    }
+
+.pages-menu > li.active > a > .caret:after {
+    border-top: 5px solid #4a88e9;
+}
+
+.k-pager-numbers .k-state-selected {
+    background: #4a88e9;
+}
+
+.k-ghost-splitbar-horizontal,
+.k-ghost-splitbar-vertical {
+    border-color: #4a88e9;
+}
+
+.k-button.k-primary,
+.k-button.k-primary:active:hover,
+.k-editor .k-tool.k-state-selected,
+.k-treeview li.k-item[aria-selected=true] > div,
+.k-treeview li.k-item[aria-selected=true] > div:hover,
+.k-treeview li.k-item[aria-selected=true] > div:hover .k-in,
+.k-treeview li.k-item[aria-selected=true] > div > .k-icon:before,
+.k-treeview li.k-item[aria-selected=true] > div > .k-in.k-state-selected,
+.k-treeview li.k-item[aria-selected=true] > div > .k-in:hover,
+.k-treeview li.k-item[aria-selected=true] > div.k-parent-focused {
+    background-color: #4a88e9;
+}
+
+.select-treelist .k-group[role=group] > li[aria-selected=true]:not(.parent-treenode) > div > .k-icon:before {
+    color: #949eb2;
+}
+
+.select-treelist .k-treeview .k-group[role=group] > li[aria-selected=true]:not(.parent-treenode) > div span.k-checkbox-wrapper .k-checkbox:checked + .k-checkbox-label:before {
+    color: #fff;
+    background-color: #35c47d;
+    border-color: #35c47d;
+}
+
+.select-treelist .k-treeview .k-group[role=group] > li[aria-selected=true]:not(.parent-treenode) > div {
+    border: 1px solid #35c47d;
+    background-color: #eaf9f2;
+    color: #35c47d;
+}
+
+.select-treelist .k-treeview .k-group[role=group] li[aria-selected=true] > div > .k-in {
+    color: #35c47d;
+}
+
+.tag-tree-holder .k-treeview li.k-item > div > .k-in.k-state-selected > i.text-muted {
+    color: #fff !important;
+}
+
+.badge.badge-primary,
+.k-ct-cell.k-state-selected,
+.k-grid tr:hover .permission.btn,
+.k-progressbar .k-state-selected {
+    background-color: #4a88e9;
+    border-color: #4a88e9;
+}
+
+.k-radio:checked + .k-radio-label:hover:before {
+    border-color: #4a88e9;
+}
+
+.k-radio:checked + .k-radio-label:before {
+    background-color: #4a88e9;
+    border-color: #4a88e9;
+}
+
+.k-radio:checked + .k-radio-label:active:before {
+    -webkit-box-shadow: 0 0 3px 0 #4a88e9;
+    box-shadow: 0 0 3px 0 #4a88e9;
+    border-color: #4a88e9;
+}
+
+.k-radio:disabled:checked + .k-radio-label:after {
+    background-color: #4a88e9;
+}
+
+.k-calendar td.k-state-selected,
+.k-calendar td.k-state-selected.k-state-focused,
+.k-calendar td.k-state-selected.k-state-hover {
+    background-color: #4a88e9;
+}
+
+.k-calendar .k-today .k-link {
+    color: #4a88e9;
+}
+
+.k-calendar .k-footer .k-nav-today,
+.k-calendar .k-footer .k-nav-today:hover,
+.k-widget.k-scheduler.native-sch .k-scheduler-views .k-current-view a.k-link,
+.k-widget.k-scheduler.native-sch .k-scheduler-views .k-current-view:hover a.k-link {
+    color: #4a88e9;
+}
+
+.k-scheduler .k-scheduler-toolbar .k-state-selected,
+.k-scheduler .k-scheduler-toolbar .k-state-selected.k-state-hover,
+.k-scheduler .k-scheduler-toolbar ul li.k-state-selected.k-state-hover .k-link {
+    background-color: #4a88e9;
+    border-color: #4a88e9;
+}
+
+.k-scheduler-content .k-event {
+    border-color: #4a88e9;
+}
+
+.switch-box.switch-primary > a.check {
+    background: #4a88e9;
+    border: 1px solid #4a88e9;
+}
+
+.adv-mid-tree .k-treeview li.k-item[aria-selected=true] > div:hover,
+.k-grid tr.k-selectRow,
+.k-grid tr.k-selectRow:hover,
+.k-grid tr.k-state-selected,
+.k-grid tr.k-state-selected:hover,
+.k-treeview .k-item > div:hover,
+.k-treeview .k-item > div:hover.k-in,
+.k-treeview .k-item > div.k-parent-focused,
+.change-selection-color.folder-tree-list-comn.k-grid tr.k-selectRow,
+.change-selection-color.folder-tree-list-comn.k-grid tr.k-selectRow:hover,
+.change-selection-color.folder-tree-list-comn.k-grid tr.k-state-selected,
+.change-selection-color.folder-tree-list-comn.k-grid tr.k-state-selected:hover {
+    background-color: rgba(192,197,208,.25);
+}
+
+.drag-placeholder {
+    outline-color: #4a88e9;
+}
+
+.tree-grid-wrap.k-grid tr.child-row td:first-child {
+    border-left-color: #4a88e9;
+}
+
+.active-switch input:checked + label > span:first-child {
+    background-color: #4a88e9;
+    border-color: #4a88e9;
+}
+
+.app-item:hover .app-content,
+.organization-card.active-organization {
+    border: solid 1px #4a88e9;
+}
+
+    .organization-card.active-organization:before {
+        border-color: transparent transparent transparent #4a88e9;
+    }
+
+.userprofile-menu .bottom-block .k-checkbox:checked + .k-checkbox-label:before,
+.userprofile-menu .bottom-block .k-checkbox:checked:active + .k-checkbox-label:before {
+    border-color: #4a88e9;
+    background-color: #4a88e9;
+}
+
+.text-primary {
+    color: #4a88e9 !important;
+}
+
+.applist .default-app:before,
+.bg-primary,
+.entity-container .inline-box-tab > ul .k-item.k-state-active:after,
+.folder-tree-list-comn.k-grid tr.k-selectRow,
+.folder-tree-list-comn.k-grid tr.k-selectRow:hover,
+.folder-tree-list-comn.k-grid tr.k-state-selected,
+.folder-tree-list-comn.k-grid tr.k-state-selected:hover,
+.form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:after,
+.form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:before,
+.form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:after,
+.form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:before,
+.form-wizard-wrapper > .k-tabstrip-wrapper > .k-tabstrip .k-tabstrip-items .k-item.form-filled:after,
+.form-wizard-wrapper > .k-tabstrip-wrapper > .k-tabstrip .k-tabstrip-items .k-item.k-state-active:after,
+.form-wizard-wrapper > .k-tabstrip-wrapper > .k-tabstrip > .k-tabstrip-items .k-item.form-filled:before,
+.form-wizard-wrapper > .k-tabstrip-wrapper > .k-tabstrip > .k-tabstrip-items .k-item.k-state-active:before,
+.k-grid .priority-option-wrapper .priority-blue,
+.menu-holder-left.k-tabstrip-items > li.k-state-active:after,
+.organization-card .default-label,
+.pages-menu > li.active > a:after,
+.right-main-tab .bg-tabstrip .inline-box-tab > ul .k-item.k-state-active:after,
+.right-main-tab li.k-item.k-state-active:after,
+.tag-list .bullet.bullet-primary,
+.workspace .default,
+fieldset .people-tab-wrap .k-tabstrip-items > .k-item.k-state-active.email-color:after {
+    background-color: #4a88e9;
+}
+
+.avatar-listing-box.box-primary,
+.box.box-primary,
+.card-group .box.box-primary,
+.card-group .box:hover {
+    border: 1px solid #4a88e9;
+}
+
+.add-list.popover-content .search-box.search-box-ext .serach-box-left,
+fieldset .email-color.search-box.search-box-ext .serach-box-left,
+fieldset .search-box.search-box-ext .serach-box-left {
+    border-left: 3px solid #4a88e9;
+}
+
+fieldset .custodian-color.search-box.search-box-ext .serach-box-left {
+    border-color: #35c47d;
+}
+
+.folder-tree-list-comn.k-grid tr.k-state-hover td {
+    border-bottom-color: #4a88e9;
+}
+
+.a-highlight,
+.action-contextmenu > .active > a,
+.action-contextmenu > .active > a:focus,
+.action-contextmenu > .active > a:hover,
+.active-switch input:checked + label > span:first-child:before,
+.applist li.default-app a,
+.aside-content-right .title h4,
+.bottom-div p,
+.breadcrumb a:hover,
+.breadcrumb span:last-of-type,
+.breadcrumb span:last-of-type > span,
+.btn-icn-trans:active:hover,
+.btn-icn-trans:focus:active,
+.btn-icn-trans:hover,
+.chart-content .title .title-right.k-button,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > li.active > a > [class^=icon-],
+.email-color.search-box-ext .select-label .k-dropdown-wrap .k-input,
+.email-color.search-box-ext .select-label .k-state-default > .k-select,
+.filter-search > i:hover,
+.form-wizard-wrapper .k-tabstrip-items .k-state-active .k-link,
+.form-wizard-wrapper > .k-tabstrip-wrapper > .k-tabstrip > .k-tabstrip-items .k-state-default.k-state-active .k-link,
+.grid-header,
+.highlight:hover,
+.input-search > i:hover,
+.k-grid-header th.k-header[data-sort=asc],
+.k-grid-header th.k-header[data-sort=desc],
+.k-grid-header th[aria-sort] > .k-link,
+.k-panelbar .k-state-focused.k-state-selected,
+.k-panelbar > li .k-state-selected,
+.k-panelbar > li.k-state-default > .k-link.k-state-selected,
+.k-popup .k-list .k-state-selected.k-state-focused,
+.k-scheduler .k-scheduler-toolbar ul li.k-state-hover,
+.k-scheduler .k-scheduler-toolbar ul li.k-state-hover .k-link,
+.k-tabstrip-items .k-state-active .k-link,
+.k-tabstrip-items .k-state-hover .k-link,
+.k-treeview .k-item.selected-treenode > div > .k-in,
+.k-treeview [role=treeitem]#panel-treeview_tv_active > div > .k-icon:before,
+.k-treeview [role=treeitem]#panel-treeview_tv_active > div > .k-in,
+.k-treeview [role=treeitem]#panel-treeview_tv_active > div > .k-in:hover,
+.k-treeview li[aria-expanded=true].parent-treenode > div > .k-in,
+.k-window .rec-navigation .btn-trans,
+.left-sidebar > .k-menu-scroll-wrapper.vertical .k-item > .k-state-active,
+.organization-name > a.selected-workspace,
+.organization-name > a:hover,
+.pages-menu > li.active > a,
+.query-trigger:hover,
+.rec-navigation .btn-trans,
+.report-list li a:hover,
+.sch-detail-content .sch-field.sch-round,
+.select-label .k-dropdown-wrap .k-input,
+.select-label .k-dropdown-wrap.k-state-focused .k-input,
+.select-label .k-dropdown-wrap.k-state-hover .k-input,
+.select-label .k-dropdown-wrap > .k-select,
+.settings .brief .input-pic,
+.settings .brief > a,
+.smallchart-content .value,
+.sort-filter-tbl .btn-icon.btn-add:hover,
+.switch-box.switch-primary .check .icon-check,
+.switch-box.switch-primary .check > span:first-child:after,
+.tree-holder-left .title h4,
+.treeview_review #panel-treeview_tv_active > div,
+.view-btn,
+.views a.active,
+.views a:hover,
+.workspace-holder .case-details .section-heading .pull-left a,
+.workspace-info ul > li > span,
+a,
+a:hover,
+fieldset .people-tab-wrap .k-tabstrip-items > .k-item.k-state-active.email-color .k-link,
+.n-head span,
+span.app-icon,
+#_MorePage_popover > ul > li.active > a,
+.k-grid-header th.k-header[aria-sort] > .k-link,
+.k-panelbar > .k-item > .k-link.k-state-focused.k-state-selected, .k-panelbar > .k-item > .k-link, .k-panelbar > .k-item > .k-link.k-state-selected,
+.action-header .btn.btn-borderd:hover, .action-header .btn.btn-borderd:focus,
+.ds-body .ds-listview .ds-list.k-state-selected .ds-list-wrap h4 {
+    color: #4a88e9;
+}
+
+.adsk-button.active,
+.adsk-button.active .adsk-button-arrow,
+.adsk-control .adsk-button .active,
+.adsk-control-tooltip,
+.dockingPanelTitle,
+.explode-submenu,
+.hudTitle,
+.modelStructurePanel .selected lmvheader,
+.modelStructurePanel .treeview .visible group.visible > :not(.dim) > lmvheader > label,
+.modelStructurePanel .treeview .visible lmvheader > label,
+.modelStructurePanel .treeview group.selected leaf,
+.modelStructurePanel .treeview group.selected lmvheader,
+.modelStructurePanel .treeview group.visible > lmvheader > label,
+.modelStructurePanel .treeview leaf.visible > lmvheader > label,
+.settings-tabs ul li.tabselected a {
+    background-color: #4a88e9 !important;
+    color: #fff !important;
+}
+
+.settings-tabs ul li.tabselected {
+    border-color: #4a88e9 !important;
+}
+
+.adsk-viewing-viewer .calibration-button,
+.cadviewertheme,
+.dockingPanel .viewer-restore-defaults,
+.measure-repick,
+.measure-restart,
+.measure-settings-button {
+    color: #4a88e9 !important;
+}
+
+.measure-selectionOne-label,
+.measure-selectionTwo-label {
+    background-color: #4a88e9 !important;
+}
+
+.adsk-viewing-viewer .calibration-textbox,
+.k-widget.k-scheduler.native-sch .k-scheduler-views.k-state-expanded li.k-state-selected,
+.k-widget.k-scheduler.native-sch .k-scheduler-views.k-state-expanded li.k-state-selected.k-state-hover {
+    background-color: #fff !important;
+    color: #4a88e9 !important;
+}
+
+.adsk-lmv-tftable tr:hover,
+.dropDownMenuCheckbox:hover,
+.dropDownMenuItem:hover,
+.homeViewMenuItem:hover,
+.layersPanel .treeview group > lmvheader:hover,
+.layersPanel .treeview leaf > lmvheader:hover,
+.menuItem:hover,
+.modelStructurePanel .treeview group > lmvheader:hover,
+.modelStructurePanel .treeview leaf > lmvheader:hover,
+.modelStructurePanel:hover .selected lmvheader,
+.notouch .propertyPanel:hover .propertyName,
+.notouch .propertyPanel:hover .propertyValue,
+.propertyPanel:hover .treeview group > lmvheader,
+.touch .propertyPanel .propertyName,
+.touch .propertyPanel .propertyValue {
+    background-color: rgba(192, 197, 208, .25) !important;
+}
+
+.adsk-viewing-viewer .settings-table .logicalgroup {
+    border: 1px solid rgba(192, 197, 208, .25) !important;
+    background-color: rgba(192, 197, 208, .25) !important;
+}
+
+.user-menu > li > a {
+    color: #003145 !important;
+}
+
+.big-drop > a:not(.btn):hover,
+.dropdown > a:not(.btn):hover {
+    color: #4a88e9;
+}
+
+    .big-drop > a:not(.btn):hover .caret:after,
+    .dropdown > a:not(.btn):hover .caret:after {
+        border-top-color: #4a88e9;
+    }
+
+.adv-dropTarget.adv-item,
+.adv-form-control .adv-control-active,
+.adv-form-control .adv-control-active .k-dropdown-wrap,
+.adv-form-control .adv-control-active .k-numeric-wrap.k-state-default,
+.adv-form-control .adv-control-active .k-picker-wrap,
+.adv-form-control .adv-control-active.k-state-focused,
+.adv-form-control .adv-control-active.k-state-hover,
+.adv-form-control .adv-control-active:hover,
+.multiselect-calender .adv-calender-icon.adv-control-active {
+    border-color: #4a88e9;
+}
+
+.adv-item.query-active {
+    background: rgba(74, 136, 233, .1);
+    border: 1px solid rgba(74, 136, 233, .3) !important;
+}
+
+.adv-operator > .k-dropdown-wrap .k-input,
+.adv-operator > .k-dropdown-wrap .k-select {
+    color: #4a88e9;
+}
+
+.btn-primary.k-button.k-state-disabled:focus,
+.btn.k-state-disabled,
+.btn.k-state-disabled:active,
+.btn.k-state-disabled:hover,
+.btn[disabled] {
+    background-color: #dcdfe5 !important;
+    color: #949eb2 !important;
+}
+
+    .btn[disabled] .caret:after {
+        border-top-color: #949eb2;
+    }
+
+.file-upload-control .k-button.k-upload-button,
+.popover-container .action-list li > .sub-list > li .btn-badge.success {
+    background: #35c47d;
+}
+
+    .file-upload-control .k-button.k-upload-button:hover,
+    .popover-container .action-list li > .sub-list > li .btn-badge.success:hover {
+        background: #2DA76A;
+    }
+
+    .file-upload-control .k-button.k-upload-button.k-state-focused,
+    .popover-container .action-list li > .sub-list > li .btn-badge.success:focus {
+        background: #169053;
+    }
+
+
+.filterhighlight,
+.k-widget.k-scheduler.native-sch .k-scheduler-toolbar .k-state-selected .k-link,
+.k-scheduler .k-scheduler-toolbar ul li.k-state-selected.k-state-hover .k-link {
+    color: #4a88e9 !important;
+}
+
+.align-icon-list > li > a:hover,
+.k-popup .k-list.view-dropdown > .k-item.k-state-selected.k-state-focused > .view-dropdown-option > label,
+.k-window .window-footer .btn.btn-link,
+.menu-holder-left.k-tabstrip-items > li.k-state-active .k-link,
+.proc-tab-left > ul.k-tabstrip-items > li.k-item.k-state-active .tab-list-wrap .tab-icon,
+.expand-vert-tab-left > ul.k-tabstrip-items > li.k-item.k-state-active .tab-list-wrap .tab-icon,
+.stamp-window-table .lt-list li a.active,
+.stamp-window-table .lt-list li a:hover,
+.view-type-wrapper > li[disabled=disabled] .view-type.selected-view:hover > i,
+.viewer-left-content .left-sidebar .left-sidebar-bottom > .icon-keyboard-shortcut:hover,
+.view-type:hover > i,
+.workspace-transfer-lefttab > ul.k-tabstrip-items > li.k-item.k-state-active .tab-list-wrap .tab-icon {
+    color: #4a88e9;
+}
+
+.highcharts-menu-item:hover {
+    background-color: rgba(192, 197, 208, .3);
+}
+
+.k-listbox .k-item:hover:not(.k-state-disabled),
+.k-listbox .k-list > .k-state-selected,
+.k-listbox .k-list > .k-state-selected.k-state-focused,
+.k-listbox-toolbar ul > li .k-button-icon:focus,
+.k-listbox-toolbar ul > li .k-button-icon:hover {
+    color: #003145;
+    background-color: #f1f2f5;
+}
+
+.download-file-wrap .download-file-wrap-btn {
+    border-color: #4a88e9;
+    color: #4a88e9;
+}
+
+.facet-menu.menu-holder-left.k-tabstrip-items > li.k-state-active .k-link:after {
+    background: #4a88e9;
+}
+
+.nav-left .workspace-toggle:before,
+.user-menu .notification-wrapper:before,
+.user-menu .support-mail-wrapper:before,
+.user-menu .userprofile.active:before,
+.user-menu .broadcast-wrapper:before {
+    border-top: 8px solid #ffd44c;
+}
+
+.left-sidebar .vertical_tab .k-tabstrip-items > .k-item.vertical-more-tab ul li:hover,
+.menu-holder-left.k-tabstrip-items:hover > li.k-state-active,
+.menu-holder-left.k-tabstrip-items > li:hover,
+.notification-list li,
+.k-widget.k-scheduler.native-sch .k-scheduler-views.k-state-expanded li.k-state-default.k-state-hover {
+    background: rgba(74, 136, 233, .1);
+}
+
+.menu-holder-left.k-tabstrip-items > li.k-state-active .k-link .menu-icon {
+    background: #edf3fd;
+}
+
+.vsdv-sidePanel-iconsPanel .vsdv-button.vsdv-sidePanel-thumbnailPanelButton.active,
+.vsdv-sidePanel-iconsPanel .vsdv-button.vsdv-sidePanel-thumbnailPanelButton:hover,
+.vsdv-sidePanel-iconsPanel .vsdv-button.vsdv-sidePanel-annotationPanelButton.active,
+.vsdv-sidePanel-iconsPanel .vsdv-button.vsdv-sidePanel-annotationPanelButton:hover {
+    background: #edf3fd;
+    color: #4a88e9;
+}
+
+.facet-menu.menu-holder-left.k-tabstrip-items > li.k-state-active .k-link {
+    background: rgba(74, 136, 233, .1);
+    color: #4a88e9;
+}
+
+.view-type-wrapper > li[disabled=disabled] .view-type.selected-view,
+.view-type.selected-view {
+    color: #4a88e9;
+    border: 1px solid #4a88e9;
+}
+
+.view-type:hover,
+.ds-body .ds-listview .ds-list.k-state-selected .ds-list-wrap,
+.timeline-view ul li div.timeline-cardview.active-timeline,
+ul.k-listview li.case-gridview-card.k-state-selected {
+    border: 1px solid #4a88e9;
+}
+
+.file-upload-control .dropText:after,
+.relation-between.overlay-circle,
+.relation-between.relation-fill,
+.relation.relation-fill {
+    background: #4a88e9;
+}
+
+.separate-tabbing > .k-tabstrip-wrapper > .k-tabstrip > .k-tabstrip-items .k-state-active .k-link,
+.separate-tabbing > .k-tabstrip-wrapper > .k-tabstrip > .k-tabstrip-items > .k-item.k-state-active {
+    background-color: #4a88e9;
+}
+
+.k-popup .k-list.view-dropdown > .k-item.k-state-selected.k-state-focused {
+    background: #dcebfc;
+}
+
+.k-popup .k-list .k-item.k-state-selected.k-state-focused .view-decs-wrap .more {
+    background: #dcebfc !important;
+}
+
+.proc-tab-left > ul.k-tabstrip-items > li.k-item.k-state-active .tab-list-wrap,
+.workspace-transfer-lefttab > ul.k-tabstrip-items > li.k-item.k-state-active .tab-list-wrap,
+.expand-vert-tab-left > ul.k-tabstrip-items > li.k-item.k-state-active .tab-list-wrap {
+    border-color: #4a88e9;
+}
+
+.treeview-trans .k-treeview li[aria-selected=true] > div > .k-icon:before,
+.treeview-trans .k-treeview li[aria-selected=true] > div > .k-in.k-state-selected {
+    color: #4a88e9;
+}
+
+.treeview-trans .k-treeview li[aria-selected=true] > div span.k-checkbox-wrapper .k-checkbox:checked + .k-checkbox-label:before {
+    border-color: #35c47d;
+    background-color: #35c47d;
+}
+
+.k-popup .k-list .k-item.k-state-selected.k-state-focused span.index-tag {
+    background: #949eb2;
+    color: #fff !important;
+}
+
+.left-sdbr-wc .k-treeview li[aria-selected="true"] > div:after {
+    color: #4a88e9;
+}
+
+.dict-content .k-tabstrip-items .k-state-active .k-link,
+.ct-mid .k-tabstrip-items .k-state-active .k-link {
+    background-color: #4a88e9;
+    border-color: #4a88e9;
+}
+
+.ct-mid .k-tabstrip .k-tabstrip-items .k-state-active .k-link:after {
+    border-top: 5px solid #4a88e9;
+}
+
+.proc-tab-left .tab-panel .doc-wrap a.count:hover,
+.doc-info a.count:hover {
+    color: #4a88e9 !important;
+}
+
+.statistic-list li > a.statistics-click, .users-list .option-link.square-img:hover {
+    background: #4a88e9;
+}
+
+.mt-input:focus, .mt-input.has-valid-val,
+input.mt-input.k-textbox.k-valid {
+    border-color: #4a88e9;
+}
+
+/* Support Mail drawer*/
+.support-mail.help-wrapper .help-listing > li.item > a > span.left-col {
+    color: #4a88e9;
+}
+
+.support-mail.help-wrapper .help-listing > li.item > a:hover,
+.support-mail.help-wrapper .help-listing > li.item > a:focus {
+    background: rgba(74, 136, 233, 0.1);
+    border: 1px solid #4a88e9;
+}
+
+.btn-active {
+    border-color: #4a88e9 !important;
+    color: #4a88e9 !important;
+    background: rgba(74, 136, 233, .1) !important;
+}
+
+.e-node-main > .e-node-active,
+.e-node-active .enode-icon[class^="icon-"], .e-node-active .enode-icon[class*=" icon-"] {
+    color: #4a88e9 !important;
+    background: #DBE7FB !important;
+}
+
+/* Kendo Editor Buttons */
+.k-popup-edit-form .k-edit-buttons .k-dialog-insert.k-button,
+.k-popup-edit-form .k-edit-buttons .k-dialog-update.k-button,
+.highlight-muliselect-drp.k-popup .k-list .k-item.k-state-selected.k-state-focused, 
+.highlight-muliselect-drp.k-popup .k-list .k-item.k-state-selected.k-state-focused:hover {
+    background-color: #4a88e9;
+    color: #fff;
+}
+
+    .k-popup-edit-form .k-edit-buttons .k-dialog-insert.k-button:hover,
+    .k-popup-edit-form .k-edit-buttons .k-dialog-update.k-button:hover {
+        background-color: #3e73c6;
+    }
+
+.k-treeview li[aria-selected=true] > div span.k-checkbox-wrapper .k-checkbox:checked + .k-checkbox-label:before {
+    background: #fff;
+    color: #4a88e9;
+    border-color: #fff;
+}
+
+.k-treeview li[aria-selected=true] > div span.k-checkbox-wrapper .k-checkbox + .k-checkbox-label:after {
+    background-color: #4a88e9;
+    border-color: #4a88e9;
+}
+
+.k-treeview li[aria-selected=true] > div span.k-checkbox-wrapper .k-checkbox + .k-checkbox-label:before {
+    border-color: #fff;
+}
+
+.adv-mid-tree .k-treeview li[aria-selected=true] > div span.k-checkbox-wrapper .k-checkbox:checked + .k-checkbox-label:before {
+    background: #35c47d;
+    border-color: #35c47d;
+}
+
+.k-treeview .k-item .k-in .tree-icon:hover,
+.k-treeview .k-item .k-in .tree-icon:focus,
+.treeview-trans .k-treeview .k-item .k-in.k-state-selected .tree-icon:hover,
+.treeview-trans .k-treeview .k-item .k-in.k-state-selected .tree-icon:focus {
+    background: rgba(192,197,208,.5);
+    color: #4a88e9;
+}
+
+.k-treeview .k-item .k-in.k-state-selected .tree-icon:hover,
+.k-treeview .k-item .k-in.k-state-selected .tree-icon:focus {
+    background: #fff;
+    color: #4a88e9;
+}
+
+.tab-content-right .close-drawer:hover,
+.tab-content-right .close-drawer:focus {
+    color: #ff5a5a;
+}
+
+.user-is-tabbing .advance-search-window .k-splitter .k-splitbar-horizontal.k-state-focused:after,
+.user-is-tabbing .k-splitter .k-splitbar-horizontal.k-state-focused:before,
+.user-is-tabbing .k-splitter .k-splitbar-vertical.k-state-focused:before,
+.swicth-box input:checked + label > span:first-child,
+.swicth-box > label > span:nth-child(2) {
+    background: #4a88e9;
+}
+
+.searchbox-wrapper .filter-search > .dropdown > a:hover,
+.searchbox-wrapper .filter-search > .dropdown > a:focus,
+.searchbar .input-search > .search-left > .search-dd > a:hover,
+.searchbar .input-search > .search-left > .search-dd > a:focus {
+    color: #4a88e9;
+}
+
+
+.doclist-tab .searchbar .icon-arrow:hover,
+.doclist-tab .searchbar .icon-arrow:focus,
+.input-search .btn-filter-cmn:hover,
+.input-search .btn-filter-cmn:focus,
+.fav-icon-list li a:hover,
+.fav-icon-list li a:focus,
+.filtered-list + .btn-filter:hover,
+.filtered-list + .btn-filter:focus,
+.btn-default-hover:hover,
+.btn-default-hover:focus,
+.btn-icn-hover:hover,
+.btn-icn-hover:focus,
+.action-header .btn.btn-icn-trans:hover,
+.action-header .btn.btn-icn-trans:focus,
+.grid-action > a:hover,
+.grid-action > a:focus {
+    color: #4a88e9 !important;
+}
+
+.workspace-toggle,
+.workspace-toggle:hover,
+.workspace-toggle:focus {
+    color: #003145;
+}
+
+.left-sidebar-listing li.active > a,
+.download-file-wrap .download-file-wrap-btn:focus,
+.download-file-wrap .download-file-wrap-btn:hover {
+    background-color: #4a88e9;
+}
+
+.user-is-tabbing a:focus, .user-is-tabbing .mt-navbar a:focus {
+    outline-color: #003145;
+}
+
+.user-is-tabbing .workspace-holder a:focus {
+    outline-color: #003145;
+}
+
+.box-listing.img-card-wrap .card-group .StoryCard .verify-box {
+    background-color: #4a88e9;
+}
+
+.k-menu .k-item > .k-link.annotation-select > .k-icon, .k-popups-wrapper.vertical .k-item.k-state-hover > .k-link.annotation-select, .k-popups-wrapper.vertical .k-item > .k-link.annotation-select, .k-popups-wrapper.vertical .k-item > .k-link.annotation-select > i,
+.hideannotation-slider .k-slider-selection,
+.hideannotation-slider .k-slider .k-draghandle,
+.doctool-submenu.k-menu-group.k-popup .k-item > .k-link.annotation-select,
+.doctool-submenu.k-menu-group.k-popup .k-item.k-state-hover > .k-link.annotation-select {
+    background-color: #4a88e9;
+}
+
+.doc-toolbar.k-menu .k-item > .k-link.annotation-select,
+.multipg-toolbar .doctool-submenu.k-menu-group.k-popup .k-item > .k-link.annotation-select,
+.multipg-toolbar .doctool-submenu.k-menu-group.k-popup .k-item.k-state-hover > .k-link.annotation-select {
+    color: #4a88e9;
+    background: #DBE7FB;
+}
+
+.k-treeview li.k-item[aria-selected=true] > div .k-in .treeview-icon-wrap .tree-button,
+.k-treeview li.k-item > div .k-in.k-state-selected .treeview-icon-wrap .tree-button {
+    background-color: #fff !important;
+    color: #4a88e9 !important;
+}
+
+.folder-panel .folder-body .folder-list li > a:hover,
+.folder-panel .folder-body .folder-list li.k-state-focused > a {
+    background-color: rgba(192,197,208,.25);
+}
+
+.k-widget.k-scheduler.native-sch .k-scheduler-content .k-event,
+.k-widget.k-scheduler.native-sch .k-scheduler-header-wrap .k-event {
+    background-color: rgba(192,197,208,.25);
+    border-color: #4a88e9;
+}
+
+
+.folder-panel .folder-body .folder-list li.k-state-selected > a {
+    background-color: #4a88e9;
+}
+
+.file-upload-wrapper .k-button.k-upload-button {
+    background: #4a88e9;
+}
+
+.CaseassistAdvanced .CaseAssisttabstrip .k-menu.k-menu-horizontal .k-item.k-state-active > .k-link {
+    border-bottom: 2px solid #4a88e9;
+    color: #4a88e9 !important;
+}
+
+.SaveStoryWrapper .card-group .card.k-state-active {
+    border: 1px solid #4a88e9 !important;
+}
+
+.defaultMselectTag-wrap {
+    background: #4a88e9 !important;
+}
+
+.window-workspace-datatransfer-content .box:hover {
+    border: 1px solid #4a88e9;
+}
+
+    .window-workspace-datatransfer-content .box:hover .bx-icon i,
+    .window-workspace-datatransfer-content .box:hover .bx-title h5 {
+        color: #4a88e9 !important;
+    }
+
+.trans-viewer-header-parent .translate-progress-parent .k-checkbox:disabled:checked + .full-translation-label:before {
+    background: #35c47d;
+    color: #fff !important;
+    border-color: #35c47d;
+}
+
+/*casemap timeline view*/
+.timeline-view ul li div.timeline-cardview.active-timeline {
+    background-color: rgba(192,197,208,.25);
+}
+
+.timeline-view ul li:not(:last-child)::after,
+.timeline-view ul li:first-child:before {
+    background: #4a88e9;
+}
+
+.timeline-view ul li:nth-child(odd) div.timeline-cardview.active-timeline::before,
+.timeline-view ul li:nth-child(even) div.timeline-cardview.active-timeline::before {
+    border-color: transparent transparent transparent #4a88e9;
+}
+
+.timeline-view ul li:nth-child(odd) div.timeline-cardview.active-timeline::after,
+.timeline-view ul li:nth-child(even) div.timeline-cardview.active-timeline::after {
+    border-color: transparent transparent transparent #eff0f3;
+}
+
+ul.k-listview li.case-gridview-card {
+    border-top-color: #4a88e9;
+}
+
+    ul.k-listview li.case-gridview-card.k-state-selected {
+        background-color: rgba(192,197,208,.25);
+    }
+
+.k-widget.k-scheduler.native-sch .k-scheduler-toolbar .k-header.k-nav-today,
+.k-widget.k-scheduler.native-sch .k-scheduler-toolbar .k-header.k-nav-today.k-state-hover {
+    background-color: #4a88e9 !important;
+    color: #fff !important;
+    border-color: #4a88e9 !important;
+}
+
+.highlight-muliselect-drp.k-popup .k-list .k-item.k-state-hover {
+    background-color: rgba(74, 136, 233, .1) !important;
+}

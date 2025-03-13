@@ -1,0 +1,162 @@
+﻿/*Dark Teal color theme css*/
+
+.mt-navbar{
+    background-color: #7fbbc5;
+    color: #4a5166;
+}
+
+.workspace-toggle > i, .workspace-toggle:hover [class^="icon-"] {
+    background-color: rgba(54, 137, 152, 0.6);
+}
+
+.notification .counts {
+    border: 1px solid #7fbbc5;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+.action-popover-content .action-list li:hover,
+.k-button.k-primary,
+.btn-primary.k-button.k-state-hover, .btn-primary.k-button:hover, .btn-primary.k-button.k-state-active, .btn-primary.k-button:active, .btn-primary.k-button.k-state-active:hover, .btn-primary.k-button:active:hover {
+    background-color: #4a5166;
+    color: #fff;
+}
+
+a, a:hover,
+a:focus, .left-menu > li > a,
+.pages-menu > li.active > a,
+.rec-action > .dropdown > a:hover,
+.grid-header,
+.breadcrumb span:last-of-type, .breadcrumb span:last-of-type > span, .breadcrumb a, .breadcrumb a:hover, .breadcrumb span, .breadcrumb span:last-of-type, .breadcrumb span:last-of-type > span .k-tabstrip-items .k-state-active .k-link,
+.left-sidebar-content .title h4,
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus,
+.select-label .k-dropdown-wrap .k-input, .select-label .k-dropdown-wrap.k-state-hover .k-input, .select-label .k-dropdown-wrap.k-state-focused .k-input,
+.select-label .k-state-default > .k-select,
+h5.n-head span,
+.k-tabstrip-items .k-state-hover .k-link,
+.form-wizard-wrapper .k-tabstrip-items .k-state-active .k-link,
+.rec-navigation .btn-trans, .k-window .rec-navigation .btn-trans,
+.case-acc,
+.aside-content-right .title h4 {
+    color: #4a5166;
+}
+
+    .case-acc .caret {
+        opacity: 1;
+    }
+
+        .case-acc .caret:after {
+            border-top-color: #4a5166;
+        }
+
+.btn-primary.btn-raised,
+.workspace-wrapper .active-workspace, .app-item:hover .app-content {
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(74,81,102,0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(74,81,102,0.5);
+    box-shadow: 0px 2px 4px 0px rgba(74,81,102,0.5);
+}
+
+.k-calendar td.k-state-selected,
+.k-calendar td.k-state-selected.k-state-hover,
+.k-editor .k-tool.k-state-selected,
+.pages-menu > li.active > a:after,
+.k-pager-numbers .k-state-selected,
+.k-pager-numbers .k-link.k-state-selected:hover,
+.menu-holder-left.k-tabstrip-items > li.k-state-active .k-link:after,
+.workspace .default,
+.cases-toggle.active,
+.form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:before, .form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:after, .form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:before, .form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:after,
+.form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:before, .form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:after, .form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:before, .form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:after {
+    background: #4a5166;
+}
+
+.pages-menu > li.active > a > .caret:after,
+span.dropdown .caret:after {
+    border-top: 5px solid #4a5166;
+}
+
+.menu-holder-left.k-tabstrip-items > li.k-state-active .k-link,
+.submenu-dropdown .dropdown-menu > li > a:hover {
+    background: rgba(74, 81, 102, 0.2);
+    color: #4a5166;
+}
+
+.k-treeview li[aria-selected="true"] > .k-top > .k-icon:before,
+.k-treeview li[aria-selected="true"] > .k-mid > .k-icon:before,
+.k-treeview li[aria-selected="true"] > .k-bot > .k-icon:before,
+.k-treeview li[aria-selected="true"] > .k-top, .k-treeview li[aria-selected="true"] > .k-mid,
+.k-treeview li[aria-selected="true"] > .k-bot, .k-treeview li[aria-selected="true"] > .k-top:hover .k-in,
+.k-treeview li[aria-selected="true"] > .k-mid:hover .k-in, .k-treeview li[aria-selected="true"] > .k-bot:hover .k-in,
+.k-treeview li[aria-selected="true"] > .k-top:hover, .k-treeview li[aria-selected="true"] > .k-mid:hover,
+.k-treeview li[aria-selected="true"] > .k-bot:hover, .k-treeview li[aria-selected="true"] > .k-top > .k-in.k-state-selected,
+.k-treeview li[aria-selected="true"] > .k-mid > .k-in.k-state-selected,
+.k-treeview li[aria-selected="true"] > .k-bot > .k-in.k-state-selected,
+.k-treeview li[aria-selected="true"] > .k-top > .k-in:hover, .k-treeview li[aria-selected="true"] > .k-mid > .k-in:hover,
+.k-treeview li[aria-selected="true"] > .k-bot > .k-in:hover {
+    background-color: #4a5166;
+}
+
+.badge {
+    background-color: #4a5166;
+    border: 1px solid #4a5166;
+}
+
+.k-panelbar > li.k-state-default > .k-link.k-state-selected, .k-panelbar > li .k-state-selected, .k-panelbar .k-state-focused.k-state-selected,
+.select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-top > .k-icon:before, .select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-mid > .k-icon:before, .select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-bot > .k-icon:before, .select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-top > .k-in, .select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-mid > .k-in, .select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-bot > .k-in,
+.k-scheduler .k-scheduler-toolbar ul li.k-state-hover, .k-scheduler .k-scheduler-toolbar ul li.k-state-hover .k-link,
+.k-tabstrip-items .k-state-active .k-link, .k-state-selected td {
+    color: #4a5166;
+}
+
+.k-ct-cell.k-state-selected,
+.k-progressbar .k-state-selected,
+.k-radio:checked + .k-radio-label:before,
+.k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-scheduler-toolbar .k-state-selected.k-state-hover, .k-scheduler .k-scheduler-toolbar ul li.k-state-selected.k-state-hover .k-link {
+    background-color: #4a5166;
+    border-color: #4a5166;
+}
+
+.k-scheduler-content .k-event {
+    border-color: #4a5166;
+    background: rgba(74,81,102,0.2);
+}
+
+.text-primary,
+.k-calendar .k-today .k-link,
+.grid-action a:hover,
+.a-highlight, .view-btn,
+.workspace-holder .case-details .section-heading .pull-left a,
+.appdetail-icon, span.app-icon,
+.btn-icn-trans:hover, .btn-icn-trans:focus:active, .btn-icn-trans:active:hover {
+    color: #4a5166 !important;
+}
+
+.k-radio:checked + .k-radio-label:hover:before,
+.workspace-wrapper .active-workspace {
+    border-color: #4a5166;
+}
+
+.app-item:hover .app-content {
+    border: solid 1px #4a5166;
+}
+
+:focus {
+    outline: none;
+}
+
+::selection {
+    background: rgba(74,81,102,0.2);
+}
+
+.user-menu > .userprofile > a > span {
+    color: #4a5166;
+    opacity: 1;
+}
+/*.bulletin {
+    background:rgba(121, 217, 234, 0.4);
+    background:rgba(74, 81, 102, 0.2);
+}
+
+    .bulletin:before {
+        background-color: #79d9ea;
+        background-color: #4a5166;
+    }*/

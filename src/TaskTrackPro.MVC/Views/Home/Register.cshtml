@@ -1,0 +1,131 @@
+@{
+    Layout = "_AuthLayout";
+}
+@* <style>
+    body {
+        background: rgb(160, 158, 197);
+        background: linear-gradient(90deg, rgba(160, 158, 197, 1) 0%, rgba(149, 221, 235, 0.6386204139859069) 34%, rgba(249, 239, 239, 1) 49%);
+</style> *@
+<div class="login-bg-wrapper d-flex flex-column">
+    <div class="login-logo-header d-flex align-items-center">
+        <a href="#" class="login-logo-wrapper"><img src="~/css/Default/images/TaskTrackPro.png" class="login-logo-img"
+                alt="Clarent Institute" /></a>
+        <span class="separator"></span>
+        <span class="login-branh-text">TaskTrackPro</span>
+    </div>
+    <div class="login-graphic-wrapper flex-1 overflow-auto d-flex flex-wrap">
+        <div class="login-left-wrapper">
+            <div>
+                <img src="~/css/Default/images/Login_Graphics.svg" alt="Register Image" class="login-graphice-img" />
+                <p class="login-graphice-text">A 360 degree Task Management App You Need.</p>
+            </div>
+        </div>
+        <div class="login-right-wrapper">
+            <div class="loginpage-box-wrapper">
+                <h2 class="login-title text-dark font-bold">Sign Up</h2>
+                <form enctype="multipart/form-data">
+                    <div class="loginpage-box-content">
+                        <div class="form-group">
+                            <input type="text" class="k-textbox login-textbox" placeholder="First Name"
+                                id="registername" name="registername">
+                            <span class="login-textbox-icon"><i class="icon-user"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="k-textbox login-textbox" placeholder="Email" id="registerEmail"
+                                name="registerEmail">
+                            <span class="login-textbox-icon"><i class="icon-email"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="k-textbox login-textbox" placeholder="Password"
+                                id="registerpwd" name="registerpwd">
+                            <span class="login-textbox-icon"><i class="icon-locked"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="k-textbox login-textbox" placeholder="Confirm Password"
+                                id="register_cnf_pwd" name="register_cnf_pwd">
+                            <span class="login-textbox-icon"><i class="icon-locked"></i></span>
+                        </div>
+                        <div class="form-group">
+                            @* <label class="text-dark font-medium d-block">Gender:</label> *@
+                            <div class="d-flex align-items-center">
+                                <input type="radio" id="male" name="gender" value="Male" class="k-radio">
+                                <label for="male" class="k-radio-label mr-3">Male</label>
+                                <input type="radio" id="female" name="gender" value="Female" class="k-radio ">
+                                <label for="female" class="k-radio-label font-large">Female</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @* <label for="profilePic" class="text-dark font-medium d-block">Upload Profile Picture:</label> *@
+                            <div class="file-upload-wrapper d-flex align-items-center">
+                                <input type="file" id="profilePic" class="">
+                                @* <span class="login-textbox-icon"><i class="icon-upload"></i></span> *@
+                            </div>
+                        </div>
+                        @* <div class="login-input-check">
+                        <div class="login-input-checkbox">
+                            <input type='checkbox' class='k-checkbox' checked id='rememeberme'>
+                            <label class='k-checkbox-label' for='rememeberme'><span>I accept the</span><a href="#"
+                                    aria-label="Terms of use">Terms of Use</a><span> & </span><a href="#"
+                                    aria-label="privacy policy">Privacy Policy.</a></label>
+                        </div>
+                    </div> *@
+                        <div class="form-group pb-10">
+                            @* <button class="btn btn-primary k-button w100 loginbtn">Sign Up</button> *@
+                            <button type="button" id="register"
+                                class="btn btn-primary k-button w100 loginbtn">Submit</button>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-dark font-medium">Have an account with us?</span> <a asp-action="Login"
+                                aria-label="Login"
+                                class="forgot-pwd btn-link-trans font-medium text-dark text-primary">Login here</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="responseMessage">
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#register').click(function () {
+            var formData = new FormData();
+            formData.append("c_uname", $('#registername').val());
+            formData.append("c_email", $('#registerEmail').val());
+            formData.append("c_password", $('#registerpwd').val());
+            formData.append("c_cnf_password", $('#register_cnf_pwd').val());
+            formData.append("c_gender", $('input[name="gender"]:checked').val());
+            // Append the image file
+            var fileInput = $('#profilePic')[0].files[0];
+            if (fileInput) {
+                formData.append("c_profile", fileInput);
+            }
+            $.ajax({
+                url: 'http://localhost:5136/Register',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    console.log(response);
+                    setTimeout(() => {
+                        if (response.success) {
+                            $('#responseMessage').text('User Register successfully!');
+                        } else {
+                            $('#responseMessage').addClass("alert alert-danger");
+                            $('#responseMessage').text('Error: ' + response.message);
+                        }
+                    }, 2000);
+                },
+                error: function (xhr, status) {
+                    console.error("error while adding the user:" + xhr.responseText);
+                }
+            });
+        }
+    });
+</script>

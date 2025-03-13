@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="23" viewBox="0 0 140 23">
+  <defs>
+    <clipPath id="clip-Clarent_White_Logo">
+      <rect width="140" height="23"/>
+    </clipPath>
+  </defs>
+  <g id="Clarent_White_Logo" clip-path="url(#clip-Clarent_White_Logo)">
+    <g id="Group_7162" data-name="Group 7162" transform="translate(-396.837 -524.836)">
+      <path id="Path_4055" data-name="Path 4055" d="M688.09,542.574h-2.38v7.2H680.7v-21.9h8.764a7.492,7.492,0,0,1,7.51,7.509,7.219,7.219,0,0,1-4.037,6.352l4.663,8.041h-5.38Zm-2.38-4.38h3.756a2.836,2.836,0,0,0,0-5.632H685.71Z" transform="translate(-221.55 -2.369)" fill="#fff"/>
+      <path id="Path_4056" data-name="Path 4056" d="M396.837,537.261a11.1,11.1,0,0,1,11.391-11.388,10.928,10.928,0,0,1,9.389,5.069l-4.319,2.5a5.663,5.663,0,0,0-5.07-2.69c-3.88,0-6.385,2.6-6.385,6.507s2.5,6.507,6.385,6.507a5.627,5.627,0,0,0,5.07-2.69l4.319,2.5a10.851,10.851,0,0,1-9.389,5.069,11.1,11.1,0,0,1-11.391-11.382Z" transform="translate(0 -0.811)" fill="#fff"/>
+      <path id="Path_4057" data-name="Path 4057" d="M519.347,544.952v4.819H506.516v-21.9h5.007v17.083Z" transform="translate(-85.601 -2.369)" fill="#fff"/>
+      <path id="Path_4058" data-name="Path 4058" d="M588.271,546.329h-8.137l-1.095,3.441h-5.477l7.449-21.9H587.4l7.449,21.9h-5.477Zm-1.5-4.694L584.2,533.6l-2.566,8.042Z" transform="translate(-137.929 -2.369)" fill="#fff"/>
+      <path id="Path_4059" data-name="Path 4059" d="M884.947,527.869v21.9h-3.756l-8.449-11.889v11.889h-5.007v-21.9h3.755l8.45,11.889V527.869Z" transform="translate(-367.523 -2.369)" fill="#fff"/>
+      <path id="Path_4060" data-name="Path 4060" d="M976.72,532.688h-5.633v17.083h-5.006V532.688h-5.634v-4.819H976.72Z" transform="translate(-439.883 -2.369)" fill="#fff"/>
+      <g id="Group_7158" data-name="Group 7158" transform="translate(480.235 524.836)">
+        <rect id="Rectangle_2112" data-name="Rectangle 2112" width="13.165" height="4.548" transform="translate(1.124 9.827) rotate(-7.992)" fill="#fff"/>
+        <rect id="Rectangle_2113" data-name="Rectangle 2113" width="13.165" height="4.608" transform="translate(0 1.83) rotate(-7.992)" fill="#fff"/>
+        <rect id="Rectangle_2114" data-name="Rectangle 2114" width="13.165" height="4.608" transform="translate(2.274 18.001) rotate(-7.992)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

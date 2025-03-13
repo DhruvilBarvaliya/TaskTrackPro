@@ -1,0 +1,218 @@
+﻿.login-bg-wrapper {
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/Login_BG.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/*login header*/
+.login-logo-header {
+    padding: 30px;
+}
+
+.login-logo-wrapper {
+}
+
+.login-logo-header .login-branh-text {
+    font-size: 24px;
+    color: #003145;
+    font-family: 'HK Grotesk bold';
+}
+
+.login-logo-header .separator {
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 30px;
+    background-color: #003145;
+}
+
+.login-logo-wrapper > .login-logo-img {
+    height: 51px;
+}
+/*Login Box*/
+.login-graphic-wrapper {
+    
+}
+
+.login-left-wrapper {
+    width: 55%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    text-align: center;
+}
+
+.login-graphice-text {
+    color: #406470;
+    font-size: 18px;
+    font-family: 'HK Grotesk Regular',sans-serif;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    line-height: 24px;
+}
+
+.login-right-wrapper {
+    width: 45%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.loginpage-box-wrapper {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    min-width: 400px;
+    max-width: 500px;
+}
+
+    .loginpage-box-wrapper .login-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .loginpage-box-wrapper .loginpage-box-content .form-group {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+        .loginpage-box-wrapper .loginpage-box-content .form-group .login-textbox {
+            height: 50px;
+            padding-left: 46px;
+            font-size: 18px;
+        }
+
+        .loginpage-box-wrapper .loginpage-box-content .form-group .login-textbox-icon {
+            font-size: 18px;
+            color: #949eb2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 48px;
+            text-align: center;
+            line-height: 53px;
+        }
+
+        .loginpage-box-wrapper .loginpage-box-content .form-group .loginbtn {
+            height: 50px;
+            font-size: 18px;
+        }
+
+    .loginpage-box-wrapper .loginpage-box-content .login-input-check {
+        margin-bottom: 20px;
+    }
+
+        .loginpage-box-wrapper .loginpage-box-content .login-input-check .login-input-checkbox {
+            margin-bottom: 10px;
+        }
+
+            .loginpage-box-wrapper .loginpage-box-content .login-input-check .login-input-checkbox .k-checkbox-label {
+                color: #003145;
+                font-family: 'HK Grotesk Medium';
+            }
+/*Forgot password Model*/
+.forgotpassword-wrapper-window .form-group .btn {
+    height: 45px;
+}
+
+.mt-login .form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.mt-login .mt-input {
+    font-size: 18px;
+    padding: 10px 10px 10px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #8d929c;
+    box-sizing: border-box !important;
+    color:#003145;
+}
+
+    .mt-login .mt-input:focus {
+        outline: none;
+        box-shadow: none !important;
+    }
+
+/* LABEL */
+.mt-login .mt-label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 14px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    font-family: 'HK Grotesk regular', sans-serif;
+    font-size: 16px;
+}
+
+/* active state */
+.mt-login .mt-input:focus ~ .mt-label, .mt-login .mt-input:valid ~ .mt-label {
+    top: -11px;
+    font-size: 14px;
+    color: #4a88e9;
+}
+
+/* BOTTOM BARS ================================= */
+.mt-login .mt-bar {
+    position: relative;
+    display: block;s
+    width: 100%;
+}
+
+    .mt-login .mt-bar:before, .mt-login .mt-bar:after {
+        content: '';
+        height: 1px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #4a88e9;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+.mt-bar:before {
+    left: 50%;
+}
+
+.mt-bar:after {
+    right: 50%;
+}
+
+/* active state */
+.mt-login .mt-input:focus ~ .mt-bar:before, .mt-login .mt-input:focus ~ .mt-bar:after {
+    width: 50%;
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}

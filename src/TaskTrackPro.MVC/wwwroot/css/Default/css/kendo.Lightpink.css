@@ -1,0 +1,286 @@
+﻿/*Light-pink color theme css*/
+
+.mt-navbar {
+    background-color: #f4bcd1;
+    color: #4a5166;
+}
+
+.workspace-toggle > i, .workspace-toggle:hover [class^="icon-"] {
+    background-color: rgba(224, 144, 174, 0.8);
+}
+
+.notification .counts {
+    border: 1px solid #f4bcd1;
+}
+
+.k-calendar td.k-state-focused.k-state-selected .k-link,
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+.action-popover-content .action-list li:hover,
+.k-button.k-primary,
+.btn-primary.k-button.k-state-hover, .btn-primary.k-button:hover, .btn-primary.k-button.k-state-active, .btn-primary.k-button:active, .btn-primary.k-button.k-state-active:hover, .btn-primary.k-button:active:hover {
+    background-color: #4a5166;
+    color: #fff !important;
+}
+
+
+
+a, a:hover,
+a:focus, .left-menu > li > a,
+.pages-menu > li.active > a,
+.rec-action > .dropdown > a:hover,
+.grid-header,
+.content-holder .grid-header .breadcrumb span,
+.breadcrumb span:last-of-type, .breadcrumb span:last-of-type > span, .breadcrumb a:hover, .breadcrumb span:last-of-type > span .k-tabstrip-items .k-state-active .k-link,
+.left-sidebar-content .title h4,
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus,
+.select-label .k-dropdown-wrap .k-input, .select-label .k-dropdown-wrap.k-state-hover .k-input, .select-label .k-dropdown-wrap.k-state-focused .k-input,
+.select-label .k-state-default > .k-select,
+h5.n-head span,
+.k-tabstrip-items .k-state-hover .k-link,
+.form-wizard-wrapper .k-tabstrip-items .k-state-active .k-link,
+.rec-navigation .btn-trans, .k-window .rec-navigation .btn-trans,
+.case-acc,
+.aside-content-right .title h4,
+.switch-box.switch-primary .check .icon-check {
+    color: #4a5166;
+}
+
+    .case-acc .caret {
+        opacity: 1;
+    }
+
+        .case-acc .caret:after {
+            border-top-color: #4a5166;
+        }
+
+.btn-primary.btn-raised,
+.workspace-wrapper .active-workspace, .app-item:hover .app-content {
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(74,81,102,0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(74,81,102,0.5);
+    box-shadow: 0px 2px 4px 0px rgba(74,81,102,0.5);
+}
+
+.k-calendar td.k-state-selected,
+.k-calendar td.k-state-selected.k-state-hover,
+.k-editor .k-tool.k-state-selected,
+.pages-menu > li.active > a:after,
+.k-pager-numbers .k-state-selected,
+.k-pager-numbers .k-link.k-state-selected:hover,
+.menu-holder-left.k-tabstrip-items > li.k-state-active .k-link:after,
+.workspace .default,
+.cases-toggle.active, .card-group .box.box-primary,
+.form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:before, .form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:after, .form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:before, .form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:after,
+.form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:before, .form-wizard-wrapper .k-tabstrip-items .k-item.k-state-active:after, .form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:before, .form-wizard-wrapper .k-tabstrip-items .k-item.form-filled:after,
+.left-sidebar > .k-menu-scroll-wrapper .submenu-dropdown .k-item.k-state-border-right > .k-link:after {
+    background: #4a5166;
+}
+
+.pages-menu > li.active > a > .caret:after,
+span.dropdown .caret:after {
+    border-top: 5px solid #4a5166;
+}
+
+.menu-holder-left.k-tabstrip-items > li.k-state-active .k-link,
+.submenu-dropdown .dropdown-menu > li > a:hover,
+.left-sidebar > .k-menu-scroll-wrapper.vertical .k-item > .k-state-active {
+    background: rgba(74, 81, 102, 0.2);
+    color: #4a5166;
+}
+
+.k-treeview li[aria-selected="true"] > .k-top > .k-icon:before,
+.k-treeview li[aria-selected="true"] > .k-mid > .k-icon:before,
+.k-treeview li[aria-selected="true"] > .k-bot > .k-icon:before,
+.k-treeview li[aria-selected="true"] > .k-top, .k-treeview li[aria-selected="true"] > .k-mid,
+.k-treeview li[aria-selected="true"] > .k-bot, .k-treeview li[aria-selected="true"] > .k-top:hover .k-in,
+.k-treeview li[aria-selected="true"] > .k-mid:hover .k-in, .k-treeview li[aria-selected="true"] > .k-bot:hover .k-in,
+.k-treeview li[aria-selected="true"] > .k-top:hover, .k-treeview li[aria-selected="true"] > .k-mid:hover,
+.k-treeview li[aria-selected="true"] > .k-bot:hover, .k-treeview li[aria-selected="true"] > .k-top > .k-in.k-state-selected,
+.k-treeview li[aria-selected="true"] > .k-mid > .k-in.k-state-selected,
+.k-treeview li[aria-selected="true"] > .k-bot > .k-in.k-state-selected,
+.k-treeview li[aria-selected="true"] > .k-top > .k-in:hover, .k-treeview li[aria-selected="true"] > .k-mid > .k-in:hover,
+.k-treeview li[aria-selected="true"] > .k-bot > .k-in:hover,
+.right-main-tab li.k-item.k-state-active:after, .right-main-tab .bg-tabstrip .inline-box-tab > ul .k-item.k-state-active:after {
+    background-color: #4a5166;
+}
+
+.badge {
+    background-color: #4a5166;
+    border: 1px solid #4a5166;
+}
+
+.k-panelbar > li.k-state-default > .k-link.k-state-selected, .k-panelbar > li .k-state-selected, .k-panelbar .k-state-focused.k-state-selected,
+.select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-top > .k-icon:before,
+.select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-mid > .k-icon:before,
+.select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-bot > .k-icon:before,
+.select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-top > .k-in,
+.select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-mid > .k-in,
+.select-treelist .k-treeview li[aria-selected="true"].parent-treenode > .k-bot > .k-in,
+.k-scheduler .k-scheduler-toolbar ul li.k-state-hover, .k-scheduler .k-scheduler-toolbar ul li.k-state-hover .k-link,
+.k-tabstrip-items .k-state-active .k-link, .k-state-selected td {
+    color: #4a5166;
+}
+
+.k-ct-cell.k-state-selected,
+.k-progressbar .k-state-selected,
+.k-radio:checked + .k-radio-label:before,
+.k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-scheduler-toolbar .k-state-selected.k-state-hover, .k-scheduler .k-scheduler-toolbar ul li.k-state-selected.k-state-hover .k-link {
+    background-color: #4a5166;
+    border-color: #4a5166;
+}
+
+.k-scheduler-content .k-event {
+    border-color: #4a5166;
+    background: rgba(74,81,102,0.2);
+}
+
+.text-primary,
+.k-calendar .k-today .k-link,
+.grid-action a:hover,
+.a-highlight, .view-btn,
+.workspace-holder .case-details .section-heading .pull-left a,
+.appdetail-icon, span.app-icon,
+.btn-icn-trans:hover, .btn-icn-trans:focus:active, .btn-icn-trans:active:hover {
+    color: #4a5166 !important;
+}
+
+.k-radio:checked + .k-radio-label:hover:before,
+.workspace-wrapper .active-workspace {
+    border-color: #4a5166;
+}
+
+.app-item:hover .app-content,
+.card-group .box:hover {
+    border: solid 1px #4a5166;
+}
+
+:focus {
+    outline: none;
+}
+
+::selection {
+    background: rgba(74,81,102,0.2);
+}
+
+.user-menu > .userprofile > a > span {
+    color: #4a5166;
+    opacity: 1;
+}
+
+.active-workspace ul.applist li.default-app a,
+.highlight:hover, .views a:hover,
+.action-list li:not([disabled]):hover i, .action-list li:not([disabled]):hover > a,
+.k-grid-header th.k-header[data-sort="asc"], .k-grid-header th.k-header[data-sort="desc"],
+.settings .brief .input-pic, .settings .brief > a,
+.query-trigger:hover {
+    color: #4a5166;
+}
+
+.dropdown-menu .action-list-wrap .action-list li a:hover {
+    color: #fff;
+}
+
+.active-workspace .applist .default-app:before, .applist .default-app:before {
+    background-color: #4a5166;
+}
+
+.action-list li[disabled]:hover i, .action-list li[disabled]:hover > a {
+    color: #949eb2;
+}
+
+.switch-box.switch-primary > a.check {
+    background: #4a5166;
+    border: 1px solid #4a5166;
+}
+
+.k-grid tr.k-state-selected, .k-grid tr.k-state-selected:hover, .k-grid tr.k-selectRow, .k-grid tr.k-selectRow:hover {
+    background-color: rgba(244, 188, 209, 0.2);
+}
+
+.filter-search > i:hover, .input-search > i:hover, .k-icon.k-i-zoom:hover {
+    color: #4a5166;
+}
+
+.k-list .k-item.k-state-selected > [class^="apphub-icon-"] {
+    color: #fff;
+}
+
+.k-popup .k-list .k-item.k-state-selected.k-state-focused, .k-popup .k-list .k-item.k-state-selected.k-state-focused:hover {
+    background-color: #4a5166;
+    color: #fff;
+}
+
+.btn.k-state-disabled:hover, .btn-primary.k-button.k-state-disabled:focus {
+    background-color: #dcdfe5;
+    color: #949eb2;
+}
+
+.badge.badge-primary {
+    background-color: #4a5166;
+    border-color: #4a5166;
+}
+
+.review-center-grid tr.indication-row td:first-child {
+    border-left-color: rgba(244, 188, 209, 0.5);
+}
+
+.review-center-grid tr.indication-row td:first-child {
+    border-left-color: rgba(244, 188, 209, 0.5);
+}
+
+.filterhighlight {
+    color: #4a5166 !important;
+}
+
+.add-field-img {
+    background-image: url('../images/Empty-record-arrow_theme.svg');
+}
+
+.organization-card.active-organization {
+    border: solid 1px #4a5166;
+    box-shadow: 1px 2px 5px 1px rgb(212, 212, 212);
+}
+
+.organization-card .default-label {
+    background-color: #4a5166;
+}
+
+.organization-card.active-organization:before {
+    border-color: transparent transparent transparent #4a5166;
+}
+
+/*Start : CAD Viewer css*/
+.adsk-control-tooltip, .explode-submenu, .dockingPanelTitle, .adsk-button.active .adsk-button-arrow, .modelStructurePanel .selected lmvheader,
+.modelStructurePanel .treeview group.selected lmvheader, .modelStructurePanel .treeview group.selected leaf, .hudTitle, .adsk-button.active,
+.modelStructurePanel .treeview .visible lmvheader > label,
+.modelStructurePanel .treeview .visible group.visible > :not(.dim) > lmvheader > label,
+.modelStructurePanel .treeview leaf.visible > lmvheader > label,
+.modelStructurePanel .treeview group.visible > lmvheader > label,
+.settings-tabs ul li.tabselected a,
+.adsk-control .adsk-button .active {
+    background-color: #4a5166 !important;
+    color: #fff !important;
+}
+
+.settings-tabs ul li.tabselected {
+    border-color: #4a5166 !important;
+}
+
+.cadviewertheme, .dockingPanel .viewer-restore-defaults, .measure-restart, .adsk-viewing-viewer .calibration-button,
+.measure-settings-button, .measure-repick {
+    color: #4a5166 !important;
+}
+
+.measure-selectionOne-label, .measure-selectionTwo-label {
+    background-color: #4a5166 !important;
+}
+
+.adsk-viewing-viewer .calibration-textbox {
+    background-color: #fff !important;
+    color: #4a5166 !important;
+}
+/*End : CAD Viewer css*/
+
+.organization-name > a:hover,
+.organization-name > a.selected-workspace {
+    color: #4a5166;
+}
