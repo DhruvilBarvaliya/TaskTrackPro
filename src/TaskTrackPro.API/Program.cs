@@ -1,9 +1,24 @@
+using Npgsql;
+using TaskTrackPro.Repositories.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<IUserInterface, UserRepository>();
+builder.Services.AddSingleton<NpgsqlConnection>((UserRepository) =>
+{
+    var connectionString = UserRepository.GetRequiredService<IConfiguration>().GetConnectionString("pgconnection");
+    return new NpgsqlConnection(connectionString);
+});
+
+builder.Services.AddControllers();
+builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
 
 var app = builder.Build();
 
@@ -15,6 +30,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseRouting();
+app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 
 var summaries = new[]
 {
@@ -23,7 +40,7 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
