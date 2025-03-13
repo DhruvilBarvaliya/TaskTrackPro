@@ -47,7 +47,7 @@
                         </div>
                         <div class="form-group">
                             @* <label class="text-dark font-medium d-block">Gender:</label> *@
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center form-control">
                                 <input type="radio" id="male" name="gender" value="Male" class="k-radio">
                                 <label for="male" class="k-radio-label mr-3">Male</label>
                                 <input type="radio" id="female" name="gender" value="Female" class="k-radio ">
@@ -93,39 +93,43 @@
 
 <script>
     $(document).ready(function () {
-        $('#register').click(function () {
-            var formData = new FormData();
-            formData.append("c_uname", $('#registername').val());
-            formData.append("c_email", $('#registerEmail').val());
-            formData.append("c_password", $('#registerpwd').val());
-            formData.append("c_cnf_password", $('#register_cnf_pwd').val());
-            formData.append("c_gender", $('input[name="gender"]:checked').val());
-            // Append the image file
-            var fileInput = $('#profilePic')[0].files[0];
-            if (fileInput) {
-                formData.append("c_profile", fileInput);
-            }
-            $.ajax({
-                url: 'http://localhost:5136/Register',
-                type: 'POST',
-                data: formData,
-                contentType: false,
-                processData: false,
-                success: function (response) {
-                    console.log(response);
-                    setTimeout(() => {
-                        if (response.success) {
-                            $('#responseMessage').text('User Register successfully!');
-                        } else {
-                            $('#responseMessage').addClass("alert alert-danger");
-                            $('#responseMessage').text('Error: ' + response.message);
-                        }
-                    }, 2000);
-                },
-                error: function (xhr, status) {
-                    console.error("error while adding the user:" + xhr.responseText);
-                }
-            });
+    $('#register').click(function () {
+        var formData = new FormData();
+        formData.append("c_uname", $('#registername').val());
+        formData.append("c_email", $('#registerEmail').val());
+        formData.append("c_password", $('#registerpwd').val());
+        formData.append("c_cnf_password", $('#register_cnf_pwd').val());
+        formData.append("c_gender", $('input[name="gender"]:checked').val());
+
+        // Append the image file
+        var fileInput = $('#profilePic')[0].files[0];
+        console.log(fileInput);
+        if (fileInput) {
+            formData.append("c_profilepicture", fileInput);
         }
+
+        $.ajax({
+            url: 'http://localhost:5136/Register',
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+                console.log(response);
+                setTimeout(() => {
+                    if (response.success) {
+                        $('#responseMessage').text('User registered successfully!');
+                    } else {
+                        $('#responseMessage').addClass("alert alert-danger");
+                        $('#responseMessage').text('Error: ' + response.message);
+                    }
+                }, 2000);
+            },
+            error: function (xhr, status) {
+                console.error("Error while adding the user: " + xhr.responseText);
+            }
+        });
     });
+});
+
 </script>
