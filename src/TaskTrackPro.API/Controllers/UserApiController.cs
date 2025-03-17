@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TaskTrackPro.Repositories.Interfaces;
 using TaskTrackPro.Core.Models;
+using TaskTrackPro.Repositories.Servcies;
 
 namespace TaskTrackPro.API
 {
@@ -14,10 +15,13 @@ namespace TaskTrackPro.API
     {
         private readonly IUserInterface _user;
         private readonly IConfiguration myconfig;
-        public UserApiController(IConfiguration config, IUserInterface user)
+
+        private readonly IEmailService _emailService;
+        public UserApiController(IConfiguration config,IEmailService emailService, IUserInterface user)
         {
             myconfig = config;
             _user = user;
+             _emailService = emailService;
         }
         [HttpPost]
         [Route("/Register")]
@@ -25,10 +29,7 @@ namespace TaskTrackPro.API
         {
             if (user.c_profile != null && user.c_profile.Length > 0)
             {
-                System.Console.WriteLine("Under profile image upload code");
-                System.Console.WriteLine("Email:" + user.c_email);
-                var fileName = user.c_email + Path.GetExtension(
-                 user.c_profile.FileName);
+                var fileName = user.c_email + Path.GetExtension(user.c_profile.FileName);
                 var filePath = Path.Combine("../TaskTrackPro.MVC/wwwroot/profile_images", fileName);
                 user.c_profilepicture = fileName;
                 using (var stream = new FileStream(filePath, FileMode.Create))
@@ -41,6 +42,12 @@ namespace TaskTrackPro.API
             var status = await _user.Add(user);
             if (status == 1)
             {
+                // Send an email to the admin
+                var adminEmail = "ritadehrawala3@gmail.com";
+                var subject = "New User Registration";
+                var body = $"A new user has registered.\n\nName: {user.c_uname}\nEmail: {user.c_email}";
+
+                await _emailService.SendEmailAsync(adminEmail, subject, body);
                 return Ok(new { success = true, message = "User Registered" });
             }
             else if (status == 0)
