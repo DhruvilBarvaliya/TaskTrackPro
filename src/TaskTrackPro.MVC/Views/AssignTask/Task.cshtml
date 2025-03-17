@@ -1,0 +1,193 @@
+<style>
+    /* Global Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f6f9;
+        padding: 20px;
+    }
+
+    /* Container for Dropdowns */
+    .dropdown-container {
+        margin-bottom: 20px;
+        max-width: 350px;
+    }
+
+    /* Label Styling */
+    label {
+        font-weight: 600;
+        font-size: 15px;
+        color: #0056b3;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    /* Custom Styling for DropDowns */
+    .k-dropdown, .form-control {
+        font-size: 14px;
+        border-radius: 8px !important;
+        padding: 12px !important;
+        border: 2px solid #007bff !important;
+        background: linear-gradient(145deg, #ffffff, #e3e6eb) !important;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.2);
+        color: #333 !important;
+        width: 100%;
+    }
+
+    /* Hover Effect */
+    .k-dropdown:hover, .form-control:hover {
+        border-color: #0056b3 !important;
+        background: #f0f8ff !important;
+    }
+
+    /* Focus Effect */
+    .k-dropdown:focus, .form-control:focus {
+        border-color: #004085 !important;
+        box-shadow: 0px 4px 8px rgba(0, 64, 133, 0.4);
+        background: white !important;
+    }
+
+    /* DropDown Arrow */
+    .k-dropdown .k-select {
+        background: transparent !important;
+        border-left: none !important;
+    }
+
+    /* Select Dropdown */
+    #sectiondropdown {
+        max-width: 350px;
+    }
+
+        /* Submit Button Styling */
+    #submitTask {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        padding: 12px 20px;
+        border-radius: 8px;
+        background: #007bff;
+        color: white;
+        border: none;
+        cursor: not-allowed;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.2);
+        outline: none;
+        width: 100%;
+        max-width: 350px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    /* Enabled Button State */
+    #submitTask:enabled {
+        cursor: pointer;
+        background: #0056b3;
+        box-shadow: 0px 4px 8px rgba(0, 64, 133, 0.4);
+    }
+
+    /* Hover Effect */
+    #submitTask:hover:enabled {
+        background: #004085;
+    }
+
+    /* Disabled State */
+    #submitBtn:disabled {
+        background: #cccccc;
+        color: #666;
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+
+</style>
+
+<h1>Assign Task</h1>
+
+<div class="dropdown-container">
+    <select id="userdropdown" multiple="multiple"></select>
+
+    <label>Task Title:</label>
+    <input type="text" id="taskTitle" style="width: 300px;"/><br><br>
+
+    <label>Task Description:</label>
+    <textarea id="taskDescription" rows="4" style="width: 300px;"/></textarea><br><br>
+
+    <label>Start Date:</label>
+    <input id="startDate" style="width: 300px;"/><br><br>
+
+    <label>End Date:</label>
+    <input id="endDate" style="width: 300px;"/><br><br>
+</div>
+
+<button id="submitTask">Assign Task</button>
+
+<script>
+    $(document).ready(function () {
+        $('#userdropdown').kendoMultiSelect({
+            placeholder: "Select Users",
+            dataTextField: "userName",
+            dataValueField: "userId",
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "http://localhost:5136/api/UserAuth/GetUsers",
+                        dataType: "json"
+                    }
+                }
+            }
+        });
+
+        $("#startDate").kendoDatePicker({
+            format: "yyyy-MM-dd"
+        });
+
+        $("#endDate").kendoDatePicker({
+            format: "yyyy-MM-dd"
+        });
+
+        $("#submitTask").click(function () {
+            let selectedUsers = $("#userdropdown").data("kendoMultiSelect").value(); // Get selected user IDs
+            let taskTitle = $("#taskTitle").val();
+            let taskDescription = $("#taskDescription").val();
+            let startDate = $("#startDate").data("kendoDatePicker").value();
+            let endDate = $("#endDate").data("kendoDatePicker").value();
+
+            if (selectedUsers.length === 0 || !taskTitle || !taskDescription || !startDate || !endDate) {
+                alert("Please fill all fields and select at least one user.");
+                return;
+            }
+
+            if (startDate >= endDate) {
+                alert("Start Date must be earlier than End Date.");
+                return;
+            }
+
+            let requestData = {
+                userIds: selectedUsers.map(Number),
+                title: taskTitle,
+                description: taskDescription,
+                startDate: startDate.toISOString().split("T")[0],
+                endDate: endDate.toISOString().split("T")[0]
+            };
+
+            console.log(requestData);
+            
+            $.ajax({
+                url: "http://localhost:5136/api/UserAuth/assign",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(requestData),
+                success: function (response) {
+                    alert("Task assigned successfully!");
+                    $("#userdropdown").data("kendoMultiSelect").value([]);
+                    $("#taskTitle").val("");
+                    $("#taskDescription").val("");
+                    $("#startDate").data("kendoDatePicker").value(null);
+                    $("#endDate").data("kendoDatePicker").value(null);
+                },
+                error: function (error) {
+                    alert("Error assigning task!");
+                    console.error(error);
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,506 @@
+/*Main Section Menu*/
+.main-section-menu {
+    padding-top: 5px;
+    height: 52px;
+}
+
+.main-section-menu .main-section-menu-ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.main-section-menu .main-section-menu-ul .ms-menu-link {
+    display: inline-flex;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-family: 'HK Grotesk SemiBold';
+    border: 1px solid;
+    border-color: transparent;
+    border-bottom: none;
+    margin-bottom: -1px;
+    border-radius: 3px 3px 0 0;
+}
+
+.main-section-menu .main-section-menu-ul .ms-menu-link.active {
+    border-color: #dcdfe5;
+    background: #ffffff;
+}
+
+.main-section-menu .main-section-menu-ul .ms-menu-link:not(.active) {
+    color: #949eb2;
+}
+/*// Main Section Menu*/
+.dashboardiframe{
+    height: 100%;
+    width: 100%;
+}
+/* Dashboard css */
+.scrum-dashboard-wrapper{
+    padding:20px;
+    height: 100%;
+}
+.scrum-dashboard-row{
+    margin-left: -7px;
+    margin-right: -7px;
+}
+.scrum-dashboard-row .scrum-dashboard-column{
+    width: 20%;
+    padding:7px;
+}
+.scrum-dashboard-row .scrum-dashboard-box{
+    border:1px solid #dedfe5;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding:20px 0;
+    position: relative;
+}
+.scrum-dashboard-box .scrum-dashboard-box-icon{
+    font-size:30px;
+    display: inline-flex;
+    padding: 0 20px;
+}
+.scrum-dashboard-box .scrum-dashboard-box-icon-actionlink{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+/*// Dashboard css */
+/*Footer*/
+.footer-main-wrapper {
+    font-size: 13px;
+    padding: 5px 20px;
+    height: 28px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/* //Footer */
+/* Data import */
+.scrum-dataimport-wrapper{
+    padding:15px 20px 0;
+    
+}
+.scrum-dataimport-header-block{
+    border-radius: 3px;
+    padding: 15px;
+}
+.scrum-dataimport-header-block .scrum-dataimport-dropdownbox{
+    width:15%;
+    padding-right: 15px;
+}
+.scrum-dataimport-importfile-input{
+    display: flex;
+    width: 100%;
+}
+.scrum-dataimport-importfile-input .clear-input{
+    margin-right: 15px;
+    flex: 1;
+    display: flex;
+}
+.scrum-dataimport-importfile-input .scrum-dataimport-importfile-import{
+    height: 34px;
+    line-height: 34px;
+}
+.scrum-dataimport-importfile-input .clear-input .k-textbox{
+    border-radius: 3px 0 0 3px;
+    background-color: #ffffff;
+}
+.scrum-dataimport-importfile-input .clear-input .scrum-dataimport-importfile-inputbtn{
+    height: 34px;
+    line-height: 34px;
+    min-width: 6rem;
+    border-radius: 0 3px 3px 0;
+}
+
+.dataimport-grid table tr > td{
+    font-family: 'HK Grotesk Medium';
+}
+/* // Dataimport */
+/* Sprint Planning */
+.box-row{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.box-row .box-column{
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+.box-row .box-33{
+    width: 33.33%;
+}
+.planning-main-wrapper {
+    padding-top: 20px;
+}
+.planning-parameters-wrapper-content{
+    padding:0 20px;
+}
+.planning-parameters-wrapper .planningwidth{
+    width: 33.33%;
+}
+.planning-report-wrapper{
+    border-radius: 3px 3px 0 0;
+    margin-left: -10px;
+}
+.planning-report-wrapper .planning-report-header{
+    padding:10px;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: 10px;
+}
+.planning-report-wrapper .planning-report-header .bg-danger{
+    background-color:rgba(255,90,90,.25) !important ;
+    border-radius: 50%;
+}
+.planning-report-content-box{
+    border-radius: 3px;
+    padding:20px 15px 0;
+    position: relative;
+    margin-top: 20px;
+}
+.planning-report-content-box .title{
+    font-size:16px;
+    text-transform: uppercase;
+    font-family: 'HK Grotesk Bold';
+    color:#003145;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 0 5px;
+}
+.planning-report-content-box .developer-textarea-width{
+    width:66.67% ;
+}
+.capacity-wrapper{
+    padding: 15px 0;
+}
+.capacity-wrapper-grid .k-grid-footer{
+    border-radius: 3px;
+}
+.capacity-wrapper-grid .k-grid-content table tr:last-child td{
+    border-bottom:none;
+}
+.capacity-wrapper-grid .k-grid-footer table tr td{
+    border: none;
+    background-color: #f9fafc;
+    font-family: 'HK Grotesk SemiBold';
+    font-weight: normal;
+}
+.sprint-backlog-wrapper-grid .k-pager-wrap{
+    position: absolute;
+}
+.planning-splitter-wrapper .k-splitbar-horizontal{
+    z-index: 99999;
+}
+.planning-report-box{
+    border-radius: 3px 3px 0 0;
+    margin-right: 10px;
+}
+.planning-report-wrapper .plaaningsplitterbtn .icon-double-arrow-right,
+.planning-report-wrapper.k-state-collapsed .plaaningsplitterbtn .icon-double-arrow-left{
+    display: inline-block;
+}
+.planning-report-wrapper .plaaningsplitterbtn .icon-double-arrow-left,
+.planning-report-wrapper.k-state-collapsed .plaaningsplitterbtn .icon-double-arrow-right{
+    display: none;
+}
+.planning-report-wrapper.k-state-collapsed .planning-report-header-text,
+.planning-report-wrapper.k-state-collapsed .planning-report-content{
+    display: none !important;
+}
+.planning-report-wrapper.k-state-collapsed .planning-report-header{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+/* // Sprint Planning */
+.admin-search-header .k-textbox{
+    padding-left: 40px !important;
+}
+.admin-search-header .icon-search{
+    font-size: 16px;
+    left:5px
+}
+/* Sperint Retrospective */
+.retrospective-wrapper{
+    padding: 13px 20px;
+}
+.box-row .box-20{
+    width: 20%;
+}
+.retro-box{
+    padding:0 15px;
+    border-radius: 3px;
+    margin:7px 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.retro-box .retro-icon-list{
+    -webkit-box-flex:1;
+    -ms-flex:1;
+    flex:1;
+}
+.retro-box .retro-icon-list .retro-icon-list-ul .retro-icon-list-icon{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.retro-box .retro-icon-list .retro-icon-list-ul .retro-icon-list-li{
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    min-width: 20%;
+}
+.retro-box .retro-icon-list .retro-icon-list-ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 5px;
+}
+.retro-box .retro-icon-list .retro-icon-list-ul .retro-icon-list-text{
+    display: block;
+    font-size: 9px;
+    color:#949eb2 ;
+    text-align: center;
+    text-transform: capitalize;
+}
+.bgtextlight-green{
+    color:#35c47d ;
+    background-color: rgba(53,196,125,0.2);
+}
+.bgtextlight-yellow{
+    color:#fcc825 ;
+    background-color: rgba(225,200,37,0.2);
+}
+.bgtextlight-blue{
+    color:#4a88e9 ;
+    background-color: rgba(74,136,233,0.2);
+}
+.bgtextlight-redwine{
+    color:#b46182 ;
+    background-color: rgba(180,97,130,0.2);
+}
+.bgtextlight-red{
+    color:#ff5a5a ;
+    background-color: rgba(250,90,90,0.2);
+}
+.retrospective-wrapper .box-row .box-column{
+    margin:7px 0;
+}
+.retrospective-wrapper .retro-box .k-button.bgtextlight-blue:focus,
+.retrospective-wrapper .retro-box .k-button.bgtextlight-blue:hover{
+    color:#4a88e9 ;
+    border:none;
+    background-color: rgba(74,136,233,0.2);
+}
+/* Retrospective board */
+.retroboard-wrapper .retroboard-content{
+    flex:1;
+    overflow: hidden;
+}
+.retroboard-wrapper .retroboard-activity-content{
+    width: 350px;
+    padding:15px
+}
+.activity-copy-box{
+    background-color: #ffffff;
+    padding:5px;
+    border: 1px solid #dcdfe5;
+    border-radius: 3px;
+}
+.activity-list-name > li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.activity-list-name .activity-list-name-img{
+    display: inline-flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.activity-list-name .activity-list-name-img > img{
+    height: 30px;
+    min-width: 100%;
+}
+.activity-list-name .activity-list-name-text{
+    color:#003145;
+    font-family: 'HK Grotesk Medium';
+    flex: 1;
+}
+.retro-report-tabstrip-wrapper{
+    height: 100%;
+}
+.retro-report-tabstrip-wrapper > .k-tabstrip-items .k-item.k-state-active:after,
+.retro-report-tabstrip-wrapper > .k-tabstrip-items .k-item.k-state-active:before{
+    background-color:#35c47d !important ;
+}
+.retro-report-tabstrip-wrapper > .k-tabstrip-items .k-item:before{
+    top:0 !important;
+    height: 22px !important;
+    width: 22px !important;
+}
+.retro-report-tabstrip-wrapper > .k-tabstrip-items .k-item:after{
+    top:10px;
+}
+.retro-report-tabstrip-wrapper > .k-tabstrip-items .k-item .k-link{
+    padding:34px 15px 0 !important;
+    color:#003145 !important;
+    min-width: 9rem;
+}
+.retro-report-tabstrip-wrapper > .retro-report-tabstrip-content{
+    border-top:none;
+    flex: 1;
+}
+.retro-report-tabstrip-wrapper .k-tabstrip-items{
+    margin-top: 20px;
+}
+.box-row .box-50{
+    width:50%;
+}
+.teamsetting-window-wrapper{
+    padding:0 !important;
+}
+.teamsetting-window-wrapper .window-footer {
+    padding-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.teamsetting-window-wrapper .teamsetting-window-form{
+    padding:0 15px;
+}
+.teamsetting-window-form .teamwindow-icon > i{
+    font-size: 17px !important;
+    line-height: 32px;
+}
+/* Board css */
+.bgborder-green{
+    border-color:#35c47d !important;
+    background-color: rgba(53,196,125,0.2);
+}
+.bgborder-yellow{
+    border-color:#fcc825 !important;
+    background-color: rgba(225,200,37,0.2);
+}
+.bgborder-blue{
+    border-color:#4a88e9 !important;
+    background-color: rgba(74,136,233,0.2);
+}
+.bgborder-redwine{
+    border-color:#b46182 !important;
+    background-color: rgba(180,97,130,0.2);
+}
+.bgborder-red{
+    border-color:#ff5a5a !important;
+    background-color: rgba(250,90,90,0.2);
+}
+.taskboard-wrapper{
+    border-radius: 3px;
+    border-top:2px solid ;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+.taskboard-wrapper .taskboard-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px 3px 0 0;
+    padding:10px;
+}
+.taskboard-wrapper .taskboard-content{
+    padding:0 10px 15px;
+    flex: 1 1 0%;
+    overflow: auto;
+}
+.taskboard-content-notecard{
+    background-color: #ffffff;
+    border:1px solid #dcdfe5;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* Taskboard */
+.retroreport-board .additem{
+    background-color: transparent !important;
+    border:none !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    min-height: 5px;
+}
+.retroreport-board{
+    display: flex;
+    justify-content: center;
+    border:none;
+    height: 100%;
+}
+.taskboard-wrapper-column{
+    width: 20%;
+    padding:0 10px;
+    height: 100%;
+    overflow: hidden;
+}
+.retroreport-board .k-add-button{
+    cursor: pointer;
+}
+.card-text-style{
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'HK Grotesk Medium';
+}
+.taskboard-place{
+    width: 100%;
+    height: 100px;
+    border:2px dashed #dcdfe5;
+    margin-bottom: 10px;
+}
+.loader{
+    position: fixed;
+    height: calc(100% - 132px);
+    width: 100%;
+    z-index: 99;
+    background-color: #ffffff;
+    top:104px;
+    right:0;
+}
+.loader:before{
+    height: 100px;
+    width: 100px;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}

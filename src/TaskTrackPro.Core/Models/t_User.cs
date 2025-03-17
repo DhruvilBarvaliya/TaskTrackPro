@@ -27,5 +27,7 @@ namespace TaskTrackPro.Core.Models
         public string c_profilepicture { get; set; }
 
         public IFormFile? c_profile { get; set; }
+
+        public bool c_approve_status { get ; set; }
     }
 }

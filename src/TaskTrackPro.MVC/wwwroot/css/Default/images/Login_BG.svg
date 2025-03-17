@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="978" viewBox="0 0 1920 978">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffd44c"/>
+      <stop offset="0.408" stop-color="#fbefca"/>
+      <stop offset="0.528" stop-color="#fbefc9"/>
+      <stop offset="1" stop-color="#f9fafc"/>
+    </linearGradient>
+    <clipPath id="clip-Login_BG">
+      <rect width="1920" height="978"/>
+    </clipPath>
+  </defs>
+  <g id="Login_BG" clip-path="url(#clip-Login_BG)">
+    <rect id="Rectangle_2552" data-name="Rectangle 2552" width="1920" height="978" opacity="0.15" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

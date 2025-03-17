@@ -1,0 +1,121 @@
+@{
+    Layout = "_AuthLayout";
+}
+
+<div class="login-bg-wrapper d-flex flex-column">
+    <div class="login-logo-header d-flex align-items-center">
+        <a href="#" class="login-logo-wrapper">
+            <img src="~/css/Default/images/TaskTrackPro.png" class="login-logo-img" alt="Clarent Institute" />
+        </a>
+        <span class="separator"></span>
+        <span class="login-branh-text">TaskTrackPro</span>
+    </div>
+    <div class="login-graphic-wrapper flex-1 overflow-auto d-flex flex-wrap">
+        <div class="login-left-wrapper">
+            <div>
+                <img src="~/css/Default/images/Login_Graphics.svg" alt="Clarent Institute" class="login-graphice-img" />
+                <p class="login-graphice-text">Keep Your Agile Ceremonies Effective and provide a seamless cycle of
+                    successful sprints</p>
+            </div>
+        </div>
+        <div class="login-right-wrapper">
+            <div class="loginpage-box-wrapper">
+                <h2 class="login-title text-dark font-bold">Sign In</h2>
+                <form class="loginpage-box-content" id="loginForm">
+                    <div class="form-group">
+                        <div class="custom-dropdown">
+                            <select name="role" id="role">
+                                <option value="Admin">Admin</option>
+                                <option value="User">User</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="k-textbox login-textbox" placeholder="Email" id="loginEmail" name="loginEmail" required>
+                        <span class="login-textbox-icon"><i class="icon-email"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="k-textbox login-textbox" placeholder="Password"
+                            id="loginPassword" name="loginPassword" required>
+                        <span class="login-textbox-icon"><i class="icon-locked"></i></span>
+                    </div>
+                    <div class="login-input-check">
+                        <div class="login-input-checkbox">
+                            <input type='checkbox' class='k-checkbox' id='rememberMe'>
+                            <label class='k-checkbox-label' for='rememberMe'>Remember me</label>
+                        </div>
+                    </div>
+                    <div class="form-group pb-10">
+                        <button type="submit" class="btn btn-primary k-button w100 loginbtn" id="submit">Log In</button>
+                    </div>
+                    <div class="text-center">
+                        <a asp-action="Forgot" class="forgot-pwd btn-link-trans font-medium text-dark outline-dark"
+                            aria-label="Forgot password">Forgot Password?</a>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-dark font-medium">Don't Have an account?</span>  
+                        <a asp-action="Register" class="forgot-pwd btn-link-trans font-medium text-dark text-primary">Register here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+$(document).ready(function () {
+    $("#loginForm").validate({
+        rules: {
+            loginEmail: {
+                required: true,
+                email: true
+            },
+            loginPassword: {
+                required: true,
+            }
+        },
+        messages: {
+            loginEmail: {
+                required: "Email is required",
+                email: "Enter a valid email"
+            },
+            loginPassword: {
+                required: "Password is required",
+            }
+        },
+        submitHandler: function(form) {
+            loginUser(); 
+        }
+    });
+
+    function loginUser() {
+        var email = $("#loginEmail").val();
+        var password = $("#loginPassword").val();
+        var role = $('#role').val();
+        var formData = new FormData();
+        formData.append("Email", email);
+        formData.append("Password", password);
+        formData.append("role", role);
+        $.ajax({
+            url: "http://localhost:5136/api/UserAuth/Login", 
+            type: "POST",
+            processData: false,  
+            contentType: false,  
+            data: formData,
+            success: function (response) {
+                alert("Login Successful!");
+                console.log(response);
+                setTimeout(()=>{
+                    window.location = '../Home/Index';
+                },2000);
+            },
+            error: function (xhr) {
+                console.log(xhr.responseText);
+                alert("Invalid Credentials!");
+            }
+        });
+    }
+});
+</script>

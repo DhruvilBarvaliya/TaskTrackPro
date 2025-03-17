@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Clarent Institute Login</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="~/css/Default/images/favicon.ico" type="image/x-icon">
+
+    <link href="~/css/Default/css/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/css/Default/css/kendo.default.min.css" rel="stylesheet" />
+    <link href="~/css/Default/css/fonts.css" rel="stylesheet" />
+    <link href="~/css/Default/css/styleguide.css" rel="stylesheet" />
+    <link href="~/css/Default/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/Default/css/casepoint.comfortable.css" rel="stylesheet" />
+    <link href="~/css/Default/css/kendo.Yellow.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/css/Default\css\casepoint.comfortable.css">
+
+    <link href="~/css/Default/css/login.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        /* General Styling */
+.form-group {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+
+/* Label Styling */
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Dropdown Container */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Select Box Styling */
+.custom-dropdown select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    appearance: none; /* Removes default browser styles */
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover & Focus Effects */
+.custom-dropdown select:hover {
+    background-color: #e9f2ff;
+}
+
+.custom-dropdown select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 91, 187, 0.5);
+}
+
+/* Custom Arrow */
+.custom-dropdown::after {
+    content: '▼';
+    font-size: 12px;
+    color: #007bff;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+    </style>
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>
