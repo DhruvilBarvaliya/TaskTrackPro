@@ -28,10 +28,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("corsapp");
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+app.MapControllers();
 
 var summaries = new[]
 {

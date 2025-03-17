@@ -54,7 +54,7 @@ public class UserRepository : IUserInterface
                 cmd.Parameters.AddWithValue("@c_email", userData.c_email);
                 cmd.Parameters.AddWithValue("@c_password", userData.c_password);
                 cmd.Parameters.AddWithValue("@c_gender", userData.c_gender);
-                cmd.Parameters.AddWithValue("@c_profilepicture", userData.c_profilepicture);
+                cmd.Parameters.AddWithValue("@c_profilepicture", userData.c_profilepicture ?? (object)DBNull.Value);
 
                 _conn.Close();
                 _conn.Open();

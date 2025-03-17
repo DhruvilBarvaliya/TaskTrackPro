@@ -25,6 +25,8 @@ namespace TaskTrackPro.API
         {
             if (user.c_profile != null && user.c_profile.Length > 0)
             {
+                System.Console.WriteLine("Under profile image upload code");
+                System.Console.WriteLine("Email:" + user.c_email);
                 var fileName = user.c_email + Path.GetExtension(
                  user.c_profile.FileName);
                 var filePath = Path.Combine("../TaskTrackPro.MVC/wwwroot/profile_images", fileName);
@@ -33,6 +35,7 @@ namespace TaskTrackPro.API
                 {
                     user.c_profile.CopyTo(stream);
                 }
+                System.Console.WriteLine("File upload success");
             }
             Console.WriteLine("user: " + user.c_uname);
             var status = await _user.Add(user);
