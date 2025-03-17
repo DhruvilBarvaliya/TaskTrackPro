@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
@@ -14,8 +15,10 @@ namespace TaskTrackPro.Core.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int c_uid { get; set; }
 
+        [JsonPropertyName("Name")]
         public string c_uname { get; set; }
 
+        [JsonPropertyName("Email")]
         public string c_email { get; set; }
 
         public string c_password { get; set; }

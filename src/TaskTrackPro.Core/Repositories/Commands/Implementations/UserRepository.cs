@@ -225,6 +225,41 @@ public class UserRepository : IUserInterface
         }
         return user;
     }
-
-
+    public async Task<List<t_User>> LoadUsers()
+    {
+        List<t_User> userList = new List<t_User>();
+        try
+        {
+            await _conn.OpenAsync();
+            string query = "SELECT * FROM t_user_task";
+            using (var cmd = new NpgsqlCommand(query, _conn))
+            {
+                using (var reader = await cmd.ExecuteReaderAsync())
+                {
+                    while (reader.Read())
+                    {
+                        userList.Add(new t_User()
+                        {
+                            c_uid = Convert.ToInt32(reader["c_uid"]),
+                            c_uname = reader["c_uname"].ToString(),
+                            c_email = reader["c_email"].ToString(),
+                            c_gender = reader["c_gender"].ToString(),
+                            c_profilepicture = reader["c_profilepicture"].ToString(),
+                            c_password = reader["c_password"].ToString(),
+                            // c_approve_status = (bool)reader["c_approve_status"]
+                        });
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in LoadUsers: {ex.Message}");
+        }
+        finally
+        {
+            await _conn.CloseAsync();
+        }
+        return userList;
+    }
 }

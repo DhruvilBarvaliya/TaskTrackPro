@@ -13,7 +13,7 @@ namespace TaskTrackPro.Repositories.Interfaces
         Task<t_User> GetUser(int userid);
         Task<int> ChangePassword(t_User userData);
         Task<int> UpdateProfile(EditProfile userData);
-
         Task<t_User> GetUserByEmail(string email);
+        Task<List<t_User>> LoadUsers();
     }
 }

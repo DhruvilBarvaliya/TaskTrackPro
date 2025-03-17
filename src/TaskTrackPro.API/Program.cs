@@ -1,67 +1,97 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Npgsql;
+using RabbitMQ.Client;
+using Repositories.Implementations;
+using StackExchange.Redis;
+using TaskTrackPro.Core.Repositories.Commands.Implementations;
+using TaskTrackPro.Core.Repositories.Commands.Interfaces;
 using TaskTrackPro.Repositories.Interfaces;
-using TaskTrackPro.Repositories.Servcies; 
-
+// using TaskTrackPro.Core.Messaging; // ✅ Include namespace for UserRegistrationConsumer
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();
+builder.Services.AddSignalR();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
-builder.Services.AddScoped<IEmailService, EmailService>();
-builder.Services.AddSingleton<IUserInterface, UserRepository>();
-builder.Services.AddSingleton<NpgsqlConnection>((UserRepository) =>
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
 {
-    var connectionString = UserRepository.GetRequiredService<IConfiguration>().GetConnectionString("pgconnection");
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+// ✅ Configure PostgreSQL
+builder.Services.AddScoped<NpgsqlConnection>(serviceProvider =>
+{
+    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+    var connectionString = configuration.GetConnectionString("pgcon");
     return new NpgsqlConnection(connectionString);
 });
 
-
-builder.Services.AddControllers();
-builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+// ✅ Configure Redis
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
 {
-    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
-}));
+    var configuration = ConfigurationOptions.Parse("127.0.0.1:6379");
+    return ConnectionMultiplexer.Connect(configuration);
+});
+
+// ✅ Configure RabbitMQ
+builder.Services.AddSingleton<IConnection>(sp =>
+{
+    var factory = new ConnectionFactory
+    {
+        HostName = "localhost",
+        Port = 5672,
+        UserName = "guest",
+        Password = "guest"
+    };
+    return factory.CreateConnection();
+});
+
+// ✅ Register Repositories & Services
+builder.Services.AddScoped<ITaskInterface, TaskRepository>();
+builder.Services.AddScoped<IUserInterface, UserRepository>();
+builder.Services.AddScoped<ChatService>();
+
+// ✅ Register RabbitMQ Consumer
+builder.Services.AddSingleton<UserRegistrationConsumer>();
+
+// ✅ Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("corsapp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000", "http://localhost:5136", "http://localhost:5285")
+              .AllowAnyMethod()
+              .AllowAnyHeader()
+              .AllowCredentials();
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseCors("corsapp");
+app.UseSession();
+app.UseAuthentication();
+app.UseAuthorization();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors("corsapp");
-app.UseHttpsRedirection();
-app.UseRouting();
-app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+// ✅ Start RabbitMQ Consumer
+var consumer = app.Services.GetRequiredService<UserRegistrationConsumer>();
+Task.Run(() => consumer.StartListening());
+
 app.MapControllers();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+app.MapHub<ChatHub>("/chathub");
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

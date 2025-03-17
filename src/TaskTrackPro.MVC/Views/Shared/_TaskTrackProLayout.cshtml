@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/MVC.styles.css" asp-append-version="true" /> *@
+    <link rel="shortcut icon" href="~/css/Default/images/favicon.ico" type="image/x-icon">
+    <link href="~/css/Default/css/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/css/Default/css/kendo.default.min.css" rel="stylesheet" />
+    <link href="~/css/Default/css/fonts.css" rel="stylesheet" />
+    <link href="~/css/Default/css/styleguide.css" rel="stylesheet" />
+    <link href="~/css/Default/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/Default/css/casepoint.comfortable.css" rel="stylesheet" />
+    <link href="~/css/Default/css/kendo.Yellow.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/Default\css\casepoint.comfortable.css">
+    <link href="~/css/Default/css/login.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"
+        integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MVC</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Task"
+                                asp-action="TaskPage">Tasks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Chat"
+                                asp-action="ChatPage">Messenger</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" id="logout" asp-area="" type="button">Logout</a>
+                        </li </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            $("#logout").on("click", function () {
+                let email = sessionStorage.getItem("userEmail");
+                console.log("Logout email:- " + email);
+                $.ajax({
+                    url: "http://localhost:5136/api/UserApi/Logout?userEmail=" + email,
+                    type: "POST",
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        if (response.success) {
+                            window.location.href = "../Home/Login"
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Failed to logout. Error:", error);
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,11 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>Welcome Home,Login page</h2>
-</body>
-</html>
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div class="login-bg-wrapper d-flex flex-column">
+    <div class="login-logo-header d-flex align-items-center">
+        <a href="#" class="login-logo-wrapper">
+            <img src="~/css/Default/images/TaskTrackPro.png" class="login-logo-img" alt="TaskTrackPro" />
+        </a>
+        <span class="separator"></span>
+        <span class="login-branh-text">TaskTrackPro</span>
+    </div>
+    <div class="login-graphic-wrapper flex-1 overflow-auto d-flex flex-wrap">
+        <div class="login-left-wrapper">
+            <div>
+                <img src="~/css/Default/images/Login_Graphics.svg" alt="TaskTrackPro" class="login-graphice-img" />
+                <p class="login-graphice-text">Keep Your Agile Ceremonies Effective and provide a seamless cycle of
+                    successful sprints</p>
+            </div>
+        </div>
+        <div class="login-right-wrapper">
+            <div class="loginpage-box-wrapper">
+                <h2 class="login-title text-dark font-bold">Sign In</h2>
+                <form class="loginpage-box-content" id="loginForm">
+                    <div class="form-group">
+                        <input type="email" class="k-textbox login-textbox" placeholder="Email" id="loginEmail" name="loginEmail" required>
+                        <span class="login-textbox-icon"><i class="icon-email"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="k-textbox login-textbox" placeholder="Password" id="loginPassword" name="loginPassword" required>
+                        <span class="login-textbox-icon"><i class="icon-locked"></i></span>
+                    </div>
+                    <div class="login-input-check">
+                        <div class="login-input-checkbox">
+                            <input type='checkbox' class='k-checkbox' id='rememberMe'>
+                            <label class='k-checkbox-label' for='rememberMe'>Remember me</label>
+                        </div>
+                    </div>
+                    <div class="form-group pb-10">
+                        <button type="submit" class="btn btn-primary k-button w100 loginbtn" id="submit">Log In</button>
+                    </div>
+                    <p id="message" class="text-center text-danger"></p>
+                    <div class="text-center">
+                        <a asp-action="Forgot" class="forgot-pwd btn-link-trans font-medium text-dark outline-dark"
+                            aria-label="Forgot password">Forgot Password?</a>
+                    </div>
+                    <div class="text-center">
+                        <span class="text-dark font-medium">Don't Have an account?</span>  
+                        <a asp-action="Register" class="forgot-pwd btn-link-trans font-medium text-dark text-primary">Register here</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Load Necessary Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script> <!--  Fix Validation Issue -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script> <!--  SignalR -->
+
+<script>
+$(document).ready(function () {
+    console.log($.fn.validate ? " jQuery Validation is loaded" : " jQuery Validation is missing!");
+
+    // jQuery Validation
+    $("#loginForm").validate({
+        rules: {
+            loginEmail: { required: true, email: true },
+            loginPassword: { required: true }
+        },
+        messages: {
+            loginEmail: { required: "Email is required", email: "Enter a valid email" },
+            loginPassword: { required: "Password is required" }
+        },
+        submitHandler: function(form) {
+            loginUser(); // Call login function when form is valid
+        }
+    });
+
+    function loginUser() {
+        var email = $("#loginEmail").val();
+        var password = $("#loginPassword").val();
+
+        var formData = new FormData();
+        formData.append("c_Email", email);
+        formData.append("c_Password", password);
+
+        $.ajax({
+            url: "http://localhost:5136/api/UserApi/Login", // API Endpoint
+            type: "POST",
+            processData: false,  
+            contentType: false,  
+            data: formData,
+            success: function (response) {
+                if (response.success) {
+                    @* console.log(response); *@
+                    sessionStorage.setItem("userEmail", email); //  Store email for SignalR chat
+                    $("#message").text(response.message).css("color", "green");
+
+                    // Connect to SignalR after successful login
+                    connectToSignalR(email);
+
+                    // Redirect to chat after a delay
+                    setTimeout(() => {
+                        window.location.href = "../Task/TaskPage";
+                    }, 1000);
+                } else {
+                    $("#message").text(response.message).css("color", "red");
+                }
+            },
+            error: function (xhr) {
+                console.log(xhr.responseText);
+                $("#message").text("Invalid Credentials!").css("color", "red");
+            }
+        });
+    }
+
+    function connectToSignalR(userEmail) {
+        let connection = new signalR.HubConnectionBuilder()
+            .withUrl("http://localhost:5136/chatHub") //  ChatHub URL
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        // Handle real-time messages
+        connection.on("ReceiveMessage", function (sender, message) {
+            console.log("New message from " + sender + ": " + message);
+            alert("New message from " + sender + ": " + message); // Replace with chat UI update
+        });
+
+        // Start the connection
+        connection.start()
+            .then(function () {
+                console.log("Connected to SignalR as " + userEmail);
+            })
+            .catch(function (err) {
+                console.error("SignalR connection error: ", err);
+            });
+    }
+});
+</script>

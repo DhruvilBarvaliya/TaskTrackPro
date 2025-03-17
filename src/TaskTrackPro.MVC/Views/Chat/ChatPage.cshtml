@@ -1,0 +1,259 @@
+@{
+    ViewData["Title"] = "Chat Page";
+    Layout = "../Shared/_TaskTrackProLayout.cshtml";
+}
+
+<div class="chat-container">
+    <h2>Chat with</h2>
+    <select name="users" id="users" class="form-control">
+        <option value="" selected disabled>-- Select User/Admin --</option>
+    </select>
+
+    <select name="online-users" id="online-users" class="form-control">
+        <option value="" selected disabled>-- Online Users --</option>
+    </select>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Type a message..." class="form-control" />
+        <button id="sendBtn" class="btn btn-primary">Send</button>
+    </div>
+</div>
+
+<!-- SignalR & jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        let userId = sessionStorage.getItem("userEmail");
+        let otherUserId = "";
+        let lastLoadedMessages = new Set();
+        let lastMessageDate = null;
+
+        if (!userId) {
+            alert("User not logged in. Redirecting to login page.");
+            window.location.href = "/Login";
+            return;
+        }
+
+        let connection = new signalR.HubConnectionBuilder()
+            .withUrl(`http://localhost:5136/chathub?userId=${userId}`)
+            .configureLogging(signalR.LogLevel.Information)
+            .build();
+
+        connection.start()
+            .then(() => console.log("Connected to SignalR"))
+            .catch(err => console.error("SignalR Connection Error:", err));
+
+        function formatDate(date) {
+            return new Date(date).toLocaleDateString([], { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' });
+        }
+
+        function formatTime(date) {
+            return new Date(date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+
+        function appendMessage(senderId, message, timestamp) {
+            let chatBox = $("#chatBox");
+            let messageTime = formatTime(timestamp);
+            let messageDate = formatDate(timestamp);
+            let messageId = senderId + message + messageTime;
+
+            if (lastLoadedMessages.has(messageId)) return;
+            lastLoadedMessages.add(messageId);
+
+            if (lastMessageDate !== messageDate) {
+                chatBox.append(`<div class="chat-date">${messageDate}</div>`);
+                lastMessageDate = messageDate;
+            }
+
+            let isSender = senderId === userId;
+            let messageHtml = `<div class="message ${isSender ? 'sent' : 'received'}">
+                <p><b>${isSender ? "You" : senderId}:</b> ${message} 
+                <sub class="msg-time">${messageTime}</sub></p></div>`;
+
+            chatBox.append(messageHtml);
+            chatBox.scrollTop(chatBox[0].scrollHeight);
+        }
+
+        function loadMessages() {
+            if (!otherUserId) return;
+
+            $.ajax({
+                url: "http://localhost:5136/api/chat/history",
+                type: "GET",
+                data: { userId: userId, otherUserId: otherUserId },
+                success: function (response) {
+                    if (!response.success) {
+                        console.error("Error loading chat:", response.message);
+                        return;
+                    }
+
+                    let chatBox = $("#chatBox");
+                    chatBox.empty();
+                    lastLoadedMessages.clear();
+                    lastMessageDate = null;
+
+                    response.data.forEach((msg) => {
+                        appendMessage(msg.senderId, msg.content, new Date(msg.timestamp));
+                    });
+
+                    chatBox.scrollTop(chatBox[0].scrollHeight);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Failed to load chat messages. Error:", error);
+                }
+            });
+        }
+
+        connection.on("ReceiveMessage", function (senderId, message) {
+            let timestamp = new Date();
+            appendMessage(senderId, message, timestamp);
+        });
+
+        $("#sendBtn").click(function () {
+            let message = $("#messageInput").val().trim();
+            if (!message) {
+                alert("Message cannot be empty!");
+                return;
+            }
+            if (!otherUserId) {
+                alert("Please select a user before sending a message.");
+                return;
+            }
+
+            let timestamp = new Date();
+
+            $.ajax({
+                url: "http://localhost:5136/api/chat/send",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ senderId: userId, receiverId: otherUserId, content: message }),
+                success: function () {
+                    appendMessage(userId, message, timestamp);
+                    $("#messageInput").val("");
+                },
+                error: function (xhr) {
+                    alert("Message failed to send. Server response: " + xhr.responseText);
+                    console.error("Chat send error:", xhr.responseText);
+                }
+            });
+
+            connection.invoke("SendMessage", userId, otherUserId, message)
+                .catch(err => console.error("SignalR SendMessage Error:", err));
+        });
+
+        function loadUsers() {
+            $.ajax({
+                url: "http://localhost:5136/api/UserApi/loadUsers",
+                type: "GET",
+                success: function (response) {
+                    if (!response.success) {
+                        console.error("Error loading users:", response.message);
+                        return;
+                    }
+                    let usersDropdown = $("#users");
+                    usersDropdown.empty().append('<option value="" selected disabled>-- Select User/Admin --</option>');
+
+                    response.users.forEach((user) => {
+                        if (user.Email != userId) {
+                            usersDropdown.append(`<option value="${user.Email}">${user.Email}</option>`);
+                        }
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("Failed to load users. Error:", error);
+                }
+            });
+        }
+        function loadOnlineUsers() {
+            $.ajax({
+                url: "http://localhost:5136/api/UserApi/getOnlineUsers",
+                type: "GET",
+                success: function (response) {
+                    if (!response.success) {
+                        console.error("Error loading online users:", response.message);
+                        return;
+                    }
+                    let usersDropdown = $("#online-users");
+                    usersDropdown.empty().append('<option value="" selected disabled>-- Online Users --</option>');
+
+                    response.onlineUsers.forEach((user) => {
+                        let option = `<option value="${user}" disabled>${user}</option>`;
+                        usersDropdown.append(option);
+                    });
+                },
+                error: function (xhr, status, error) {
+                    console.error("Failed to load online users. Error:", error);
+                }
+            });
+        }
+        $("#users").change(function () {
+            otherUserId = $(this).val();
+            loadMessages();
+        });
+
+        loadUsers();
+        loadOnlineUsers();
+    });
+</script>
+
+<style>
+    .chat-container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 10px;
+        background: #f8f9fa;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-box {
+        height: 400px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background: #fff;
+    }
+
+    .chat-date {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 12px;
+        color: #666;
+        background: #e0e0e0;
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .message {
+        max-width: 75%;
+        padding: 8px 12px;
+        margin: 5px;
+        border-radius: 10px;
+        word-wrap: break-word;
+    }
+
+    .sent {
+        background: #dcf8c6;
+        float: right;
+        text-align: right;
+        clear: both;
+    }
+
+    .received {
+        background: #ffffff;
+        float: left;
+        text-align: left;
+        border: 1px solid #ccc;
+        clear: both;
+    }
+
+    .msg-time {
+        font-size: 10px;
+        color: #666;
+    }
+</style>
