@@ -1,5 +1,6 @@
 @{
     Layout = "_AuthLayout";
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
 }
 
 <div class="login-bg-wrapper d-flex flex-column">
@@ -12,14 +13,15 @@
     <div class="login-graphic-wrapper flex-1 overflow-auto d-flex flex-wrap">
         <div class="login-left-wrapper">
             <div>
-                <img src="~/css/Default/images/regitser_logo.svg" height="450px" alt="Register Image" class="login-graphice-img" />
+                <img src="~/css/Default/images/regitser_logo.svg" height="450px" alt="Register Image"
+                    class="login-graphice-img" />
                 @* <p class="login-graphice-text">A 360 degree Task Management App You Need.</p> *@
             </div>
         </div>
         <div class="login-right-wrapper">
             <div class="loginpage-box-wrapper">
                 <h2 class="login-title text-dark font-bold">Sign Up</h2>
-                <form enctype="multipart/form-data">
+                <form enctype="multipart/form-data" id="registerForm">
                     <div class="loginpage-box-content">
                         <div class="form-group">
                             <input type="text" class="k-textbox login-textbox" placeholder="First Name"
@@ -34,6 +36,7 @@
                         <div class="form-group">
                             <input type="password" class="k-textbox login-textbox" placeholder="Password"
                                 id="registerpwd" name="registerpwd">
+                            <div id="passwordError" class="text-danger"></div>
                             <span class="login-textbox-icon"><i class="icon-locked"></i></span>
                         </div>
                         <div class="form-group">
@@ -53,7 +56,7 @@
 
                         <div class="form-group">
                             <div class="file-upload-wrapper d-flex align-items-center">
-                                <input type="file" id="profilePic" class="" >
+                                <input type="file" id="profilePic" name="profilePic" class="">
                             </div>
                         </div>
 
@@ -77,45 +80,161 @@
 
 </div>
 
+<!-- Kendo Notification Container -->
+<div id="notification"></div>
+<style>
+    /* Custom green notification */
+    .kendo-custom-success {
+        background-color: #28a745 !important;
+        /* Green */
+        color: #fff !important;
+        /* White text */
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .Error {
+        color: red !important;
+        font-size: 14px;
+        display: block;
+        margin-top: 5px;
+    }
+</style>
 <script>
     $(document).ready(function () {
-    $('#register').click(function () {
-        var formData = new FormData();
-        formData.append("c_uname", $('#registername').val());
-        formData.append("c_email", $('#registerEmail').val());
-        formData.append("c_password", $('#registerpwd').val());
-        formData.append("c_cnf_password", $('#register_cnf_pwd').val());
-        formData.append("c_gender", $('input[name="gender"]:checked').val());
-
-        // Append the image file
-        var fileInput = $('#profilePic')[0].files[0];
-        console.log(fileInput);
-        if (fileInput) {
-            formData.append("c_profile", fileInput);
-        }
-
-        $.ajax({
-            url: 'http://localhost:5136/Register',
-            type: 'POST',
-            data: formData,
-            contentType: false,
-            processData: false,
-            success: function (response) {
-                console.log(response);
-                setTimeout(() => {
-                    if (response.success) {
-                        $('#responseMessage').text('User registered successfully!');
-                    } else {
-                        $('#responseMessage').addClass("alert alert-danger");
-                        $('#responseMessage').text('Error: ' + response.message);
-                    }
-                }, 2000);
+        var notification = $("#notification").kendoNotification({
+            position: {
+                top: 20,
+                left: "70%",
+                translateX: "-50%" // Center the notification
             },
-            error: function (xhr, status) {
-                console.error("Error while adding the user: " + xhr.responseText);
+            autoHideAfter: 4000, // Show for 2 seconds
+            stacking: "down",
+            templates: [{
+                type: "success",
+                template: "<div class='kendo-custom-success'>#= message #</div>" // Fixed template syntax
+            }]
+        }).data("kendoNotification");
+
+        $('#register').on('click', function () {
+            if ($('#registerForm').valid()) {
+                saveData();
+            }
+            else {
+                console.log("Validation Error");
+            }
+        })
+
+        $.validator.addMethod('nameRegex', function (value, element) {
+            return this.optional(element) || /^[A-Za-z\s]+$/
+                .test(value);
+        }, 'Numbers Not Allowed');
+
+
+        $.validator.addMethod('passRegex', function (value, element) {
+            return this.optional(element) || /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!%*?&])[A-Za-z\d!%*?&]{6,}$/.test(value);
+        }, 'Password must contain:<br>■ Minimum 6 characters<br>■ At least 1 uppercase letter<br>■ At least 1 lowercase letter<br>■ At least 1 number<br>■ At least 1 special character (!%*?&)');
+
+
+        $('#registerForm').validate({
+            errorClass: 'Error',
+            rules: {
+                registername: {
+                    required: true,
+                    nameRegex: true,
+                },
+                registerEmail: {
+                    required: true,
+                },
+                registerpwd: {
+                    required: true,
+                    passRegex: true,
+                },
+                register_cnf_pwd: {
+                    required: true,
+                    equalTo: '#registerpwd',
+                },
+                gender: {
+                    required: true,
+                },
+                profilePic: {
+                    required: true,
+                },
+            },
+            messages: {
+                registername: {
+                    required: 'Please Enter Name',
+                },
+                registerEmail: {
+                    required: 'Please Enter Email',
+                },
+                registerpwd: {
+                    required: 'Please Enter Password',
+                },
+                register_cnf_pwd: {
+                    required: 'Please Enter Confirm Password',
+                },
+                gender: {
+                    required: 'Please Select Gender',
+                },
+                profilePic: {
+                    required: 'Please Upload Image',
+                },
+            },
+            errorPlacement: function (error, element) {
+                if (element.attr("type") === "radio") {
+                    error.appendTo(element.closest(".d-flex"));
+                } else {
+                    error.insertAfter(element);
+                }
             }
         });
+
+        function saveData() {
+            var formData = new FormData();
+            formData.append("c_uname", $('#registername').val());
+            formData.append("c_email", $('#registerEmail').val());
+            formData.append("c_password", $('#registerpwd').val());
+            formData.append("c_cnf_password", $('#register_cnf_pwd').val());
+            formData.append("c_gender", $('input[name="gender"]:checked').val());
+
+            // Append the image file
+            var fileInput = $('#profilePic')[0].files[0];
+            console.log(fileInput);
+            if (fileInput) {
+                formData.append("c_profile", fileInput);
+            }
+
+            $.ajax({
+                url: 'http://localhost:5136/Register',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    // Show Kendo Notification on Success
+                    notification.show({ message: "User registered successfully!" }, "success");
+                    clearData();
+                    setTimeout(() => {
+                        window.location = '../Home/Login';
+                    }, 2000);
+                },
+                error: function (xhr, status) {
+                    console.error("Error while adding the user: " + xhr.responseText);
+                }
+            });
+        };
+
+        function clearData() {
+            $('#registername').val("");
+            $('#registerEmail').val("");
+            $('#registerpwd').val("");
+            $('#register_cnf_pwd').val("");
+            $('input[name="gender"]').prop("checked", false);
+            $('#profilePic').val("");
+        }
     });
-});
 
 </script>

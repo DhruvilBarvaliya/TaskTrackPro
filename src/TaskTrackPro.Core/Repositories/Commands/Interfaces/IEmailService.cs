@@ -1,4 +1,4 @@
-namespace TaskTrackPro.Repositories.Interfaces
+namespace TaskTrackPro.Repositories.Servcies
 {
     public interface IEmailService
     {

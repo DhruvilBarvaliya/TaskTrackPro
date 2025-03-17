@@ -1,6 +1,7 @@
 using Npgsql;
 using TaskTrackPro.Repositories.Interfaces;
 using TaskTrackPro.Core.Models;
+using BCrypt.Net;
 
 public class UserRepository : IUserInterface
 {
@@ -42,21 +43,57 @@ public class UserRepository : IUserInterface
         return UserData;
     }
 
+    // public async Task<int> Add(t_User userData)
+    // {
+    //     var qry = "Insert into t_user_task (c_uname, c_email,c_gender,c_password,c_profilepicture) values (@c_uname, @c_email,@c_gender,@c_password,@c_profilepicture)";
+
+    //     try
+    //     {
+    //         using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
+    //         {
+    //             cmd.Parameters.AddWithValue("@c_uname", userData.c_uname);
+    //             cmd.Parameters.AddWithValue("@c_email", userData.c_email);
+    //             cmd.Parameters.AddWithValue("@c_password", userData.c_password);
+    //             cmd.Parameters.AddWithValue("@c_gender", userData.c_gender);
+    //             cmd.Parameters.AddWithValue("@c_profilepicture", userData.c_profilepicture ?? (object)DBNull.Value);
+
+    //             _conn.Close();
+    //             _conn.Open();
+    //             cmd.ExecuteNonQuery();
+    //             _conn.Close();
+
+    //             return 1;
+    //         }
+    //     }
+    //     catch (Exception e)
+    //     {
+    //         Console.WriteLine("-----fuck----->Login Error : " + e.Message);
+    //         return -1;
+
+    //     }
+    //     finally
+    //     {
+    //         await _conn.CloseAsync();
+    //     }
+
+    // }
+
     public async Task<int> Add(t_User userData)
     {
-        var qry = "Insert into t_user_task (c_uname, c_email,c_gender,c_password,c_profilepicture) values (@c_uname, @c_email,@c_gender,@c_password,@c_profilepicture)";
+        var qry = "Insert into t_user_task (c_uname, c_email, c_gender, c_password, c_profilepicture) values (@c_uname, @c_email, @c_gender, @c_password, @c_profilepicture)";
 
         try
         {
             using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
             {
+                string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userData.c_password); // Hashing password
+
                 cmd.Parameters.AddWithValue("@c_uname", userData.c_uname);
                 cmd.Parameters.AddWithValue("@c_email", userData.c_email);
-                cmd.Parameters.AddWithValue("@c_password", userData.c_password);
                 cmd.Parameters.AddWithValue("@c_gender", userData.c_gender);
+                cmd.Parameters.AddWithValue("@c_password", hashedPassword); // Store hashed password
                 cmd.Parameters.AddWithValue("@c_profilepicture", userData.c_profilepicture ?? (object)DBNull.Value);
 
-                _conn.Close();
                 _conn.Open();
                 cmd.ExecuteNonQuery();
                 _conn.Close();
@@ -66,15 +103,13 @@ public class UserRepository : IUserInterface
         }
         catch (Exception e)
         {
-            Console.WriteLine("-----fuck----->Login Error : " + e.Message);
+            Console.WriteLine("Login Error: " + e.Message);
             return -1;
-
         }
         finally
         {
             await _conn.CloseAsync();
         }
-
     }
     public async Task<t_User> GetUser(int userid)
     {
