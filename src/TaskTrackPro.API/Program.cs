@@ -4,48 +4,39 @@ using TaskTrackPro.Core.Repositories.Commands.Implementations;
 using TaskTrackPro.Core.Repositories.Commands.Interfaces;
 using TaskTrackPro.Core.Repositories.Queries.Implementations;
 using TaskTrackPro.Core.Repositories.Queries.Interfaces;
-
+using TaskTrackPro.API.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Add CORS Policy
+// ✅ Add CORS Policy (Keeping only ONE policy)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",
         policy =>
         {
-            policy.AllowAnyOrigin() // Allows requests from any frontend (Avoid in production)
-                  .AllowAnyMethod() // Allows GET, POST, PUT, DELETE, etc.
+            policy.AllowAnyOrigin()  // Allows requests from any frontend (Avoid in production)
+                  .AllowAnyMethod()  // Allows GET, POST, PUT, DELETE, etc.
                   .AllowAnyHeader(); // Allows all headers
         });
 });
 
-// ✅ Configure PostgreSQL connection
+// ✅ Configure PostgreSQL connection (Scoped for each request)
 var connectionString = builder.Configuration.GetConnectionString("pgconnection");
 builder.Services.AddScoped<NpgsqlConnection>(_ => new NpgsqlConnection(connectionString));
+
+// ✅ Register Core Services
+builder.Services.AddSingleton<RabbitMqConsumer>();
+builder.Services.AddScoped<RedisService>();
+builder.Services.AddScoped<RabbitMqPublisher>();
 builder.Services.AddScoped<ITaskInterface, TaskRepository>();
 builder.Services.AddScoped<IAdminQuery, AdminQuery>();
 builder.Services.AddScoped<IAdminCommand, AdminCommand>();
 
-// ✅ Add services for Controllers & API
+// ✅ Add Services for Controllers & API
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddControllers();
-
-// Configuring cors 
-builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
-{
-    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
-}));
-
-// Configuring connection string
-builder.Services.AddSingleton<NpgsqlConnection>((ServiceProvider) =>
-{
-    var connection = ServiceProvider.GetRequiredService<IConfiguration>().GetConnectionString("pgconnection");
-    return new NpgsqlConnection(connection);
-});
 
 var app = builder.Build();
 
@@ -58,13 +49,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
-app.UseCors("corsapp");
-
+var rabbitConsumer = app.Services.GetRequiredService<RabbitMqConsumer>();
+Task.Run(() => rabbitConsumer.ConsumeNotifications());  // Run in a separate thread
 app.UseHttpsRedirection();
 app.UseAuthorization();  // Handles authentication & authorization
-
-app.MapControllers(); // ✅ This replaces `UseRouting()` and `UseEndpoints()`
-
+app.MapControllers();    // ✅ Replaces `UseRouting()` and `UseEndpoints()`
 app.Run();

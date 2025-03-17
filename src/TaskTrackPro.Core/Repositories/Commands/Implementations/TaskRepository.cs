@@ -1,49 +1,177 @@
 using System;
 using System.Threading.Tasks;
 using Npgsql;
+using TaskTrackPro.API.Services;
 using TaskTrackPro.Core.Models;
 using TaskTrackPro.Core.Repositories.Commands.Interfaces;
+
+
 
 namespace TaskTrackPro.Core.Repositories.Commands.Implementations
 {
     public class TaskRepository : ITaskInterface
     {
-        private readonly string _connectionString;
+       private readonly string _connectionString;
+        private readonly RedisService _redisService;
+        private readonly RabbitMqPublisher _rabbitMqPublisher;
 
-        public TaskRepository(NpgsqlConnection connection)
+        public TaskRepository(NpgsqlConnection connection, RedisService redisService, RabbitMqPublisher rabbitMqPublisher)
         {
             _connectionString = connection.ConnectionString;
+            _redisService = redisService;
+            _rabbitMqPublisher = rabbitMqPublisher;
         }
 
-        public async Task<int> Add(t_task data)
+
+    /// ✅ **Add a New Task & Notify User**
+    public async Task<int> Add(t_task data)
+    {
+        try
         {
-            try
+            await using var conn = new NpgsqlConnection(_connectionString);
+            await conn.OpenAsync();
+
+            string insertQuery = @"
+                INSERT INTO t_task (c_uid, c_task_title, c_description, c_start_date, c_end_date, c_task_status) 
+                VALUES (@c_uid, @c_task_title, @c_description, @c_start_date, @c_end_date, @c_task_status)
+                RETURNING c_tid;";
+
+            await using var cm = new NpgsqlCommand(insertQuery, conn);
+            cm.Parameters.AddWithValue("@c_uid", data.c_uid);
+            cm.Parameters.AddWithValue("@c_task_title", data.c_task_title);
+            cm.Parameters.AddWithValue("@c_description", data.c_description);
+            cm.Parameters.AddWithValue("@c_start_date", data.c_start_date);
+            cm.Parameters.AddWithValue("@c_end_date", data.c_end_date);
+            cm.Parameters.AddWithValue("@c_task_status", data.c_task_status);
+
+            var insertedId = await cm.ExecuteScalarAsync();
+            int taskId = insertedId != null ? Convert.ToInt32(insertedId) : 0;
+
+            if (taskId > 0)
             {
-                await using var conn = new NpgsqlConnection(_connectionString);
-                await conn.OpenAsync();
-
-                await using var cm = new NpgsqlCommand(@"
-                    INSERT INTO t_task (c_uid, c_task_title, c_description, c_start_date, c_end_date, c_task_status) 
-                    VALUES (@c_uid, @c_task_title, @c_description, @c_start_date, @c_end_date, @c_task_status)
-                    RETURNING c_tid;", conn);
-
-                cm.Parameters.AddWithValue("@c_uid", data.c_uid);
-                cm.Parameters.AddWithValue("@c_task_title", data.c_task_title);
-                cm.Parameters.AddWithValue("@c_description", data.c_description);
-                cm.Parameters.AddWithValue("@c_start_date", data.c_start_date);
-                cm.Parameters.AddWithValue("@c_end_date", data.c_end_date);
-                cm.Parameters.AddWithValue("@c_task_status", data.c_task_status);
-
-                var insertedId = await cm.ExecuteScalarAsync();
-
-                return insertedId != null ? Convert.ToInt32(insertedId) : 0;
+                string notification = $"New Task Assigned: {data.c_task_title}";
+                await _redisService.StoreNotificationAsync(data.c_uid.ToString(), notification);
+                _rabbitMqPublisher.PublishNotification(data.c_uid.ToString(), notification);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-                return 0;
-            }
+
+            return taskId;
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            return 0;
+        }
+    }
+
+    /// ✅ **Update Task & Notify User**
+    public async Task<int> Update(t_task taskData)
+    {
+        try
+        {
+            await using var conn = new NpgsqlConnection(_connectionString);
+            await conn.OpenAsync();
+
+            string query = @"
+                UPDATE t_task 
+                SET 
+                    c_uid = @c_uid, 
+                    c_task_title = @c_task_title, 
+                    c_description = @c_description, 
+                    c_start_date = @c_start_date, 
+                    c_end_date = @c_end_date, 
+                    c_task_status = @c_task_status
+                WHERE c_tid = @c_tid";
+
+            await using var cm = new NpgsqlCommand(query, conn);
+            cm.Parameters.AddWithValue("@c_tid", taskData.c_tid);
+            cm.Parameters.AddWithValue("@c_uid", taskData.c_uid);
+            cm.Parameters.AddWithValue("@c_task_title", taskData.c_task_title);
+            cm.Parameters.AddWithValue("@c_description", taskData.c_description);
+            cm.Parameters.AddWithValue("@c_start_date", taskData.c_start_date);
+            cm.Parameters.AddWithValue("@c_end_date", taskData.c_end_date);
+            cm.Parameters.AddWithValue("@c_task_status", taskData.c_task_status);
+
+            int rowsAffected = await cm.ExecuteNonQueryAsync();
+
+            if (rowsAffected > 0)
+            {
+                string notification = $"Task Updated: {taskData.c_task_title}";
+                await _redisService.StoreNotificationAsync(taskData.c_uid.ToString(), notification);
+                _rabbitMqPublisher.PublishNotification(taskData.c_uid.ToString(), notification);
+            }
+
+            return rowsAffected;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            return 0;
+        }
+    }
+
+    /// ✅ **Delete Task & Notify User**
+    public async Task<int> Delete(int c_TaskID)
+    {
+        try
+        {
+            await using var conn = new NpgsqlConnection(_connectionString);
+            await conn.OpenAsync();
+
+            string query = "DELETE FROM t_task WHERE c_tid = @c_TaskID RETURNING c_uid, c_task_title";
+
+            await using var cm = new NpgsqlCommand(query, conn);
+            cm.Parameters.AddWithValue("@c_TaskID", c_TaskID);
+
+            await using var reader = await cm.ExecuteReaderAsync();
+            if (await reader.ReadAsync())
+            {
+                int userId = reader.GetInt32(0);
+                string taskTitle = reader.GetString(1);
+
+                string notification = $"Task Deleted: {taskTitle}";
+                await _redisService.StoreNotificationAsync(userId.ToString(), notification);
+                _rabbitMqPublisher.PublishNotification(userId.ToString(), notification);
+
+                return 1;
+            }
+
+            return 0;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            return 0;
+        }
+    }
+        // public async Task<int> Add(t_task data)
+        // {
+        //     try
+        //     {
+        //         await using var conn = new NpgsqlConnection(_connectionString);
+        //         await conn.OpenAsync();
+
+        //         await using var cm = new NpgsqlCommand(@"
+        //             INSERT INTO t_task (c_uid, c_task_title, c_description, c_start_date, c_end_date, c_task_status) 
+        //             VALUES (@c_uid, @c_task_title, @c_description, @c_start_date, @c_end_date, @c_task_status)
+        //             RETURNING c_tid;", conn);
+
+        //         cm.Parameters.AddWithValue("@c_uid", data.c_uid);
+        //         cm.Parameters.AddWithValue("@c_task_title", data.c_task_title);
+        //         cm.Parameters.AddWithValue("@c_description", data.c_description);
+        //         cm.Parameters.AddWithValue("@c_start_date", data.c_start_date);
+        //         cm.Parameters.AddWithValue("@c_end_date", data.c_end_date);
+        //         cm.Parameters.AddWithValue("@c_task_status", data.c_task_status);
+
+        //         var insertedId = await cm.ExecuteScalarAsync();
+
+        //         return insertedId != null ? Convert.ToInt32(insertedId) : 0;
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         Console.WriteLine($"Error: {ex.Message}");
+        //         return 0;
+        //     }
+        // }
 
         public async Task<List<t_User>> GetAllUsers()
         {
@@ -128,66 +256,67 @@ namespace TaskTrackPro.Core.Repositories.Commands.Implementations
         }
 
 
-        public async Task<int> Update(t_task taskData)
-        {
-            try
-            {
-                await using var conn = new NpgsqlConnection(_connectionString);
-                await conn.OpenAsync();
+        // public async Task<int> Update(t_task taskData)
+        // {
+        //     try
+        //     {
+        //         await using var conn = new NpgsqlConnection(_connectionString);
+        //         await conn.OpenAsync();
 
-                string query = @"
-            UPDATE t_task 
-            SET 
-                c_uid = @c_uid, 
-                c_task_title = @c_task_title, 
-                c_description = @c_description, 
-                c_start_date = @c_start_date, 
-                c_end_date = @c_end_date, 
-                c_task_status = @c_task_status
-            WHERE c_tid = @c_tid";
+        //         string query = @"
+        //     UPDATE t_task 
+        //     SET 
+        //         c_uid = @c_uid, 
+        //         c_task_title = @c_task_title, 
+        //         c_description = @c_description, 
+        //         c_start_date = @c_start_date, 
+        //         c_end_date = @c_end_date, 
+        //         c_task_status = @c_task_status
+        //     WHERE c_tid = @c_tid";
 
-                await using var cm = new NpgsqlCommand(query, conn);
+        //         await using var cm = new NpgsqlCommand(query, conn);
 
-                cm.Parameters.AddWithValue("@c_tid", taskData.c_tid); // ✅ Identify by Task ID
-                cm.Parameters.AddWithValue("@c_uid", taskData.c_uid);
-                cm.Parameters.AddWithValue("@c_task_title", taskData.c_task_title);
-                cm.Parameters.AddWithValue("@c_description", taskData.c_description);
-                cm.Parameters.AddWithValue("@c_start_date", taskData.c_start_date);
-                cm.Parameters.AddWithValue("@c_end_date", taskData.c_end_date);
-                cm.Parameters.AddWithValue("@c_task_status", taskData.c_task_status);
+        //         cm.Parameters.AddWithValue("@c_tid", taskData.c_tid); // ✅ Identify by Task ID
+        //         cm.Parameters.AddWithValue("@c_uid", taskData.c_uid);
+        //         cm.Parameters.AddWithValue("@c_task_title", taskData.c_task_title);
+        //         cm.Parameters.AddWithValue("@c_description", taskData.c_description);
+        //         cm.Parameters.AddWithValue("@c_start_date", taskData.c_start_date);
+        //         cm.Parameters.AddWithValue("@c_end_date", taskData.c_end_date);
+        //         cm.Parameters.AddWithValue("@c_task_status", taskData.c_task_status);
 
-                int rowsAffected = await cm.ExecuteNonQueryAsync();
-                return rowsAffected; // ✅ Returns number of affected rows
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-                return 0;
-            }
-        }
+        //         int rowsAffected = await cm.ExecuteNonQueryAsync();
+        //         return rowsAffected; // ✅ Returns number of affected rows
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         Console.WriteLine($"Error: {ex.Message}");
+        //         return 0;
+        //     }
+        // }
 
 
-        public async Task<int> Delete(int c_TaskID)
-        {
-            try
-            {
-                await using var conn = new NpgsqlConnection(_connectionString);
-                await conn.OpenAsync();
+        // public async Task<int> Delete(int c_TaskID)
+        // {
+        //     try
+        //     {
+        //         await using var conn = new NpgsqlConnection(_connectionString);
+        //         await conn.OpenAsync();
 
-                string query = "DELETE FROM t_task WHERE c_tid = @c_TaskID";
+        //         string query = "DELETE FROM t_task WHERE c_tid = @c_TaskID";
 
-                await using var cm = new NpgsqlCommand(query, conn);
-                cm.Parameters.AddWithValue("@c_TaskID", c_TaskID);
+        //         await using var cm = new NpgsqlCommand(query, conn);
+        //         cm.Parameters.AddWithValue("@c_TaskID", c_TaskID);
 
-                int rowsAffected = await cm.ExecuteNonQueryAsync();
-                return rowsAffected; // ✅ Returns number of affected rows
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-                return 0;
-            }
-        }
+        //         int rowsAffected = await cm.ExecuteNonQueryAsync();
+        //         return rowsAffected; // ✅ Returns number of affected rows
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         Console.WriteLine($"Error: {ex.Message}");
+        //         return 0;
+        //     }
+        // }
 
     }
+
 }
