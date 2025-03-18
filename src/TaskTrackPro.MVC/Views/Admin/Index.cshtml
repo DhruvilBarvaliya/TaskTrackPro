@@ -12,7 +12,7 @@
 </section>
 <!--// Menu Section-->
 
-<div class="d-flex dashboard-wrapper justify-content-center  h100">
+<div class="d-flex dashboard-wrapper justify-content-center h100">
     <div class="dashboard-left overflow-auto d-flex flex-column">
         <!-- Daily Activity -->
         <div class="dashboard-daily-activity">
@@ -52,52 +52,91 @@
         </div>
         <!--// Daily Activity -->
 
-
+        <!-- Data Visualization Section -->
+        <div class="dashboard-graph mt-4">
+            <h4 class="title font-semi-bold fs-16 text-dark">User Statistics</h4>
+            <canvas id="userStatsChart"></canvas>
+        </div>
     </div>
 </div>
 
-
-
-
+<!-- Include Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
     $(document).ready(function () {
-        var Total;
+        var totalMembers = 0;
+        var approvedMembers = 0;
+        var notApprovedMembers = 0;
+        var pendingTasks = 0;
+
+        function updateChart() {
+            var ctx = document.getElementById("userStatsChart").getContext("2d");
+            var userStatsChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: ["Total Members", "Approved Members", "Not Approved Users", "Pending Tasks"],
+                    datasets: [{
+                        label: "Count",
+                        data: [totalMembers, approvedMembers, notApprovedMembers, pendingTasks],
+                        backgroundColor: ["#4CAF50", "#2196F3", "#FF5722", "#FFC107"],
+                        borderColor: ["#388E3C", "#1976D2", "#D32F2F", "#FFA000"],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Fetch Total Members
         $.ajax({
             url: "http://localhost:5136/api/Admin/AllMembers",
             type: "GET",
             success: function (count) {
-                Total =count;
-                $('#TotalMember').html(count)
+                totalMembers = count;
+                $("#TotalMember").html(count);
+                updateChart();
             },
             error: function (xhr) {
-                alert("Error fetching approved users: " + xhr.responseText);
+                alert("Error fetching total members: " + xhr.responseText);
             }
         });
 
+        // Fetch Pending Tasks
         $.ajax({
             url: "http://localhost:5136/api/Admin/PendingTask",
             type: "GET",
             success: function (count) {
-                console.log(count)
-                $('#PendingTask').html(count)
+                pendingTasks = count;
+                $("#PendingTask").html(count);
+                updateChart();
             },
             error: function (xhr) {
-                alert("Error fetching approved users: " + xhr.responseText);
+                alert("Error fetching pending tasks: " + xhr.responseText);
             }
         });
 
+        // Fetch Approved Members
         $.ajax({
             url: "http://localhost:5136/api/Admin/ApproveMembers",
             type: "GET",
             success: function (count) {
-                console.log(count)
-                $('#ApproveMembers').html(count)
-                $('#NotApprove').html(Total-count)
+                approvedMembers = count;
+                $("#ApproveMembers").html(count);
+                notApprovedMembers = totalMembers - approvedMembers;
+                $("#NotApprove").html(notApprovedMembers);
+                updateChart();
             },
             error: function (xhr) {
-                alert("Error fetching approved users: " + xhr.responseText);
+                alert("Error fetching approved members: " + xhr.responseText);
             }
         });
-    })
+    });
 </script>
