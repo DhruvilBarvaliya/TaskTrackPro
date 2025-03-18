@@ -10,38 +10,86 @@ public class UserRepository : IUserInterface
     {
         _conn = connection;
     }
-    public async Task<t_User> Login(Login user)
+    // public async Task<t_User> Login(t_Login user)
+    // {
+    //     t_User UserData = new t_User();
+    //     var qry = "SELECT * FROM t_user_task WHERE c_email=@c_email AND c_password=@c_password;";
+    //     try
+    //     {
+    //         using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
+    //         {
+    //             cmd.Parameters.AddWithValue("@c_email", user.Email);
+    //             cmd.Parameters.AddWithValue("@c_password", user.Password);
+    //             await _conn.OpenAsync();
+    //             var reader = await cmd.ExecuteReaderAsync();
+    //             if (reader.Read())
+    //             {
+    //                 UserData.c_uid = (int)reader["c_uid"];
+    //                 UserData.c_email = (string)reader["c_email"];
+    //                 UserData.c_uname = (string)reader["c_uname"];
+    //                 UserData.c_password = (string)reader["c_password"];
+    //                 UserData.c_profilepicture = (string)reader["c_profilepicture"];
+    //             }
+    //         }
+    //     }
+    //     catch (Exception e)
+    //     {
+    //         Console.WriteLine("----------->Login Error : " + e.Message);
+    //     }
+    //     finally
+    //     {
+    //         await _conn.CloseAsync();
+    //     }
+    //     return UserData;
+    // }
+
+
+public async Task<t_User> Login(t_Login user)
+{
+    t_User UserData = null;
+    var qry = "SELECT * FROM t_user_task WHERE c_email=@c_email;";
+    
+    try
     {
-        t_User UserData = new t_User();
-        var qry = "SELECT * FROM t_user_task WHERE c_email=@c_email AND c_password=@c_password;";
-        try
+        using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
         {
-            using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
+            cmd.Parameters.AddWithValue("@c_email", user.Email);
+            await _conn.OpenAsync();
+            
+            using (var reader = await cmd.ExecuteReaderAsync())
             {
-                cmd.Parameters.AddWithValue("@c_email", user.c_email);
-                cmd.Parameters.AddWithValue("@c_password", user.c_password);
-                await _conn.OpenAsync();
-                var reader = await cmd.ExecuteReaderAsync();
-                if (reader.Read())
+                if (await reader.ReadAsync())
                 {
-                    UserData.c_uid = (int)reader["c_uid"];
-                    UserData.c_email = (string)reader["c_email"];
-                    UserData.c_uname = (string)reader["c_uname"];
-                    UserData.c_password = (string)reader["c_password"];
-                    UserData.c_profilepicture = (string)reader["c_profilepicture"];
+                    string storedHashedPassword = (string)reader["c_password"];
+                    
+                    // Verify the input password against the stored hash
+                    if (BCrypt.Net.BCrypt.Verify(user.Password, storedHashedPassword))
+                    {
+                        UserData = new t_User
+                        {
+                            c_uid = (int)reader["c_uid"],
+                            c_email = (string)reader["c_email"],
+                            c_uname = (string)reader["c_uname"],
+                            c_password = storedHashedPassword, // Store only if necessary
+                            c_profilepicture = (string)reader["c_profilepicture"]
+                        };
+                    }
                 }
             }
         }
-        catch (Exception e)
-        {
-            Console.WriteLine("----------->Login Error : " + e.Message);
-        }
-        finally
-        {
-            await _conn.CloseAsync();
-        }
-        return UserData;
     }
+    catch (Exception e)
+    {
+        Console.WriteLine("-----------> Login Error: " + e.Message);
+    }
+    finally
+    {
+        await _conn.CloseAsync();
+    }
+    
+    return UserData;
+}
+
 
     // public async Task<int> Add(t_User userData)
     // {
@@ -143,22 +191,21 @@ public class UserRepository : IUserInterface
         return UserData;
     }
 
-    public async Task<int> UpdateProfile(EditProfile userData)
+    public async Task<int> UpdateProfile(t_User userData)
     {
-        var qry = "UPDATE t_user_task SET c_uname=@c_uname, c_email=@c_email,c_profileimage WHERE c_uid = @c_uid";
+        var qry = "UPDATE t_user_task SET c_uname=@c_uname, c_email=@c_email,c_profilepicture=@profile_image WHERE c_uid = @c_uid";
         try
         {
             using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
             {
+                _conn.Close();
                 cmd.Parameters.AddWithValue("@c_uname", userData.c_uname);
                 cmd.Parameters.AddWithValue("@c_email", userData.c_email);
-                cmd.Parameters.AddWithValue("@profile_image", userData.profile_image.ToString());
+                cmd.Parameters.AddWithValue("@profile_image", userData.c_profilepicture.ToString());
                 cmd.Parameters.AddWithValue("@c_uid", userData.c_uid);
-                _conn.Close();
                 _conn.Open();
                 int rowsAffected = await cmd.ExecuteNonQueryAsync();
-                _conn.Close();
-                return rowsAffected;
+                return 1;
             }
         }
         catch (Exception e)
@@ -167,6 +214,7 @@ public class UserRepository : IUserInterface
         }
         return 0;
     }
+
     public async Task<int> ChangePassword(t_User userData)
     {
         var qry = "UPDATE t_user_task SET c_password = @c_password WHERE c_uid = @c_uid";
@@ -181,7 +229,7 @@ public class UserRepository : IUserInterface
                 _conn.Open();
                 int rowsAffected = await cmd.ExecuteNonQueryAsync();
                 _conn.Close();
-                return rowsAffected;
+                return 1;
             }
         }
         catch (Exception e)
@@ -190,6 +238,7 @@ public class UserRepository : IUserInterface
         }
         return 0;
     }
+
 
     public async Task<t_User> GetUserByEmail(string email)
     {
