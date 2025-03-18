@@ -8,9 +8,12 @@
         <li><a href="javascript:void(0);" id="iAuditTemplate" class="ms-menu-link active">Members</a></li>
         <li><a asp-action="Task" id="iAuditInspection" class="ms-menu-link">Task</a></li>
         <li><a asp-action="Messages" id="iAuditAnalytics" class="ms-menu-link">Messages</a></li>
-    </ul>
+        </ulv>
 </section>
+
 <!--// Menu Section-->
+@* <img src="~/profile_images/dhruvilbarvaliaya20@gmail.com.png" alt=""> *@
+
 <!--// Main Section-->
 <div class="d-flex dashboard-wrapper justify-content-center align-items-center h100 mt-15 ">
     <div class="dashboard-left   d-flex flex-column h100">
@@ -42,7 +45,6 @@
 </div>
 
 
-
 </div>
 <!-- option menu -->
 <ul id="popup" class="grid-options" style="display: none;">
@@ -71,11 +73,11 @@
 @* Approv User model *@
 <div id="task-window-table">
     <div class="window-wrapper">
-        <input id="UserId" type="text">
+        <input hidden id="UserId" type="text">
         <div class="mb-10">
 
-            <img src="https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
-                alt="">
+            <img id="UserProfile" style="width: 100%; height: 300px;"
+                alt="UserProfileImage">
         </div>
         <div class="mb-10">
             <h5 class="fw-bolder">User Name</h5>
@@ -184,8 +186,8 @@
                 var formattedData = data.map((user, index) => ({
                     datano: index,
                     dataid: user.c_uid,
-                    datareq: user.c_uname,
-                    dataTpl: user.c_email,
+                    datareq: user.Name,
+                    dataTpl: user.Email,
                     dataAss: user.c_gender,
                     dataVal: user.c_profilepicture,
                     dataInt: user.c_user_status
@@ -208,9 +210,12 @@
                         { field: "dataTpl", title: "Email", width: "200px" },
                         { field: "dataAss", title: "Gender", width: "120px" },
                         {
-                            field: "dataVal", title: "Profile Picture", width: "150px",
-                            template: "<img src='/images/#: dataVal #' width='50' height='50' alt='Profile' />"
+                            field: "dataVal",
+                            title: "Profile Picture",
+                            width: "150px",
+                            template: "<img src='/profile_images/#: dataVal #' width='50' height='50' alt='Profile' />"
                         },
+
                         {
                             field: "dataInt",
                             title: "Action",
@@ -235,6 +240,7 @@
                                 $("#Username").html(dataItem.datareq);
                                 $("#Useremail").html(dataItem.dataTpl);
                                 $("#UserGender").html(dataItem.dataAss);
+                                $("#UserProfile").attr("src", "/profile_images/"+dataItem.dataVal);
                             }
                         });
                     }
@@ -244,8 +250,8 @@
                 alert("Failed to fetch data.");
             }
         });
-        
-        
+
+
         // Approve User
         $("#approveUserBtn").click(function () {
             let userId = $("#UserId").val();
@@ -264,23 +270,23 @@
 
 </script>
 
- <script>
-    $('#ElasticClear').click(function(){
-            window.location.reload();
-        })
-    $('#MemberElaticSearch').click(function(){
+<script>
+    $('#ElasticClear').click(function () {
+        window.location.reload();
+    })
+    $('#MemberElaticSearch').click(function () {
         var searchWord = $('#MemberElaticInput').val();
 
-         $.ajax({
-            url: "http://localhost:5136/api/Admin/name?name="+searchWord, // Adjust API URL if needed
+        $.ajax({
+            url: "http://localhost:5136/api/Admin/name?name=" + searchWord, // Adjust API URL if needed
             type: "GET",
             dataType: "json",
             success: function (data) {
                 var formattedData = data.map((user, index) => ({
                     datano: index,
                     dataid: user.c_uid,
-                    datareq: user.c_uname,
-                    dataTpl: user.c_email,
+                    datareq: user.Name,
+                    dataTpl: user.Email,
                     dataAss: user.c_gender,
                     dataVal: user.c_profilepicture,
                     dataInt: user.c_user_status
@@ -304,7 +310,7 @@
                         { field: "dataAss", title: "Gender", width: "120px" },
                         {
                             field: "dataVal", title: "Profile Picture", width: "150px",
-                            template: "<img src='/images/#: dataVal #' width='50' height='50' alt='Profile' />"
+                            template: "<img src='/profile_images/#: dataVal #' width='50' height='50' alt='Profile' />"
                         },
                         {
                             field: "dataInt",
@@ -330,6 +336,8 @@
                                 $("#Username").html(dataItem.datareq);
                                 $("#Useremail").html(dataItem.dataTpl);
                                 $("#UserGender").html(dataItem.dataAss);
+                                $("#UserProfile").attr("src", "/profile_images/"+dataItem.dataVal);
+
                             }
                         });
                     }
@@ -339,7 +347,7 @@
                 alert("Failed to fetch data.");
             }
         });
-        
-        
+
+
     })
- </script>
+</script>

@@ -54,12 +54,15 @@
         @* connection.serverTimeoutInMilliseconds = 60000; // Increase timeout to 1 min *@
 
 
-        connection.start()
-            .then(() => console.log("Connected to SignalR"))
-            .catch(err => console.error("SignalR Connection Error:", err));
+        function restart(){
+            connection.start()
+                .then(() => console.log("Connected to SignalR"))
+                .catch(err => console.error("SignalR Connection Error:", err));
+        }
 
         connection.onclose(error => {
             console.error("SignalR connection closed:", error);
+            restart()
         });
 
 

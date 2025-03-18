@@ -5,13 +5,13 @@ using TaskTrackPro.Core.Repositories.Commands.Implementations;
 using TaskTrackPro.Core.Repositories.Commands.Interfaces;
 using TaskTrackPro.Core.Repositories.Queries.Implementations;
 using TaskTrackPro.Core.Repositories.Queries.Interfaces;
-using TaskTrackPro.Core.Services.Messaging;
 using TaskTrackPro.API.Services;
 using Elastic.Transport;
 using Elastic.Clients.Elasticsearch;
 using TaskTrackPro.API.Consumers;
 using RabbitMQ.Client;
 using TaskTrackPro.Core.Services.Email;
+using Repositories.Implementations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,13 +31,13 @@ builder.Services.AddCors(options =>
 // ✅ Configure PostgreSQL connection
 var connectionString = builder.Configuration.GetConnectionString("pgconnection");
 builder.Services.AddScoped<NpgsqlConnection>(_ => new NpgsqlConnection(connectionString));
+builder.Services.AddScoped<ChatService>();
 builder.Services.AddScoped<ITaskInterface, TaskRepository>();
 builder.Services.AddScoped<IAdminQuery, AdminQuery>();
 builder.Services.AddScoped<IAdminCommand, AdminCommand>();
 builder.Services.AddScoped<IAccountCommand, AccountCommand>();
 builder.Services.AddScoped<IUserInterface, UserRepository>();
 builder.Services.AddScoped<ITaskCount, TaskCountRepository>();
-builder.Services.AddScoped<ChatService>();
 builder.Services.AddSingleton<ElasticsearchServices>();
 builder.Services.AddSingleton<ElasticsearchService>();
 builder.Services.AddSingleton<RabbitMqPublisher>();

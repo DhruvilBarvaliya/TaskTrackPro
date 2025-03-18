@@ -35,9 +35,8 @@
 
 </head>
 
-<body>
-    @* <div class="loader iloader"></div> *@
 
+<body>
     <!--Navigation Header-->
     <header class="main-header">
         <nav class="mt-navbar">
@@ -61,7 +60,7 @@
                     <li class="notification-item notification item">
                         <a href="#offcanvasExample" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNotifications" aria-controls="offcanvasNotifications">
                             <span class="icon"><i class="icon-notification"></i></span>
-                            <span id="NotificationCount" style="box-shadow: 0px 0px 10px rgb(255, 255, 255);" class="counts">12</span>
+                            <span id="NotificationCount" style="box-shadow: 0px 0px 10px rgb(255, 255, 255);" class="counts">0</span>
                         </a>
                     </li>
                     <li class="separator"></li>
@@ -112,7 +111,7 @@
                         <div class="a-box">
                             <a id="settings"><i class="icon-setting"></i><span
                                     class="text-dark text-semibold">Settings</span></a>
-                            <a href="../Login.html" class="bl-0"><i class="icon-logout text-danger"></i><span
+                            <a asp-action="Logout" asp-controller="Home" class="bl-0"><i class="icon-logout text-danger"></i><span
                                     class="text-dark text-semibold">Logout</span></a>
                         </div>
                         <div class="bottom-block">
@@ -343,9 +342,10 @@
 
 
 <script>
+    var userData = JSON.parse(sessionStorage.getItem("User"))
     function fetchNotifications() {
         $.ajax({
-            url: "http://localhost:5136/api/task/notifications/2", // Replace 2 with dynamic user ID
+            url: "http://localhost:5136/api/task/notifications/"+userData.c_uid, // Replace 2 with dynamic user ID
             type: "GET",
             dataType: "json",
             success: function (data) {
@@ -372,7 +372,7 @@
         });
 
          $.ajax({
-            url: "http://localhost:5136/api/task/notifications/count/2", // Replace 2 with dynamic user ID
+            url: "http://localhost:5136/api/task/notifications/count/"+userData.c_uid, // Replace 2 with dynamic user ID
             type: "GET",
             dataType: "json",
             success: function (data) {
@@ -386,7 +386,7 @@
 
     function clearNotifications() {
         $.ajax({
-            url: "http://localhost:5136/api/task/notifications/clear/2", // Replace 2 with dynamic user ID
+            url: "http://localhost:5136/api/task/notifications/clear/"+userData.c_uid, // Replace 2 with dynamic user ID
             type: "DELETE",
             success: function () {
                 fetchNotifications(); // Refresh notifications after clearing

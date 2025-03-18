@@ -96,7 +96,7 @@ namespace TaskTrackPro.Core.Repositories.Commands.Implementations
                         c_uname = reader.GetString(1),
                         c_email = reader.GetString(2),
                         c_gender = reader.GetString(4),
-                        // c_profilepicture = reader.GetString(6)
+                        c_profilepicture = (string)reader["c_profilepicture"]
                         // c_profilepicture = reader.IsDBNull(5) ? "default.png" : reader.GetString(5),
                     });
                 }

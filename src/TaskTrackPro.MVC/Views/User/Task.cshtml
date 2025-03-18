@@ -13,9 +13,9 @@
 <!--// Menu Section-->
 
 <div class="d-flex dashboard-wrapper justify-content-center  h100">
-    <div class="dashboard-left overflow-auto d-flex flex-column">
+    <div class="dashboard-left d-flex flex-column">
         <!-- Daily Activity -->
-        <div class="dashboard-daily-activity">
+        @* <div class="dashboard-daily-activity">
             <div class="dashboard-daily-activity-wrapper ">
                 <ul class="dashboard-daily-activity-wrapper-ul justify-content-center d-flex flex-wrap">
                     <li class="dashboard-daily-activity-item border daily-item-success">
@@ -41,12 +41,12 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> *@
         <!--// Daily Activity -->
 
 
         <!-- Todo Activity -->
-        <div class="todo-inspection-activity-wrapper flex-1 overflow-auto">
+        <div class="todo-inspection-activity-wrapper flex-1 ">
             <div class="d-flex flex-wrap dashboard-row h100">
                 <div class="todo-activity-wrapper dashboard-column-100 d-flex flex-column h100">
                     <h4 class="title font-semi-bold fs-16 text-dark pb-10">Task List</h4>
@@ -69,19 +69,19 @@
         <form>
             <div class="form-group">
                 <label>Task Title</label>
-                <input id="UpdateTaskTitle" type="text" class="form-control" title="table name">
+                <input disabled id="UpdateTaskTitle" type="text" class="form-control" title="table name">
             </div>
             <div class="form-group mb-10">
                 <label for="UpdateautoComplete">Select Member</label>
-                <input id="UpdateautoComplete" class="form-control border b-1" title="date timepicker" />
+                <input disabled id="UpdateautoComplete" class="form-control border b-1" title="date timepicker" />
             </div>
             <div class="form-group mb-10">
                 <label for="Updatestartdatetimepicker">Start Date Timepicker</label>
-                <input id="Updatestartdatetimepicker" class="form-control" title="date timepicker" />
+                <input  disabled id="Updatestartdatetimepicker" class="form-control" title="date timepicker" />
             </div>
             <div class="form-group mb-10">
                 <label for="Updateenddatetimepicker">End Date Timepicker</label>
-                <input id="Updateenddatetimepicker" class="form-control" title="date timepicker" />
+                <input disabled id="Updateenddatetimepicker" class="form-control" title="date timepicker" />
             </div>
             <div class="form-group mb-10">
                 <label for="Updatestatus">Update Status</label>
@@ -94,7 +94,7 @@
             </div>
             <div class="form-group">
                 <label>Description <span class="text-muted">(Optional)</span></label>
-                <textarea id="UpdatetaskDescription" class="form-control" rows="4" placeholder="Write here"
+                <textarea disabled id="UpdatetaskDescription" class="form-control" rows="4" placeholder="Write here"
                     title="description"></textarea>
             </div>
         </form>
@@ -124,12 +124,13 @@
 </script>
 @* Change in API call *@
 <script>
+     var userData = JSON.parse(sessionStorage.getItem("User"))
     $(document).ready(function () {
         // Fetch Data from API
         var taskDataSource = new kendo.data.DataSource({
             transport: {
                 read: {
-                    url: "http://localhost:5136/api/task/task?userId=24",
+                    url: "http://localhost:5136/api/task/task?userId="+userData.c_uid,
                     dataType: "json"
                 }
             },
@@ -161,10 +162,6 @@
             },
             groupable: true,
             sortable: true,
-            toolbar: ["search"],
-            search: {
-                fields: ["c_task_title"],
-            },
             filterable: true,
             resizable: true,
             columns: [
@@ -223,5 +220,6 @@
             dataSource: taskDataSource
         });
     });
-
 </script>
+
+

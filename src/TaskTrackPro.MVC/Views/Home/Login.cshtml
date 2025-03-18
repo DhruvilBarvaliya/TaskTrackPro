@@ -95,23 +95,23 @@
                 contentType: false,
                 data: formData,
                 success: function (response) {
+                        var userdata = JSON.stringify(response.data)
                     if (response.success) {
-                        console.log(response);
                         sessionStorage.setItem("userEmail", email); //  Store email for SignalR chat
                         $("#message").text(response.message).css("color", "green");
 
                         // Connect to SignalR after successful login
                         connectToSignalR(email);
-                        console.log(response.role);
                         if (response.role == "Admin") {
                             window.location.href = "/Admin/Index"
                         }
                         else {
-                            window.location.href = "../User/Task"
+                            window.location.href = "/User/Task"
+                            sessionStorage.setItem("User",userdata)
                         }
                     } 
                     else {
-                        $("#message").text(response.message).css("color", "red");
+                        $("#message").text(response.message).css("color", "green");
                     }
                 },
                 error: function (xhr) {
