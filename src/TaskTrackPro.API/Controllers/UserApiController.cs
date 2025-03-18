@@ -155,7 +155,7 @@ namespace TaskTrackPro.API.Controllers
                 Console.WriteLine("Login Success");
                 Console.WriteLine($"User Email: {data.c_email}");
 
-                return Ok(new { message = "Login Success", data = data });
+                return Ok(new { success = true, message = "Login Success", data = data });
             }
             catch (Exception ex)
             {

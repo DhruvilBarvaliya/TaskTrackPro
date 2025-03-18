@@ -18,5 +18,10 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Logout()
+    {
+        return View();
+    }
+
     
 }

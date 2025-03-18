@@ -35,9 +35,9 @@ namespace TaskTrackPro.Core.Repositories.Queries.Implementations
                         c_uname = reader.GetString(1),
                         c_email = reader.GetString(2),
                         c_gender = reader.GetString(4),
-                        c_user_status = reader.GetBoolean(6)
-                        // c_profilepicture = reader.GetString(6)
-                        // c_profilepicture = reader.IsDBNull(5) ? "default.png" : reader.GetString(5),
+                        c_user_status = reader.GetBoolean(6),
+                        // c_profilepicture = reader.GetString(5)
+                        c_profilepicture = reader.IsDBNull(5) ? "default.png" : reader.GetString(5),
                     });
                 }
             }
