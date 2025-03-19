@@ -1,5 +1,5 @@
 @{
-    Layout = "_Custom";
+    Layout = "_CustomA";
 }
 <!-- Menu Section-->
 <section class="main-section-menu bg-light bb-1">
@@ -25,7 +25,7 @@
                         <div class="searchbar w100 p-10 pb-5">
                             <div class="clear-input search-box w100">
                                 <input type="text" name="txtTagListSearch" id="TaskElaticInput" aria-label="tag name"
-                                    class="form-control k-textbox k-valid" placeholder="Search Task here...">
+                                    class="form-control k-textbox k-valid" placeholder="Search Task Title here...">
                                 <i class="icon-search" aria-hidden="true"></i>
                                 <a role="button" id="ElasticClear" aria-label="Clear Search" href="javascript:void(0);"
                                     class="btn-icn-hover close icon-cancel" data-ara-title="Clear Search"></a>
@@ -290,22 +290,6 @@
                 }
             });
         });
-
-        // Get All Users
-        function LoaduserData_NIU() {
-            $.ajax({
-                url: apiUrl + "/users",
-                type: "GET",
-                success: function (users) {
-                    console.log(users);
-
-                },
-                error: function (xhr) {
-                    alert("Error fetching users: " + xhr.responseText);
-                }
-            });
-        };
-
         // Get Approved Usernames
         function LoaduserData() {
             $.ajax({
@@ -607,6 +591,7 @@
     $(document).ready(function () {
         $("#logout").on("click", function (e) {
             e.preventDefault();
+            sessionStorage.clear()
             sessionStorage.removeItem("userEmail");
             window.location.replace("/Home/Login");
         });

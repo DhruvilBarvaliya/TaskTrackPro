@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>Clarent Institute iAudit Dashboard</title>
+    <title>TaskTrackPro</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="~/favicon.png" type="image/x-icon">
 
@@ -44,10 +44,6 @@
                 <div class="logo-wrapper">
                     <img style="width: 100%;" src="~/css/Default/images/LogoImage.png" />
                 </div>
-                <ul class="left-menu list-unstyled list-inline">
-                    <li class="separator"></li>
-                    <li class="active project-item ml-5"><a class="noPointer ellipsis" title="CMS">TaskTrackPro</a></li>
-                </ul>
             </div>
             <div class="nav-right">
                 <ul class="user-menu">
@@ -68,7 +64,7 @@
                     <li class="separator"></li>
                     <li class="userprofile-item userprofile dropdown">
                         <a href="javascript:void(0)">
-                            <span class="navuser-ellipse">Dhruvil Barvaliya<br /><small>Admin</small></span>
+                            <span id="MainProfilename" class="navuser-ellipse">Dhruvil Barvaliya<br /></span>
                             <span class="dw-icon"><i class="icon-arrow-down"></i></span>
                         </a>
                     </li>
@@ -102,147 +98,41 @@
     </script>
     <!-- Main Contain -->
     <main class="main-contain-wrapper main-content">
-        <!-- user profile -->
+         <!-- user profile -->
         <div class="userprofile-menu dropdown-menu">
             <div class="usermenu-wrap">
                 <div class="main-up">
                     <div class="userprofile-content-wrapper">
                         <div class="brief">
-                            <div class="img-circle"><span>NP</span></div>
-                        </div>
-                        <div class="a-box">
-                            <a id="settings"><i class="icon-setting"></i><span
-                                    class="text-dark text-semibold">Settings</span></a>
+                            <div  class="img-circle"><img id="UserProfile" src="/profile_images/" alt=""></div>
+                            
                         </div>
                         <div class="bottom-block">
                             <div class="userprofile-info d-flex align-items-center">
                                 <span class="userprofile-info-icon"><i class="icon-username-check"></i></span>
                                 <div class="flex-1 overflow-hidden font-semi-bold ml-15">
-                                    <span class="text-muted d-block ellipsis mb-5">Username</span>
-                                    <span class="text-dark d-block ellipsis fs-15" id="username"></span>
+                                    <span class="text-muted d-block ellipsis mb-5">UserEmail</span>
+                                    <span id="UserEmailProfile" class="text-dark d-block ellipsis fs-15">subhash.dudhat@casepoint.in</span>
+                                </div>
+                            </div>
+                            <div class="userprofile-info d-flex align-items-center">
+                                <span class="userprofile-info-icon"><i class="icon-fullname"></i></span>
+                                <div class="flex-1 overflow-hidden font-semi-bold ml-15">
+                                    <span class="text-muted d-block ellipsis mb-5"> Name</span>
+                                    <span id="UserNameProfile" class="text-dark d-block ellipsis fs-15"></span>
                                 </div>
                             </div>
                             <div class="userprofile-info d-flex align-items-center">
                                 <span class="userprofile-info-icon"><i class="icon-email"></i></span>
                                 <div class="flex-1 overflow-hidden font-semi-bold ml-15">
-                                    <span class="text-muted d-block ellipsis mb-5">Email</span>
-                                    <span class="text-dark d-block ellipsis fs-15" id="useremail"></span>
-                                </div>
-                            </div>
-                            <div class="userprofile-info d-flex align-items-center">
-                                <span class="userprofile-info-icon"><i class="icon-call-phone"></i></span>
-                                <div class="flex-1 overflow-hidden font-semi-bold ml-15">
-                                    <span class="text-muted d-block ellipsis mb-5">Phone Number</span>
-                                    <span class="text-dark d-block ellipsis fs-15">+91 9979692357</span>
-                                </div>
-                            </div>
-                            <div class="userprofile-info d-flex align-items-center">
-                                <span class="userprofile-info-icon"><i class="icon-assign-role"></i></span>
-                                <div class="flex-1 overflow-hidden font-semi-bold ml-15">
-                                    <span class="text-muted d-block ellipsis mb-5">User Role</span>
-                                    <span class="text-dark d-block ellipsis fs-15">Scrum</span>
+                                    <span class="text-muted d-block ellipsis mb-5">Gender</span>
+                                    <span id="UserGenderProfile" class="text-dark d-block ellipsis fs-15"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="settings">
-                    <div class="head">
-                        <a class="back"><i class="icon-arrow-left"></i></a>
-                        <h3>Settings</h3>
-                    </div>
-                    <!-- tab strip -->
-                    <div id="tabstrip" class="h100">
-                        <ul>
-                            <li class="k-state-active">
-                                Edit Profile
-                            </li>
-                            <li>
-                                Change Password
-                            </li>
-                        </ul>
-                        <div>
-                            <div class="setting-footer">
-                                <a class="btn btn-trans close">Close</a>
-                                <a class="btn btn-trans ml-0">Reset</a>
-                                <a class="btn btn-primary">Update</a>
-                            </div>
-                            <form class="edit-profile">
-                                <div class="brief">
-                                    <div class="img-circle"><span>NP</span></div>
-                                    <span class="input-pic">
-                                        <input type="file" id="fileProfileImage" name="fileProfileImage"
-                                            title="Change Photo">
-                                        <i class="icon-photo"></i>Change Photo
-                                    </span>
-                                    <a><i class="icon-delete"></i>Reset Photo</a>
-                                </div>
-                                <div class="edit-profile-details">
-                                    <div class="form-group">
-                                        <label>User Name</label>
-                                        <input class="form-control" readonly type="text"
-                                            value="nikhil.parmar@casepoint.in" />
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="half">
-                                            <label>First Name</label>
-                                            <input class="form-control" type="text" value="Nikhil" />
-                                        </div>
-                                        <div class="half">
-                                            <label>Last Name</label>
-                                            <input class="form-control" type="text" value="Parmar" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Email</label>
-                                        <input class="form-control" type="email" readonly
-                                            value="nikhil.parmar@casepoint.in" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Phone Number</label>
-                                        <input class="form-control" type="text" value="9876543210" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="drop-list">User Role</label>
-                                        <select id="UserRoleDropdown" title="dropdown without search">
-                                            <option>Scrum</option>
-                                            <option>iAudit</option>
-                                            <option>CorPocket</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div>
-                            <div>
-                                <form class="edit-profile">
-                                    <div class="edit-profile-details">
-                                        <div class="form-group">
-                                            <label>Current Password</label>
-                                            <input class="form-control" type="password"
-                                                placeholder="Current Password" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label>New Password <i class="icon-info-unfill text-muted"></i> </label>
-                                            <input class="form-control" type="password" placeholder="New Password" />
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Confirm Password</label>
-                                            <input class="form-control" type="password"
-                                                placeholder="Re-type New Password" />
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="setting-footer">
-                                <a class="btn btn-trans close">Close</a>
-                                <a class="btn btn-trans ml-0">Reset</a>
-                                <a class="btn btn-primary">Save</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
-                </div>
+
             </div>
         </div>
         <!-- end user profile -->
@@ -339,10 +229,15 @@
 
 
 
-
+ 
 
 <script>
     var userData = JSON.parse(sessionStorage.getItem("User"))
+    $('#MainProfilename').html(userData.Name)
+    $('#UserEmailProfile').html(userData.Email)
+    $('#UserNameProfile').html(userData.Name)
+    $('#UserGenderProfile').html(userData.c_gender)
+     $("#UserProfile").attr("src", "/profile_images/"+userData.c_profilepicture)
     function fetchNotifications() {
         $.ajax({
             url: "http://localhost:5136/api/task/notifications/" + userData.c_uid, // Replace 2 with dynamic user ID

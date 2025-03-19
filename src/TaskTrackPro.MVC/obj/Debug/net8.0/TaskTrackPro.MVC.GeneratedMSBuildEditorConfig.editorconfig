@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TaskTrackPro.MVC
+build_property.RootNamespace = TaskTrackPro.MVC
+build_property.ProjectDir = C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Admin/Members.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVtYmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Admin/Messages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWVzc2FnZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Admin/Task.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGFzay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/AssignTask/ChatPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduVGFza1xDaGF0UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/AssignTask/TaskAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduVGFza1xUYXNrQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Auth/Forgot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3Jnb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Message/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Shared/_AuthLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Shared/_Custom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Shared/_CustomA.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdXN0b21BLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Shared/_TaskAdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYXNrQWRtaW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Shared/_TaskTrackProLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYXNrVHJhY2tQcm9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/User/Messages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNZXNzYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/User/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTZXR0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/User/Task.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxUYXNrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Downloads/TaskTrackPro/TaskTrackPro/TaskTrackPro/src/TaskTrackPro.MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-914v9y682i

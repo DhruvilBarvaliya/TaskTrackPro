@@ -1,5 +1,5 @@
 @{
-    Layout = "_Custom";
+    Layout = "_CustomA";
 }
 
 <!-- Menu Section -->
@@ -272,3 +272,14 @@
         color: #666;
     }
 </style>
+
+<script>
+    $(document).ready(function () {
+        $("#logout").on("click", function (e) {
+            e.preventDefault();
+            sessionStorage.clear()
+            sessionStorage.removeItem("userEmail");
+            window.location.replace("/Home/Login");
+        });
+    });
+</script>

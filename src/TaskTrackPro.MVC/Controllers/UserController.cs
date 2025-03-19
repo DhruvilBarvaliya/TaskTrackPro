@@ -23,5 +23,9 @@ namespace TaskTrackPro.MVC.Controllers
         {
             return View();
         }
+        public IActionResult Settings()
+        {
+            return View();
+        }
     }
 }

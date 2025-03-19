@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "B5ofIqSVBdUSmDnPrRRRNvnGZwIsAeWW1W+t7xmwG5g=",
+  "Source": "TaskTrackPro.API",
+  "BasePath": "_content/TaskTrackPro.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

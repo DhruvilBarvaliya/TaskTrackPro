@@ -1,0 +1,200 @@
+@{
+    Layout = "_Custom";
+}
+
+<!-- Menu Section-->
+<section class="main-section-menu bg-light bb-1">
+    <ul class="main-section-menu-ul" id="mainSectionMenu">
+        <li><a asp-action="Task" id="iAuditInspection" class="ms-menu-link ">Task</a></li>
+        <li><a asp-action="Messages" id="iAuditAnalytics" class="ms-menu-link">Messages</a></li>
+        <li><a asp-action="Settings" id="iAuditAnalytics" class="ms-menu-link active">Settings</a></li>
+        <li><a id="logout" class="ms-menu-link">Logout</a></li>
+    </ul>
+</section>
+<!--// Menu Section-->
+
+
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h3 class="text-center">Update Profile</h3>
+        <form id="updateProfileForm">
+            <input type="text" id="userIdEdit">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="usernameEdit" name="c_uname" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="c_email" required>
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select class="form-control" id="gender" name="c_gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="profilePicture" class="form-label">Profile Picture</label>
+                <input type="file" class="form-control" id="profilePicture" name="profile_image">
+                <img id="previewImage" src="" alt="Profile Picture" class="img-thumbnail mt-2" style="max-width: 100px; display: none;">
+            </div>
+            <input type="hidden" id="userId" name="c_uid">
+            <input type="hidden" id="oldProfilePic" name="old_profile_picture">
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Update Profile</button>
+            </div>
+        </form>
+
+        <div id="successMessage" class="alert alert-success mt-3 d-none"></div>
+        <div id="errorMessage" class="alert alert-danger mt-3 d-none"></div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <h2>Change Password</h2>
+    <div class="alert alert-success d-none" id="successMessage">Password updated successfully!</div>
+    <div class="alert alert-danger d-none" id="errorMessage"></div>
+
+    <form id="changePasswordForm">
+        <div class="mb-3">
+            <label for="oldPassword" class="form-label">Old Password</label>
+            <input type="password" class="form-control" id="oldPassword" name="OldPassword" required>
+        </div>
+        <div class="mb-3">
+            <label for="newPassword" class="form-label">New Password</label>
+            <input type="password" class="form-control" id="newPassword" name="NewPassword" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Password</button>
+    </form>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var userData = JSON.parse(sessionStorage.getItem("User"));
+
+        $("#changePasswordForm").submit(function (e) {
+            e.preventDefault();
+
+            var userId = parseInt(userData.c_uid); // Fetch user ID from session
+            var oldPassword = $("#oldPassword").val();
+            var newPassword = $("#newPassword").val();
+
+            var formData = new FormData();
+            formData.append("c_uid", userId);
+            formData.append("OldPassword", oldPassword);
+            formData.append("NewPassword", newPassword);
+
+            $.ajax({
+                url: "http://localhost:5136/api/UserApi/ChangePassword", // Update this with your API endpoint
+                type: "PUT",
+                processData: false,
+                contentType: false,
+                data: formData,
+                success: function (response) {
+                    $("#successMessage").removeClass("d-none").text("Password updated successfully!");
+                    $("#errorMessage").addClass("d-none");
+                    $("#changePasswordForm")[0].reset();
+                },
+                error: function (xhr) {
+                    $("#errorMessage").removeClass("d-none").text(xhr.responseText);
+                    $("#successMessage").addClass("d-none");
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#logout").on("click", function () {
+            let email = sessionStorage.getItem("userEmail");
+            console.log("Logout email:- " + email);
+            $.ajax({
+                url: "http://localhost:5136/api/UserApi/logout?userEmail=" + email,
+                type: "POST",
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    @* if (response.success) { *@
+                        window.location.href = "../Home/Login"
+                    @* } *@
+                    },
+                error: function (xhr, status, error) {
+                    console.error("Failed to logout. Error:", error);
+                }
+            })
+        })
+    })
+
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        var userData = JSON.parse(sessionStorage.getItem("User"));
+
+        // Pre-fill user data
+        $("#usernameEdit").val(userData.Name);
+        $("#email").val(userData.Email);
+        $("#gender").val(userData.c_gender);
+        $("#userIdEdit").val(parseInt(userData.c_uid)); // Convert to int
+        $("#oldProfilePic").val(userData.c_profilepicture);
+
+        // Show existing profile picture (if available)
+        if (userData.c_profilepicture) {
+            $("#previewImage").attr("src", "/profile_images/"+ userData.c_profilepicture).show();
+        }
+
+        // Handle form submission
+        $("#updateProfileForm").submit(function (e) {
+            e.preventDefault();
+
+            var formData = new FormData();
+            formData.append("c_uname", $("#usernameEdit").val());
+            formData.append("c_email", $("#email").val());
+            formData.append("c_gender", $("#gender").val());
+            formData.append("c_uid",$("#userIdEdit").val());
+
+            console.log($("#userIdEdit").val());
+
+
+            // Handle profile picture upload
+            var profilePic = $("#profilePicture")[0].files[0];
+            if (profilePic) {
+                formData.append("c_profilepicture", profilePic);
+            } else {
+                formData.append("c_profilepicture", $("#oldProfilePic").val()); // Send existing image URL
+            }
+
+            $.ajax({
+                url: "http://localhost:5136/api/UserApi/UpdateProfile", // Update API URL
+                type: "PUT",
+                processData: false,
+                contentType: false,
+                data: formData,
+                success: function (response) {
+                    console.log(response)
+                    $("#successMessage").removeClass("d-none").text("Profile updated successfully!");
+                    $("#errorMessage").addClass("d-none");
+                },
+                error: function (error,xhr) {
+                    console.log(error)
+                    $("#errorMessage").removeClass("d-none").text(xhr.responseText);
+                    $("#successMessage").addClass("d-none");
+                }
+            });
+        });
+
+        // Preview selected profile picture
+        $("#profilePicture").change(function (event) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("#previewImage").attr("src", e.target.result).show();
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        });
+    });
+</script>

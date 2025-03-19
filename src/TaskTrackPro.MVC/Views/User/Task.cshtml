@@ -8,6 +8,7 @@
     <ul class="main-section-menu-ul" id="mainSectionMenu">
         <li><a asp-action="Task" id="iAuditInspection" class="ms-menu-link active">Task</a></li>
         <li><a asp-action="Messages" id="iAuditAnalytics" class="ms-menu-link">Messages</a></li>
+        <li><a asp-action="Settings" id="iAuditAnalytics" class="ms-menu-link">Settings</a></li>
         <li><a id="logout" class="ms-menu-link">Logout</a></li>
     </ul>
 </section>
@@ -225,10 +226,11 @@
         });
     });
     // Update Task
+    var userData = JSON.parse(sessionStorage.getItem("User"));
     $("#updateTaskBtn").click(function () {
         let updatedTask = {
             c_tid: $("#taskId").val(),
-            c_uid: 24,  // Assuming this input holds user ID
+            c_uid: parseInt(userData.c_uid) ,  // Assuming this input holds user ID
             c_task_title: $("#UpdateTaskTitle").val(),
             c_start_date: new Date($("#Updatestartdatetimepicker").val()).toISOString(), // Convert to ISO format
             c_end_date: new Date($("#Updateenddatetimepicker").val()).toISOString(),

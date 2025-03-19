@@ -1,0 +1,1181 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TaskTrackPro.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TaskTrackPro.MVC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\Css icon\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\Css icon\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\Site.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\Site.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\casepoint.comfortable.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\casepoint.comfortable.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\casepoint.compact.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\casepoint.compact.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\casepoint.cozy.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\casepoint.cozy.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Aqua.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Aqua.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Black.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Black.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Brown.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Brown.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Darkbrown.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Darkbrown.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Darkgray.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Darkgray.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Darkteal.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Darkteal.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Deepblue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Deepblue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Deeppurple.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Deeppurple.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Grayishblue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Grayishblue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Green.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Green.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Indigo.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Indigo.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Lightaqua.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Lightaqua.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Lightblue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Lightblue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Lightgreen.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Lightgreen.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Orange.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Orange.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Pink.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Pink.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Purple.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Purple.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Raspberry.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Raspberry.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Red.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Red.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Springgreen.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Springgreen.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Teal.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Teal.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\compliance.Yellow.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\compliance.Yellow.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\core-pocket-responsive.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\core-pocket-responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\core-pocket.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\core-pocket.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts\\glyphs\\KendoUIGlyphs.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts\\glyphs\\KendoUIGlyphs.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts\\glyphs\\KendoUIGlyphs.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts\\glyphs\\KendoUIGlyphs.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts\\glyphs\\KendoUIGlyphs.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts\\glyphs\\KendoUIGlyphs.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts\\glyphs\\KendoUIGlyphs.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts\\glyphs\\KendoUIGlyphs.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts\\glyphs\\WebComponentsIcons.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts\\glyphs\\WebComponentsIcons.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts\\glyphs\\WebComponentsIcons.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts\\glyphs\\WebComponentsIcons.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts\\glyphs\\WebComponentsIcons.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts\\glyphs\\WebComponentsIcons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\fonts\\glyphs\\WebComponentsIcons.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\fonts\\glyphs\\WebComponentsIcons.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\iaudit_dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\iaudit_dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\icon_more_option.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\icon_more_option.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\icons-navbar1.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\icons-navbar1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\oit.loading.gif",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\oit.loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Blue.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Blue.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Bluedark.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Bluedark.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Bluelight.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Bluelight.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Green.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Green.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Greenlight.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Greenlight.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Orangedark.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Orangedark.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Orangelight.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Orangelight.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Pink.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Pink.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Purple.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Purple.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Purpledark.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Purpledark.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Purplelight.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Purplelight.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Reddark.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Reddark.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Redlight.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Redlight.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Skyblue.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Skyblue.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Teal.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Teal.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Teallight.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-Teallight.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-black.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-black.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-yellow.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\ViewerIcon\\viewer-icon-yellow.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\back.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\back.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\check.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\check.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\checkbox.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\checkbox.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\drag-icon.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\drag-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\kendoui.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\kendoui.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\kendoui.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\kendoui.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\kendoui.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\kendoui.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\wp8_icons.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\wp8_icons.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\images\\wp8_inverseicons.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\images\\wp8_inverseicons.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\jquery-ui\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\jquery-ui\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\jquery-ui\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\jquery-ui\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Aqua.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Aqua.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Black.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Black.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Dark Teal.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Dark Teal.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Darkbrown.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Darkbrown.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Darkgray.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Darkgray.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Darkteal.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Darkteal.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Deepblue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Deepblue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Deeppurple.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Deeppurple.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Grayishblue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Grayishblue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Green.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Green.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Indigo.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Indigo.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Light Orange.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Light Orange.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Light Purple.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Light Purple.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Lightaqua.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Lightaqua.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Lightblue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Lightblue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Lightpink.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Lightpink.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Orange.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Orange.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Pink.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Pink.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Purple.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Purple.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Raspberry.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Raspberry.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Red.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Red.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Sky Blue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Sky Blue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Springgreen.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Springgreen.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Teal.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Teal.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.Yellow.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.Yellow.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.blue.min.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.blue.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.brown.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.brown.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.common.min.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.common.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.darkblue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.darkblue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.darkviolet.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.darkviolet.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.default.min.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.default.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.default.mobile.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.lightbrown.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.lightbrown.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.lightgreen.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.lightgreen.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.maroon.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.maroon.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.officeblue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.officeblue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.olive.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.olive.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.peacock.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.peacock.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.seablue.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.seablue.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\kendo.violet.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\kendo.violet.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\styleguide.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\styleguide.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\textures\\transparency.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\textures\\transparency.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\textures\\transtexture.png",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\textures\\transtexture.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\css\\wescrum.css",
+      "PackagePath": "staticwebassets\\css\\Default\\css\\wescrum.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Avenir-Bold.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Avenir-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Avenir-Bold.otf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Avenir-Bold.otf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Avenir-Bold.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Avenir-Bold.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Avenir-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Avenir-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Avenir-Bold.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Avenir-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Bold.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Bold.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Bold.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Bold.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Bold.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-BoldItalic.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-BoldItalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-BoldItalic.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-BoldItalic.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-BoldItalic.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-BoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-BoldItalic.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-BoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Italic.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Italic.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Italic.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Italic.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Italic.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Italic.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Italic.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Italic.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Italic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Light.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Light.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Light.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Light.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Light.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Light.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-LightItalic.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-LightItalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-LightItalic.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-LightItalic.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-LightItalic.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-LightItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-LightItalic.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-LightItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Medium.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Medium.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Medium.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Medium.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Medium.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Medium.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-MediumItalic.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-MediumItalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-MediumItalic.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-MediumItalic.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-MediumItalic.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-MediumItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-MediumItalic.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-MediumItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Regular.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Regular.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Regular.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Regular.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-Regular.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBold.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBold.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBold.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBold.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBold.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBold.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBoldItalic.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBoldItalic.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBoldItalic.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\HKGrotesk-SemiBoldItalic.woff2",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\HKGrotesk-SemiBoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Black.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Black.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Black.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Black.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Black.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Bold.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Bold.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Light.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Light.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Light.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Regular.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Regular.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\Lato-Regular.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\Lato-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\apphub-icon.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\apphub-icon.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\apphub-icon.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\apphub-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\apphub-icon.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\apphub-icon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\apphub-icon.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\apphub-icon.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\color-icomoon.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\color-icomoon.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\color-icomoon.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\color-icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\color-icomoon.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\color-icomoon.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\css\\Default\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\Clarent_Logo.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\Clarent_Logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\Clarent_White_Logo.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\Clarent_White_Logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\Login_BG.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\Login_BG.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\Login_Graphics.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\Login_Graphics.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\LogoImage.png",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\LogoImage.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\TaskProLogo.png",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\TaskProLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\core-pocket\\event.jpg",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\core-pocket\\event.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\empty-record-arrow.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\empty-record-arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\error-shape.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\error-shape.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\loader1.gif",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\loader1.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\Default\\images\\regitser_logo.svg",
+      "PackagePath": "staticwebassets\\css\\Default\\images\\regitser_logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\CLARENT\\Other\\Custom\\Custom.js",
+      "PackagePath": "staticwebassets\\js\\CLARENT\\Other\\Custom\\Custom.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\CLARENT\\Other\\Custom\\clarant-custom.js",
+      "PackagePath": "staticwebassets\\js\\CLARENT\\Other\\Custom\\clarant-custom.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\CLARENT\\Other\\Custom\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\js\\CLARENT\\Other\\Custom\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\Kendo\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\js\\Kendo\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\Kendo\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\Kendo\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\Kendo\\jquery.min.map",
+      "PackagePath": "staticwebassets\\js\\Kendo\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\Kendo\\kendo.all-vsdoc.js",
+      "PackagePath": "staticwebassets\\js\\Kendo\\kendo.all-vsdoc.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\Kendo\\kendo.all.min.js",
+      "PackagePath": "staticwebassets\\js\\Kendo\\kendo.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\Kendo\\kendo.all.min.js.map",
+      "PackagePath": "staticwebassets\\js\\Kendo\\kendo.all.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\Kendo\\kendo.web.min.js",
+      "PackagePath": "staticwebassets\\js\\Kendo\\kendo.web.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\Kendo\\kendoARA.all-vsdoc.js",
+      "PackagePath": "staticwebassets\\js\\Kendo\\kendoARA.all-vsdoc.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\kendo\\kendo.all.min.js",
+      "PackagePath": "staticwebassets\\lib\\kendo\\kendo.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\lib\\kendo\\kendo.default-v2.min.css",
+      "PackagePath": "staticwebassets\\lib\\kendo\\kendo.default-v2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Downloads\\TaskTrackPro\\TaskTrackPro\\TaskTrackPro\\src\\TaskTrackPro.MVC\\wwwroot\\profile_images\\dhruvilbarvaliaya20@gmail.com.png",
+      "PackagePath": "staticwebassets\\profile_images\\dhruvilbarvaliaya20@gmail.com.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TaskTrackPro.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TaskTrackPro.MVC.props",
+      "PackagePath": "build\\TaskTrackPro.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TaskTrackPro.MVC.props",
+      "PackagePath": "buildMultiTargeting\\TaskTrackPro.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TaskTrackPro.MVC.props",
+      "PackagePath": "buildTransitive\\TaskTrackPro.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

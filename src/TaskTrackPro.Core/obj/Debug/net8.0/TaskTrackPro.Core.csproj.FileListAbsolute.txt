@@ -1,0 +1,52 @@
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.deps.json
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.dll
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.pdb
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.csproj.AssemblyReference.cache
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.AssemblyInfoInputs.cache
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.AssemblyInfo.cs
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.csproj.CoreCompileInputs.cache
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.sourcelink.json
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.dll
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\refint\TaskTrackPro.Core.dll
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.pdb
+D:\CP Internship\#Project\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\ref\TaskTrackPro.Core.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.deps.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.pdb
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.csproj.AssemblyReference.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.AssemblyInfoInputs.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.AssemblyInfo.cs
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.csproj.CoreCompileInputs.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.sourcelink.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\refint\TaskTrackPro.Core.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.pdb
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\ref\TaskTrackPro.Core.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.deps.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.pdb
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.csproj.AssemblyReference.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.AssemblyInfoInputs.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.AssemblyInfo.cs
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.csproj.CoreCompileInputs.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.sourcelink.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\refint\TaskTrackPro.Core.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.pdb
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\ref\TaskTrackPro.Core.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.deps.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\bin\Debug\net8.0\TaskTrackPro.Core.pdb
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.AssemblyInfo.cs
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.sourcelink.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\refint\TaskTrackPro.Core.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\TaskTrackPro.Core.pdb
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.Core\obj\Debug\net8.0\ref\TaskTrackPro.Core.dll

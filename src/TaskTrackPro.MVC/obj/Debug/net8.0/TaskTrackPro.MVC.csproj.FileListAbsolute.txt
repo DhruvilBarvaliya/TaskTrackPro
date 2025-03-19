@@ -1,0 +1,198 @@
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\appsettings.Development.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\appsettings.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.staticwebassets.runtime.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.exe
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.deps.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.runtimeconfig.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.pdb
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Dapper.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Npgsql.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\RabbitMQ.Client.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.Core.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.Core.pdb
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.csproj.AssemblyReference.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.GeneratedMSBuildEditorConfig.editorconfig
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.AssemblyInfoInputs.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.AssemblyInfo.cs
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.csproj.CoreCompileInputs.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.MvcApplicationPartsAssemblyInfo.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.RazorAssemblyInfo.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.RazorAssemblyInfo.cs
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.sourcelink.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.build.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.development.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.TaskTrackPro.MVC.Microsoft.AspNetCore.StaticWebAssets.props
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.build.TaskTrackPro.MVC.props
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TaskTrackPro.MVC.props
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TaskTrackPro.MVC.props
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.pack.json
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\bundle\TaskTrackPro.MVC.styles.css
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\projectbundle\TaskTrackPro.MVC.bundle.scp.css
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrac.6D7734D1.Up2Date
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\refint\TaskTrackPro.MVC.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.pdb
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.genruntimeconfig.cache
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\ref\TaskTrackPro.MVC.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\MailKit.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\MimeKit.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Text.Json.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\CP Internship\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\appsettings.Development.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\appsettings.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.staticwebassets.runtime.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.exe
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.deps.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.runtimeconfig.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.pdb
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Dapper.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\MailKit.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\MimeKit.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Npgsql.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\RabbitMQ.Client.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Text.Json.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.Core.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.Core.pdb
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.csproj.AssemblyReference.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.GeneratedMSBuildEditorConfig.editorconfig
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.AssemblyInfoInputs.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.AssemblyInfo.cs
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.csproj.CoreCompileInputs.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.MvcApplicationPartsAssemblyInfo.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.RazorAssemblyInfo.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.RazorAssemblyInfo.cs
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.sourcelink.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.build.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.development.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.TaskTrackPro.MVC.Microsoft.AspNetCore.StaticWebAssets.props
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.build.TaskTrackPro.MVC.props
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TaskTrackPro.MVC.props
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TaskTrackPro.MVC.props
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.pack.json
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\bundle\TaskTrackPro.MVC.styles.css
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\projectbundle\TaskTrackPro.MVC.bundle.scp.css
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrac.6D7734D1.Up2Date
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\refint\TaskTrackPro.MVC.dll
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.pdb
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.genruntimeconfig.cache
+D:\ChatApp_Krishna\TaskTrackPro_merge\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\ref\TaskTrackPro.MVC.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\appsettings.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.staticwebassets.runtime.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.exe
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.deps.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.runtimeconfig.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.MVC.pdb
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Dapper.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\MailKit.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\MimeKit.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Npgsql.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.Core.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\bin\Debug\net8.0\TaskTrackPro.Core.pdb
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.AssemblyInfo.cs
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.RazorAssemblyInfo.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.RazorAssemblyInfo.cs
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.sourcelink.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.TaskTrackPro.MVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.build.TaskTrackPro.MVC.props
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TaskTrackPro.MVC.props
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TaskTrackPro.MVC.props
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\bundle\TaskTrackPro.MVC.styles.css
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\scopedcss\projectbundle\TaskTrackPro.MVC.bundle.scp.css
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrac.6D7734D1.Up2Date
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\refint\TaskTrackPro.MVC.dll
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.pdb
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\TaskTrackPro.MVC.genruntimeconfig.cache
+C:\Users\LENOVO\Downloads\TaskTrackPro\TaskTrackPro\TaskTrackPro\src\TaskTrackPro.MVC\obj\Debug\net8.0\ref\TaskTrackPro.MVC.dll

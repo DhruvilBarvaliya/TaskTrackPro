@@ -184,81 +184,79 @@ namespace TaskTrackPro.Core.Repositories.Commands.Implementations
 
 
         public async Task<t_User> Login(Login user)
-{
-    t_User UserData = null;
-    var qry = "SELECT * FROM t_user_task WHERE c_email=@c_email;";
-
-    try
-    {
-        using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
         {
-            cmd.Parameters.AddWithValue("@c_email", user.c_email);
-            await _conn.OpenAsync();
+            t_User UserData = null;
+            var qry = "SELECT * FROM t_user_task WHERE c_email=@c_email AND c_approve_status='true';";
 
-            using (var reader = await cmd.ExecuteReaderAsync())
-            {
-                if (await reader.ReadAsync())  // ✅ Ensure there is a row before reading data
-                {
-                    string storedHashedPassword = reader["c_password"].ToString();
-
-                    // Verify the input password against the stored hash
-                    if (BCrypt.Net.BCrypt.Verify(user.c_password, storedHashedPassword))
-                    {
-                        UserData = new t_User
-                        {
-                            c_uid = reader.GetInt32(reader.GetOrdinal("c_uid")),
-                            c_email = reader.GetString(reader.GetOrdinal("c_email")),
-                            c_uname = reader.GetString(reader.GetOrdinal("c_uname")),
-                            c_password = storedHashedPassword, // Store only if necessary
-                            c_profilepicture = reader.IsDBNull(reader.GetOrdinal("c_profilepicture")) 
-                                                ? null 
-                                                : reader.GetString(reader.GetOrdinal("c_profilepicture"))
-                        };
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("No user found with this email.");
-                }
-            }
-        }
-    }
-    catch (Exception e)
-    {
-        Console.WriteLine("-----------> Login Error: " + e.Message);
-    }
-    finally
-    {
-        await _conn.CloseAsync();
-    }
-
-    return UserData;
-}
-
-        public async Task<int> UpdateProfile(EditProfile userData)
-        {
-            var qry = "UPDATE t_user_task SET c_uname=@c_uname, c_email=@c_email,c_profileimage WHERE c_uid = @c_uid";
             try
             {
                 using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
                 {
-                    cmd.Parameters.AddWithValue("@c_uname", userData.c_uname);
-                    cmd.Parameters.AddWithValue("@c_email", userData.c_email);
-                    cmd.Parameters.AddWithValue("@profile_image", userData.profile_image.ToString());
-                    cmd.Parameters.AddWithValue("@c_uid", userData.c_uid);
-                    _conn.Close();
-                    _conn.Open();
-                    int rowsAffected = await cmd.ExecuteNonQueryAsync();
-                    _conn.Close();
-                    return rowsAffected;
+                    cmd.Parameters.AddWithValue("@c_email", user.c_email);
+                    await _conn.OpenAsync();
+
+                    using (var reader = await cmd.ExecuteReaderAsync())
+                    {
+                        if (await reader.ReadAsync())  // ✅ Ensure there is a row before reading data
+                        {
+                            string storedHashedPassword = reader["c_password"].ToString();
+
+                            // Verify the input password against the stored hash
+                            if (BCrypt.Net.BCrypt.Verify(user.c_password, storedHashedPassword))
+                            {
+                                UserData = new t_User
+                                {
+                                    c_uid = reader.GetInt32(reader.GetOrdinal("c_uid")),
+                                    c_email = reader.GetString(reader.GetOrdinal("c_email")),
+                                    c_uname = reader.GetString(reader.GetOrdinal("c_uname")),
+                                    c_gender = reader.GetString(4),
+                                    c_profilepicture = reader.IsDBNull(5) ? "default.png" : reader.GetString(5),
+                                    c_password = storedHashedPassword, // Store only if necessary
+                                };
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("No user found with this email.");
+                        }
+                    }
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error updating profile: " + e.Message);
+                Console.WriteLine("-----------> Login Error: " + e.Message);
             }
-            return 0;
+            finally
+            {
+                await _conn.CloseAsync();
+            }
+
+            return UserData;
         }
+
+        public async Task<int> UpdateProfile(t_UserUpdate userData)
+    {
+        var qry = "UPDATE t_user_task SET c_uname=@c_uname, c_email=@c_email,c_profilepicture=@profile_image WHERE c_uid = @c_uid";
+        try
+        {
+            using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
+            {
+                _conn.Close();
+                cmd.Parameters.AddWithValue("@c_uname", userData.c_uname);
+                cmd.Parameters.AddWithValue("@c_email", userData.c_email);
+                cmd.Parameters.AddWithValue("@profile_image", userData.c_profilepicture.ToString());
+                cmd.Parameters.AddWithValue("@c_uid", userData.c_uid);
+                _conn.Open();
+                int rowsAffected = await cmd.ExecuteNonQueryAsync();
+                return 1;
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Error updating profile: " + e.Message);
+        }
+        return 0;
+    }
 
     }
 }

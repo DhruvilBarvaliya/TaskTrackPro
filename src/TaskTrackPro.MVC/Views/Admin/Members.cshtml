@@ -1,5 +1,5 @@
 @{
-    Layout = "_Custom";
+    Layout = "_CustomA";
 }
 <!-- Menu Section-->
 <section class="main-section-menu bg-light bb-1">
@@ -8,7 +8,8 @@
         <li><a href="javascript:void(0);" id="iAuditTemplate" class="ms-menu-link active">Members</a></li>
         <li><a asp-action="Task" id="iAuditInspection" class="ms-menu-link">Task</a></li>
         <li><a asp-action="Messages" id="iAuditAnalytics" class="ms-menu-link">Messages</a></li>
-        </ulv>
+                <li><a id="logout" class="ms-menu-link">Logout</a></li>
+
 </section>
 
 <!--// Menu Section-->
@@ -22,7 +23,7 @@
             <div class="searchbar w100 p-10 pb-5">
                 <div class="clear-input search-box w100">
                     <input type="text" name="txtTagListSearch" id="MemberElaticInput" aria-label="tag name"
-                        class="form-control k-textbox k-valid" placeholder="Search Task here...">
+                        class="form-control k-textbox k-valid" placeholder="Search Members here...">
                     <i class="icon-search" aria-hidden="true"></i>
                     <a role="button" id="ElasticClear" aria-label="Clear Search" href="javascript:void(0);"
                         class="btn-icn-hover close icon-cancel" data-ara-title="Clear Search"></a>
@@ -350,4 +351,16 @@
 
 
     })
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $("#logout").on("click", function (e) {
+            e.preventDefault();
+            sessionStorage.clear()
+            sessionStorage.removeItem("userEmail");
+            window.location.replace("/Home/Login");
+        });
+    });
 </script>

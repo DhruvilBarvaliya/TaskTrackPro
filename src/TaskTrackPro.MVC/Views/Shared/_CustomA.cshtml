@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--meta tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>TaskTrackPro</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="~/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/Default/css/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/css/Default/css/kendo.default.min.css" rel="stylesheet" />
+    <link href="~/css/Default/css/fonts.css" rel="stylesheet" />
+    <link href="~/css/Default/css/styleguide.css" rel="stylesheet" />
+    <link href="~/css/Default/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/Default/css/casepoint.comfortable.css" rel="stylesheet" />
+    <link href="~/css/Default/css/kendo.Red.css" rel="stylesheet" />
+
+
+    <!-- css -->
+    <link href="~/css/Default/css/iaudit_dashboard.css" rel="stylesheet" />
+
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Kendo/jquery.min.js"></script>
+    <script src="~/js/Kendo/kendo.all.min.js"></script>
+
+    <script src="~/js/CLARENT/Other/Custom/clarant-custom.js"></script>
+    <script src="~/js/CLARENT/Other/Custom/Custom.js"></script>
+
+
+</head>
+
+
+<body>
+    <!--Navigation Header-->
+    <header class="main-header">
+        <nav class="mt-navbar">
+            <div class="nav-left" id="dvLeftMenu" data-role="aratooltipv2">
+                <div class="logo-wrapper">
+                    <img style="width: 100%;" src="~/css/Default/images/LogoImage.png" />
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul class="user-menu">
+                    <li class="support-mail-wrapper">
+                        <a href="javascript:void(0);" tabindex="0" class="help" id="btnSupportMail"
+                            data-ara-title="Help" aria-label="Help" role="button" data-role="aratooltipv2"><i
+                                class="icon-help" aria-hidden="true"></i></a>
+
+                    </li>
+                    <li class="separator"></li>
+                    <li class="userprofile-item userprofile ">
+                        Admin
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--// Navigation Header-->
+
+    <!--// Notification Offcanvas start-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNotifications" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasLabel">Notifications</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="notificationList" class="list-group">
+                <p class="text-center text-muted">Loading notifications...</p>
+            </div>
+            <button onclick="clearNotifications()" class="btn btn-danger w-100 mt-3">Clear All Notifications</button>
+        </div>
+    </div>
+    <!--// Notification Offcanvas start-->
+
+    <script>
+        // Mark notification as read when clicked
+        $(".accordion-item.unread").on("click", function () {
+            $(this).removeClass("unread").addClass("read");
+            $(this).find(".accordion-button").addClass("collapsed");
+        });
+    </script>
+    <!-- Main Contain -->
+    <main class="main-contain-wrapper main-content">
+
+
+        <!-- Notification Dropdown -->
+        <div class="notification-menu dropdown-menu">
+            <div class="notification-wrap">
+                <div class="main-up">
+                    <div class="notification-header">
+                        <h3 class="text-dark text-semibold">Notifications</h3>
+                        <a class="mark-all-read" onclick="markAllRead()">Mark All as Read</a>
+                    </div>
+                    <div class="notification-list">
+                        <div class="notification-item unread" onclick="markAsRead(this)">
+                            <span class="notification-icon"><i class="icon-bell"></i></span>
+                            <div class="notification-content">
+                                <span class="text-dark d-block ellipsis">New job alert: Full Stack Developer</span>
+                                <span class="text-muted d-block ellipsis small">5 mins ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item unread" onclick="markAsRead(this)">
+                            <span class="notification-icon"><i class="icon-message"></i></span>
+                            <div class="notification-content">
+                                <span class="text-dark d-block ellipsis">Message from recruiter</span>
+                                <span class="text-muted d-block ellipsis small">10 mins ago</span>
+                            </div>
+                        </div>
+                        <div class="notification-item" onclick="markAsRead(this)">
+                            <span class="notification-icon"><i class="icon-check"></i></span>
+                            <div class="notification-content">
+                                <span class="text-dark d-block ellipsis">Your application has been reviewed</span>
+                                <span class="text-muted d-block ellipsis small">1 hour ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Notification Dropdown -->
+        @RenderBody()
+    </main>
+    <!--// Main Contain -->
+
+
+    <!-- Footer -->
+    <footer class="footer-main-wrapper d-flex justify-content-space-between bg-light text-dark bt-1">
+        <span>🕒 Login Time: <strong id="loginTime"></strong></span>
+        <span>&copy; <strong id="currentYear"></strong> <a href="#" class="text-dark text-decoration-none fw-bold">Group
+                C</a>. All rights reserved.</span>
+    </footer>
+
+
+
+</body>
+
+<script>
+    function updateLoginTime() {
+        const now = new Date();
+        const formattedDate = now.toLocaleString('en-US', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true
+        });
+        document.getElementById('loginTime').textContent = formattedDate;
+    }
+
+    updateLoginTime(); // Call the function to update time on page load
+</script>
+
+<script>
+    var user = sessionStorage.getItem("userdata");
+
+    if (user) {
+        try {
+            var userObj = JSON.parse(user); // Parse the JSON string into an object
+            $('#useremail').text(userObj.email);
+            $('#username').text(userObj.name);
+        } catch (error) {
+            console.error("Error parsing user data:", error);
+        }
+    } else {
+        console.warn("No user data found in sessionStorage.");
+    }
+</script>
+
+
+</html>
+
+
+
+
+
+ 
+
+<script>
+    var userData = JSON.parse(sessionStorage.getItem("User"))
+    $('#MainProfilename').html(userData.Name)
+    $('#UserEmailProfile').html(userData.Email)
+    $('#UserNameProfile').html(userData.Name)
+    $('#UserGenderProfile').html(userData.c_gender)
+     $("#UserProfile").attr("src", "/profile_images/"+userData.c_profilepicture)
+    function fetchNotifications() {
+        $.ajax({
+            url: "http://localhost:5136/api/task/notifications/" + userData.c_uid, // Replace 2 with dynamic user ID
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                let notificationList = $("#notificationList");
+                let notificationBadge = $("#notificationBadge");
+
+                if (data.length > 0) {
+                    let listItems = data.map(n => `
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            ${n}
+                            <span class="badge bg-primary">New</span>
+                        </div>
+                    `).join("");
+                    notificationList.html(listItems);
+                    notificationBadge.text(data.length).show();
+                } else {
+                    notificationList.html("<p class='text-center text-muted'>No new notifications</p>");
+                    notificationBadge.hide();
+                }
+            },
+            error: function () {
+                $("#notificationList").html("<p class='text-center text-danger'>Error loading notifications</p>");
+            }
+        });
+
+        $.ajax({
+            url: "http://localhost:5136/api/task/notifications/count/" + userData.c_uid, // Replace 2 with dynamic user ID
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                $('#NotificationCount').html(data.notificationCount)
+            },
+            error: function () {
+                $("#notificationList").html("<p class='text-center text-danger'>Error loading notifications</p>");
+            }
+        });
+    }
+
+    function clearNotifications() {
+        $.ajax({
+            url: "http://localhost:5136/api/task/notifications/clear/" + userData.c_uid, // Replace 2 with dynamic user ID
+            type: "DELETE",
+            success: function () {
+                fetchNotifications(); // Refresh notifications after clearing
+            },
+            error: function () {
+                console.error("Error clearing notifications");
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        fetchNotifications();
+        setInterval(fetchNotifications, 5000);
+    });
+</script>

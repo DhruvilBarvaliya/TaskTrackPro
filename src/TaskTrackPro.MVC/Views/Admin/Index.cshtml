@@ -1,5 +1,5 @@
 @{
-    Layout = "_Custom";
+    Layout = "_CustomA";
 }
 <!-- Menu Section-->
 <section class="main-section-menu bg-light bb-1">
@@ -106,6 +106,7 @@
     $(document).ready(function () {
         $("#logout").on("click", function (e) {
             e.preventDefault();
+            sessionStorage.clear()
             sessionStorage.removeItem("userEmail");
             window.location.replace("/Home/Login");
         });
